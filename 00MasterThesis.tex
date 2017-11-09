@@ -1,0 +1,343 @@
+\documentclass[12pt]{book}
+% \usepackage[english]{babel}
+
+%\topmargin=20mm
+%\headheight=12pt
+%\headsep=0mm
+%\textheight=200mm
+%\oddsidemargin=5mm
+%\evensidemargin=5mm
+%\textwidth=150mm
+
+\topmargin=-10mm
+\headheight=12pt
+\headsep=0mm
+\textheight=245mm
+\oddsidemargin=-5mm
+\evensidemargin=-5mm
+\textwidth=170mm
+
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{subfigure}
+\usepackage{cite}
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{book tabs}
+\usepackage{braket}
+\usepackage{setspace}
+% \usepackage{docmute}
+
+\newcounter{one}
+\setcounter{one}{1}
+
+\pagestyle{plain}
+
+% \newcommand{\kB}{{k_\mathrm{B}}}
+% \newcommand{\TR}{{T_\mathrm{R}}}
+% \newcommand{\TL}{{T_\mathrm{L}}}
+% \newcommand{\QR}{{Q_\mathrm{R}}}
+% \newcommand{\QL}{{Q_\mathrm{L}}}
+% \newcommand{\UR}{{U_\mathrm{R}}}
+% \newcommand{\UL}{{U_\mathrm{L}}}
+% \newcommand{\WR}{{W_\mathrm{R}}}
+% \newcommand{\WL}{{W_\mathrm{L}}}
+% \newcommand{\NR}{{N_\mathrm{R}}}
+% \newcommand{\NL}{{N_\mathrm{L}}}
+% \newcommand{\betaR}{{\beta_\mathrm{R}}}
+% \newcommand{\betaL}{{\beta_\mathrm{L}}}
+% \newcommand{\fR}{{f_\mathrm{R}}}
+% \newcommand{\fL}{{f_\mathrm{L}}}
+% \newcommand{\chicR}{{\chi_{c\mathrm{R}}}}
+% \newcommand{\chicL}{{\chi_{c\mathrm{L}}}}
+% \newcommand{\chihR}{{\chi_{h\mathrm{R}}}}
+% \newcommand{\chihL}{{\chi_{h\mathrm{L}}}}
+% \newcommand{\chiQL}{{\chi_{Q}^{\mathrm{L}}}}
+% \newcommand{\chiQR}{{\chi_{Q}^{\mathrm{R}}}}
+% \newcommand{\chiNL}{{\chi_{N}^{\mathrm{L}}}}
+% \newcommand{\chiNR}{{\chi_{N}^{\mathrm{R}}}}
+% \newcommand{\chiqR}{{\chi_{q}^{\mathrm{R}}}}
+% \newcommand{\chiqL}{{\chi_{q}^{\mathrm{L}}}}
+% \newcommand{\chiQLL}{{\chi_{Q\mathrm{L}}^{\mathrm{L}}}}
+% \newcommand{\chiQLR}{{\chi_{Q\mathrm{R}}^{\mathrm{L}}}}
+% \newcommand{\chiQRL}{{\chi_{Q\mathrm{L}}^{\mathrm{R}}}}
+% \newcommand{\chiQRR}{{\chi_{Q\mathrm{R}}^{\mathrm{R}}}}
+% \newcommand{\chiNLL}{{\chi_{N\mathrm{L}}^{\mathrm{L}}}}
+% \newcommand{\chiNLR}{{\chi_{N\mathrm{R}}^{\mathrm{L}}}}
+% \newcommand{\chiNRL}{{\chi_{N\mathrm{L}}^{\mathrm{R}}}}
+% \newcommand{\chiNRR}{{\chi_{N\mathrm{R}}^{\mathrm{R}}}}
+% \newcommand{\chiqRL}{{\chi_{q\mathrm{L}}^{\mathrm{R}}}}
+% \newcommand{\chiqRR}{{\chi_{q\mathrm{R}}^{\mathrm{R}}}}
+% \newcommand{\chiqLL}{{\chi_{q\mathrm{L}}^{\mathrm{L}}}}
+% \newcommand{\chiqLR}{{\chi_{q\mathrm{R}}^{\mathrm{L}}}}
+% \newcommand{\AcR}{{A_{c\mathrm{R}}}}
+% \newcommand{\AcL}{{A_{c\mathrm{L}}}}
+% \newcommand{\AhR}{{A_{h\mathrm{R}}}}
+% \newcommand{\AhL}{{A_{h\mathrm{L}}}}
+% \newcommand{\ANR}{{A_N^{\mathrm{R}}}}
+% \newcommand{\ANL}{{A_N^{\mathrm{L}}}}
+% \newcommand{\ANRL}{{A_{N\mathrm{L}}^{\mathrm{R}}}}
+% \newcommand{\ANRR}{{A_{N\mathrm{R}}^{\mathrm{R}}}}
+% \newcommand{\ANLL}{{A_{N\mathrm{L}}^{\mathrm{L}}}}
+% \newcommand{\ANLR}{{A_{N\mathrm{R}}^{\mathrm{L}}}}
+% \newcommand{\AQR}{{A_Q^{\mathrm{R}}}}
+% \newcommand{\AQL}{{A_Q^{\mathrm{L}}}}
+% \newcommand{\AQRL}{{A_{Q\mathrm{L}}^{\mathrm{R}}}}
+% \newcommand{\AQRR}{{A_{Q\mathrm{R}}^{\mathrm{R}}}}
+% \newcommand{\AQLR}{{A_{Q\mathrm{R}}^{\mathrm{L}}}}
+% \newcommand{\AQLL}{{A_{Q\mathrm{L}}^{\mathrm{L}}}}
+% \newcommand{\AqR}{{A_q^{\mathrm{R}}}}
+% \newcommand{\AqL}{{A_q^{\mathrm{L}}}}
+% \newcommand{\AqRL}{{A_{q\mathrm{L}}^{\mathrm{R}}}}
+% \newcommand{\AqRR}{{A_{q\mathrm{R}}^{\mathrm{R}}}}
+% \newcommand{\AqLR}{{A_{q\mathrm{R}}^{\mathrm{L}}}}
+% \newcommand{\AqLL}{{A_{q\mathrm{L}}^{\mathrm{L}}}}
+% \newcommand{\Ah}{{A_h}}
+% \newcommand{\Ac}{{A_c}}
+% \newcommand{\pR}{{p_\mathrm{R}}}
+% \newcommand{\pL}{{p_\mathrm{L}}}
+% \newcommand{\muR}{{\mu_\mathrm{R}}}
+% \newcommand{\muL}{{\mu_\mathrm{L}}}
+% \newcommand{\EG}{{E_\mathrm{G}}}
+% \newcommand{\JQR}{{J_Q^{\mathrm{R}}}}
+% \newcommand{\JQL}{{J_Q^{\mathrm{L}}}}
+% \newcommand{\JNR}{{J_N^{\mathrm{R}}}}
+% \newcommand{\JNL}{{J_N^{\mathrm{L}}}}
+% \newcommand{\JOR}{{J_\Omega^{\mathrm{R}}}}
+% \newcommand{\JOL}{{J_\Omega^{\mathrm{L}}}}
+% \newcommand{\JQl}{{J_Q^{\ell}}}
+% \newcommand{\JSR}{{J_S^{\mathrm{R}}}}
+% \newcommand{\JSL}{{J_S^{\mathrm{L}}}}
+% \newcommand{\JSl}{{J_S^{\ell}}}
+% \newcommand{\sR}{{s_\mathrm{R}}}
+% \newcommand{\sL}{{s_\mathrm{L}}}
+% \newcommand{\SRdot}{{\dot{S}_\mathrm{R}}}
+% \newcommand{\SLdot}{{\dot{S}_\mathrm{L}}}
+% \newcommand{\QRdot}{{\dot{Q}_\mathrm{R}}}
+% \newcommand{\QLdot}{{\dot{Q}_\mathrm{L}}}
+% \newcommand{\NRdot}{{\dot{N}_\mathrm{R}}}
+% \newcommand{\NLdot}{{\dot{N}_\mathrm{L}}}
+% \newcommand{\URdot}{{\dot{U}_\mathrm{R}}}
+% \newcommand{\ULdot}{{\dot{U}_\mathrm{L}}}
+% \newcommand{\WRdot}{{\dot{W}_\mathrm{R}}}
+% \newcommand{\WLdot}{{\dot{W}_\mathrm{L}}}
+% \newcommand{\dSRdot}{{\Delta \dot{S_\mathrm{R}}}}
+% \newcommand{\dSLdot}{{\Delta \dot{S_\mathrm{L}}}}
+% \newcommand{\Sdot}{{\dot{S}}}
+% \newcommand{\Dl}{{D_{\ell}}}
+% \newcommand{\DKR}{{D_{\mathrm{KR}}}}
+% \newcommand{\llangle}{{\langle\! \langle}}
+% \newcommand{\rrangle}{{\rangle\! \rangle}}
+% \newcommand{\ain}{{a^{\text{in}}}}
+% \newcommand{\aout}{{a^{\text{out}}}}
+% \newcommand{\bin}{{b^{\text{in}}}}
+% \newcommand{\bout}{{b^{\text{out}}}}
+% \newcommand{\anin}{{a_n^{\text{in}}}}
+% \newcommand{\anout}{{a_n^{\text{out}}}}
+% \newcommand{\bnin}{{b_n^{\text{in}}}}
+% \newcommand{\bnout}{{b_n^{\text{out}}}}
+% \newcommand{\vecain}{{\bm{a}^{\text{in}}}}
+% \newcommand{\vecaout}{{\bm{a}^{\text{out}}}}
+% \newcommand{\vecbin}{{\bm{b}^{\text{in}}}}
+% \newcommand{\vecbout}{{\bm{b}^{\text{out}}}}
+% \newcommand{\SLL}{{S_\text{LL}}}
+% \newcommand{\SLR}{{S_\text{LR}}}
+% \newcommand{\SRL}{{S_\text{RL}}}
+% \newcommand{\SRR}{{S_\text{RR}}}
+% \newcommand{\SLa}{{S_{\text{L}\alpha}}}
+% \newcommand{\SLb}{{S_{\text{L}\beta}}}
+% \newcommand{\IL}{{I_{\mathrm{L}}}}
+% \newcommand{\cre}[2]{{{#1}_{{#2}}^{\dagger}}}
+% \newcommand{\ani}[2]{{{#1}_{{#2}}}}
+% \newcommand{\dcre}[3]{{{#1}_{{#2},{#3}}^{\dagger}}}
+% \newcommand{\dani}[3]{{{#1}_{{#2},{#3}}}}
+% \newcommand{\dlcre}[3]{{{#1}_{\text{{#2}},{#3}}^{\dagger}}}
+% \newcommand{\dlani}[3]{{{#1}_{\text{{#2}},{#3}}}}
+% \newcommand{\dagg}[1]{{{#1}^\dagger}}
+% \newcommand{\conjg}[1]{{{#1}^\ast}}
+% \newcommand{\Tr}[1]{{\text{Tr}[{#1}]}}
+% \newcommand{\expect}[1]{{\langle{#1}\rangle}}
+% \newcommand{\cumulant}[1]{{\langle\!\langle{#1}\rangle\!\rangle}}
+% \newcommand{\deriv}[2]{\frac{\text{d}{#1}}{\text{d}{#2}}}
+
+%\renewcommand{\baselinestretch}{2} %ダブルスペース用
+%\allowdisplaybreaks %数式の途中で改ページ許可
+%\setstretch{1.1}
+
+\begin{document}
+
+\title{Effects of Boundary Conditions on Magnetic Friction}
+\author{Kentaro Sugimoto \\ Department of Physics, The University of Tokyo }
+\date{\today}
+\maketitle
+
+\input{Acknowledgement}
+
+\clearpage
+
+\begin{center}
+\large{{\bf Abstract}}
+\end{center}
+
+%%%%%
+In the present thesis, hogehoge.
+Moreover, fugafuga.
+%%%%%
+
+\tableofcontents
+
+\input{Introduction}
+% \input{2Landauer-Buttiker}
+% \input{3Full_counting_statistics}
+% \input{4Heat_current}
+\input{Summary}
+\appendix
+ %Appendix A %Chap3の計算詳細
+% \input{App2Detailed_forchap3}
+% %Appendix B
+% \input{App4Sommerfeld}
+%  %Appenedix C %メソ系熱機関の解析
+% \input{App3heatengine}
+% Appendix C
+
+% Appendix D
+
+
+% \begin{thebibliography}{99}
+%
+% \bibitem{goupil2011}%Thermodynamics of Thermoelectric Phenomena and Applications.
+% C. Goupil, W. Seifert, K. Zabrocki, E. M\"uller, and G.~J.~ Snyder, Entropy \textbf{13}, 1481 (2011).
+%
+% \bibitem{callen}%Thermodynamics and an Introduction to Thermostatistics.
+% H.~B.~Callen, \textit{Thermodynamics and an Introduction to Thermostatistics} (2nd Ed.), Wiley, New York (1985).
+%
+% \bibitem{onsager1931a}%RECIPROCAL   RELATIONS   IN   IRREVERSIBLE PROCESSES. I.
+% L. Onsager, Phys. Rev. \textbf{37}, 405 (1931).
+%
+% \bibitem{onsager1931b}%RECIPROCAL   RELATIONS   IN   IRREVERSIBLE PROCESSES. \UTF{2161}.
+% L. Onsager, Phys. Rev. \textbf{38}, 2265 (1931).
+%
+% \bibitem{casimir1945}%On Onsager's Principle of Microscopic Reversibility.
+% H.~B.~G.~Casimir, Rev. Mod. Phys. \textbf{17}, 343 (1945).
+%
+% \bibitem{vandenboreck2005}%Thermodynamic Efficiency at Maximum Power.
+% C. Van den Broeck, Phys. Rev. Lett. \textbf{95}, 190602 (2005).
+%
+% \bibitem{saito2010}%A microscopic mechanism for increasing thermoelectric efficiency.
+% K.~Saito, G.~Benenti, and G.~Casati, Chem. Phys. \textbf{375}, 508 (2010).
+%
+% \bibitem{benenti2011}%Thermodynamic bounds on efficiency for systems with broken time-reversal symmetry.
+% G.~Benenti, K.~Saito, and G.~Casati, Phys. Rev. Lett. \textbf{106}, 230602 (2011).
+%
+% \bibitem{saito2011}%Thermopower with broken time-reversal symmetry.
+% K. Saito, G. Benenti, G. Casati, and T. Prosen, Phys. Rev. B \textbf{84}, 201306(R) (2011).
+%
+% \bibitem{brandner2013}%Strong Bounds on Onsager Coefficients and Efficiency for Three-Terminal Thermoelectric Transport in a Magnetic Field
+% K.~Brandner, K.~Saito, and U.~Seifert, Phys. Rev. Lett. \textbf{110},  070603 (2013).
+%
+% \bibitem{brandner2013multi}%Multi-terminal thermoelectric transport in a magnetic field: bounds on Onsager coefficients and efficiency
+% K.~Brandner and U.~Seifert, New J. Phys. \textbf{15}, 105003 (2013).
+%
+% \bibitem{Benenti}
+% G.~Benenti, G.~Casati, T.~Prozen, and K.~Saito, arXiv:1311.4430 (2013).
+%
+% \bibitem{landauer1957}
+% R. Landauer, IBM J. Res. \& Dev. \textbf{1}, 223 (1957).
+%
+% \bibitem{datta1995}%Electronic Transport in Mesoscopic Systems
+% S. Datta, \textit{Electronic Transport in Mesoscopic Systems}, Cambridge University Press, Cambridge, UK (1995).
+%
+% \bibitem{diventra2008}%Electrical Transport in Nanoscale Systems
+% M.~Di Ventra, \textit{Electrical Transport in Nanoscale Systems}, Cambridge University Press, Cambridge, UK, (2008).
+%
+% \bibitem{kato2014}
+% T. Kato, Bussei Kenkyu Denshiban \textbf{3}, 1 (2014) (in Japanese).
+%
+% \bibitem{wees1988}%Quantized conductance of point contacts in a two-dimensional electron gas
+% B. J. van Wees, H. van Houten, C. W. J. Beenakker, J. G. Williamson, L. P. Kouwenhoven, D. van der Marel, and C. T. Foxon, Phys. Rev. Lett. \textbf{60}, 848 (1988).
+%
+%  \bibitem{snyder2008}%Complex thermoelectric materials.
+% G.~J.~Snyder, E.~S.~Toberer, Nat. Mater. \textbf{7}, 105 (2008).
+%
+% \bibitem{matthews2014}%Experimental verification of reciprocity relations in quantum thermoelectric transport.
+% J. Matthews, F. Battista, D. S\'anchez, P. Samuelsson, and H. Linke, Phys. Rev. B \textbf{90}, 165428 (2014).
+%
+% \bibitem{izumida2012}%Efficiency at maximum power of minimally nonlinear irreversible heat engines
+% Y. Izumida and K. Okuda, Europhys. Lett. \textbf{97}, 10004 (2012).
+%
+% \bibitem{izumida2014}%Heat devices in nonlinear irreversible thermodynamics
+% Y. Izumida, K. Okuda, J.~M.~M.~Roco, and A.~C.~Hernandez, arXiv:1405.6777 (2014).
+%
+% \bibitem{saito2008}%Symmetry in full counting statistics, fluctuation theorem, and relations among nonlinear transport coefficients in the presence of a magnetic field
+% K. Saito and Y. Utsumi, Phys. Rev. B \textbf{78}, 115429 (2008).
+%
+% \bibitem{nazarov2003}%Quantum Noise in Mesoscopic Physics.
+% Yu.~V.~Nazarov (ed.),\textit{Quantum Noise in Mesoscopic Physics}, NATO Science Series II: Mathematics, Physics and Chemistry, Vol. \textbf{97},  Kluwer Academic, Dordrecht (2003).
+%
+% \bibitem{saito2009}%さいとうさんのノート
+% K. Saito, Bussei Kenkyu, \textbf{92}, 345 (2009) (in Japanese).
+%
+% \bibitem{martin2005}%Noise in mesoscopic physics.
+% T. Martin, arXiv:cond-mat/0501208 (2005).
+%
+% \bibitem{fetter2003}
+% A.~L.~Fetter and J.~D.~Walecka, \textit{Quantum Theory of ManyParticle Systems}, Dover Publications, Inc, New York (2003).
+%
+% \bibitem{kurchan2001}%A Quantum Fluctuation Theorem.
+% J. Kurchan, arXiv:cond-mat/0007360 (2001).
+%
+% \bibitem{nakamura2010}%Nonequilibrium Fluctuation Relations in a Quantum Coherent Conductor
+% S. Nakamura, Y. Yamauchi, M. Hashisaka, K. Chida, K. Kobayashi, T. Ono, R. Leturcq, K. Ensslin, K. Saito, Y. Utsumi, and A.~C.~Gossard, Phys. Rev. Lett. \textbf{104}, 080602 (2010).
+%
+% \bibitem{nakamura2011}%Fluctuation theorem and microreversibility in a quantum coherent conductor
+% S. Nakamura, Y. Yamauchi, M. Hashisaka, K. Chida, K. Kobayashi, T. Ono, R. Leturcq, K. Ensslin, K. Saito, Y. Utsumi, and A.~C.~Gossard, Phys. Rev. B \textbf{83}, 155431 (2011).
+%
+% \bibitem{iyoda2010}%Nonequilibrium Extension of Onsager Relations for Thermoelectric Effects in Mesoscopic Conductors.
+% E. Iyoda, Y. Utsumi, and T. Kato, J. Phys. Soc. Jpn. \textbf{79}, 045003 (2010).
+%
+% \bibitem{ruokola2011}%Single-electron heat diode: Asymmetric heat transport between electronic reservoirs through Coulomb islands.
+% T. Ruokola and T. Ojanen, Phys. Rev. B \textbf{83}, 241404(R) (2011).
+%
+% \bibitem{lim2013}%Dynamic thermoelectric and heat transport in mesoscopic capacitors.
+% J.~S.~Lim, R.~L\'opez, and D.~S\'anchez, Phys. Rev. B \textbf{88}, 201304(R) (2013).
+%
+% \bibitem{sivan}
+% U.~Sivan and Y. Imry, Phys. Rev. B \textbf{33}, 551 (1986).
+%
+% \bibitem{Butcher}
+% P.~N.~Butcher, J. Phys. Condens. Matter \textbf{2}, 4869 (1990).
+%
+% \bibitem{jezouin2013}%Quantum limit of heat flow across a single electronic channel.
+% S.~Jezouin, F.~D.~Parmentier, A.~Anthore, U.~Gennser, A.~Cavanna, Y.~Jin, and F.~Pierre, Science \textbf{342}, 601 (2013).
+%
+% \bibitem{iyoda}%いよださんの修論
+% E.~Iyoda, \textit{Thermoelectric effects and fluctuation theorem in quantum dots}, Master Thesis, University of Tokyo (2008) (in Japanese); Bussei Kenkyu \textbf{92}, 188 (2009) (in Japanese).
+%
+% \bibitem{sanchez2013}%Scattering Theory of Nonlinear Thermoelectric Transport. %非線形ゼーベック
+% D.~S\'anchez and R.~L\'opez, Phys. Rev. Lett. \textbf{110},  026804 (2013).
+%
+% \bibitem{cipiloglu2004}%Nonlinear Seebeck and Peltier effects in quantum point contacts.
+% M.~A.~{\c{C}}ipilo{\u{g}}lu, S.~Turgut, and M.~Tomak, Phys. Status Solidi B \textbf{241}, 2575 (2004).
+%
+% \bibitem{verley2014a}%The unlikely Carnot efficiency.
+% G. Verley, M. Esposito, T. Willaert, and C. Van den Broeck, Nat. Commun. \textbf{5}, 4721 (2014).
+%
+% \bibitem{verley2014b}%Universal theory of efficiency fluctuations.
+% G. Verley, T. Willaert, C. Van den Broeck, and M. Esposito, Phys. Rev. E \textbf{90}, 052145 (2014).
+%
+% \bibitem{polettini2014}%Finite-time efficiency fluctuations: Enhancing the most likely value.
+% M. Polettini, G. Verley, and M. Esposito, arXiv:1409.4716 (2014).
+%
+% \bibitem{sakurai1985}
+% J.~J.~Sakurai, \textit{Modern Quantum Mechanics}, Benjamin, Menlo Park, California (1985).
+%
+% \bibitem{ashcroft1976}
+% N.~W.~Ashcroft and N.~D.~Mermin, \textit{Solid State Physics}, Holt, Rinehart and Winston, New York (1976).
+%
+% \bibitem{humphrey2002}%Reversible Quantum Brownian Heat Engines for Electrons.
+% T.~E.~Humphrey, R. Newbury, R.~P.~Taylor, and H. Linke, Phys. Rev. Lett. \textbf{89}, 116801 (2002).
+%
+% \end{thebibliography}
+
+\end{document}
