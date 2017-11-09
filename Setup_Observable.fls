@@ -1,0 +1,7 @@
+PWD /Users/tarotene/Research2016-2017/Paper/MasterThesis
+INPUT /usr/local/texlive/2017/texmf.cnf
+INPUT /usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2017/texmf.cnf
+INPUT /usr/local/texlive/2017/texmf-var/web2c/eptex/platex.fmt
+INPUT Setup_Observable.tex
+OUTPUT Setup_Observable.log

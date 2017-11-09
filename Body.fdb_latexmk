@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1510209239 "Body.dvi" "Body.pdf" "Body" 1510209278
-  "Body.dvi" 1510209239 1336 8cf1bb0e5f6bf3255f45a6507d840e3e "latex"
+["dvipdf"] 1510209650 "Body.dvi" "Body.pdf" "Body" 1510223218
+  "Body.dvi" 1510209650 3948 205c78dd339a62f9632228e291245c70 "latex"
   (generated)
   "Body.pdf"
-["latex"] 1510209238 "Body.tex" "Body.dvi" "Body" 1510209278
+["latex"] 1510209649 "Body.tex" "Body.dvi" "Body" 1510223218
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/ptex-fonts/standard/goth10.tfm" 1480098698 1196 5981e79c37b2cfd27b3612a6783cd4b6 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/ptex-fonts/standard/min10.tfm" 1480098698 1196 1be730212205a270378fba11a44765dc ""
@@ -41,6 +41,7 @@
   "/usr/local/texlive/2017/texmf-dist/tex/latex/booktabs/booktabs.sty" 1480098823 5869 94335281ffcab47f341cf07ea8220e30 ""
   "/usr/local/texlive/2017/texmf-dist/tex/latex/braket/braket.sty" 1480098823 3601 193635d942bc4777a5acaaeeffdce692 ""
   "/usr/local/texlive/2017/texmf-dist/tex/latex/cite/cite.sty" 1480098825 26218 19edeff8cdc2bcb704e8051dc55eb5a7 ""
+  "/usr/local/texlive/2017/texmf-dist/tex/latex/docmute/docmute.sty" 1480098826 988 a3a422de3bfed3a5e7f8db2f55a3876f ""
   "/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1480098830 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1480098830 1224 978390e9c2234eab29404bc21b268d1e ""
   "/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/dvips.def" 1480098830 6061 50d4229b73605a823fbef0f36b323e59 ""
@@ -60,17 +61,18 @@
   "/usr/local/texlive/2017/texmf-var/web2c/eptex/platex.fmt" 1497268673 4345396 673a2d7e88fc316d16a4757dcfd87dfd ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
   "Acknowledgement.tex" 1509586339 17 d3d730a2df85fbe3635e12043d0202c8 ""
-  "App_StochasticMatrices.tex" 1510209252 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "Body.aux" 1510209239 8 a94a2480d3289e625eea47cd1b285758 ""
-  "Body.tex" 1510209278 1042 5a52ed7ee6c0f476966a2fc6b7b70792 ""
-  "Body.toc" 1510209239 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "Introduction.tex" 1509586343 14 faa71219710e6e8e91d823f72ef3d814 ""
-  "Results.tex" 1510209230 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "Setup_Model.tex" 1510209215 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "Setup_Observable.tex" 1510209223 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "Summary.tex" 1509586347 9 22f3293d1e3948b5feb62fd21ed352a4 ""
+  "App_FiniteSizeScaling.tex" 1510209264 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "App_StochasticMatrices.tex" 1510209293 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "Body.aux" 1510209650 821 07aaa44c89be94be9a95cf2320afc979 ""
+  "Body.tex" 1510209648 1043 c14c20932734546a167cc38b786eb1b6 ""
+  "Body.toc" 1510209650 343 f7f5ea144e7cfa9a0c66fe3f48b4344f ""
+  "Introduction.tex" 1510209380 38 e327021c2fb4a2385f05469fb3b29362 ""
+  "Results.tex" 1510209416 28 f973ad0db2c7c4d439120c86d3e76474 ""
+  "Setup_Model.tex" 1510209630 83 7086a24351e5db57a329f50f3ea51c84 ""
+  "Setup_Observable.tex" 1510209646 80 b84907b297c03353745017a38aee6f45 ""
+  "Summary.tex" 1510209425 28 13fefa65417e970ead406a1e6b20531a ""
   (generated)
-  "Body.log"
   "Body.aux"
-  "Body.toc"
   "Body.dvi"
+  "Body.toc"
+  "Body.log"

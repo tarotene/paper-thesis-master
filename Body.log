@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.6.12)  9 NOV 2017 15:33
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.6.12)  9 NOV 2017 15:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -184,6 +184,8 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \@thisrulewidth=\dimen146
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/braket/braket.sty) (/usr/local/texlive/2017/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/docmute/docmute.sty
+Package: docmute 2012/03/22 v1.4 Input stand-alone documents
 )
 \c@one=\count111
  (./Body.aux)
@@ -205,6 +207,7 @@ LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
 LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
+\docmute@nestinglevel=\count112
 LaTeX Font Info:    Try loading font information for U+msa on input line 33.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -229,32 +232,43 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 46.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 46.
- (./Body.toc)
+ (./Body.toc
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
+)
 \tf@toc=\write3
 \openout3 = `Body.toc'.
 
- (./Introduction.tex) (./Setup_Model.tex) (./Setup_Observable.tex) (./Results.tex) (./Summary.tex)
+ (./Introduction.tex [5] [6
 
-! LaTeX Error: File `App_StochasticMatrices.tex' not found.
+]
+Chapter 1.
+) (./Setup_Model.tex [7] [8
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: tex)
+]
+Chapter 2.
+) (./Setup_Observable.tex [9] [10
 
-Enter file name: 
-./Body.tex:56: Emergency stop.
-<read *> 
-         
-l.56 \input{App_StochasticMatrices}
-                                   ^^M
-*** (cannot \read from terminal in nonstop modes)
+]
+Chapter 3.
+) (./Results.tex [11] [12
 
- 
+]
+Chapter 4.
+) (./Summary.tex [13] [14
+
+]
+Chapter 5.
+) (./App_StochasticMatrices.tex) (./App_FiniteSizeScaling.tex) [15] (./Body.aux) ) 
 Here is how much of TeX's memory you used:
- 2257 strings out of 493653
- 28357 string characters out of 6148874
- 83852 words of memory out of 5000000
- 5803 multiletter control sequences out of 15000+600000
- 16389 words of font info for 65 fonts, out of 8000000 for 9000
+ 2284 strings out of 493653
+ 28913 string characters out of 6148874
+ 84033 words of memory out of 5000000
+ 5819 multiletter control sequences out of 15000+600000
+ 16696 words of font info for 66 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  27i,6n,24p,221b,228s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on Body.dvi (4 pages, 1336 bytes).
+
+Output written on Body.dvi (15 pages, 3948 bytes).

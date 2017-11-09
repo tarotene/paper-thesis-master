@@ -1,0 +1,5 @@
+\contentsline {chapter}{\numberline {1}Introduction}{7}
+\contentsline {chapter}{\numberline {2}Setup: \\ Monte Carlo Simulation of the Ising Model}{9}
+\contentsline {chapter}{\numberline {3}Setup: \\ Definition of DW Frictional Force}{11}
+\contentsline {chapter}{\numberline {4}Results}{13}
+\contentsline {chapter}{\numberline {5}Summary}{15}

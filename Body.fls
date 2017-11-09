@@ -63,6 +63,8 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/braket/braket.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/braket/braket.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/setspace/setspace.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/docmute/docmute.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/docmute/docmute.sty
 INPUT Body.aux
 INPUT Body.aux
 OUTPUT Body.aux
@@ -108,6 +110,7 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/ptex-fonts/standard/goth10.tf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT Body.toc
 INPUT Body.toc
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 OUTPUT Body.toc
 INPUT Introduction.tex
 INPUT Introduction.tex
@@ -119,3 +122,8 @@ INPUT Results.tex
 INPUT Results.tex
 INPUT Summary.tex
 INPUT Summary.tex
+INPUT App_StochasticMatrices.tex
+INPUT App_StochasticMatrices.tex
+INPUT App_FiniteSizeScaling.tex
+INPUT App_FiniteSizeScaling.tex
+INPUT Body.aux

@@ -1,0 +1,14 @@
+# Fdb version 3
+["dvipdf"] 0 "Setup_Observable.dvi" "Setup_Observable.pdf" "Setup_Observable" 0
+  "Setup_Observable.dvi" 0 -1 0 "latex"
+  (generated)
+  "Setup_Observable.pdf"
+["latex"] 1510209582 "Setup_Observable.tex" "Setup_Observable.dvi" "Setup_Observable" 1510209583
+  "/usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf" 1494087824 32646 eadc4ca26cdbe7105ac7c593aa8c4f72 ""
+  "/usr/local/texlive/2017/texmf-var/web2c/eptex/platex.fmt" 1497268673 4345396 673a2d7e88fc316d16a4757dcfd87dfd ""
+  "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
+  "Setup_Observable.aux" 1510209582 8 a94a2480d3289e625eea47cd1b285758 ""
+  "Setup_Observable.tex" 1510209582 86 87b99f0c1ce7babcfcd1d8e0e1ce5609 ""
+  (generated)
+  "Setup_Observable.dvi"
+  "Setup_Observable.log"
