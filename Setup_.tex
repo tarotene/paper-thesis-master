@@ -1,0 +1,51 @@
+\chapter{Setup}
+\section{Model Definition}
+To calculate magnetic frictional forces in real world, we use square lattice Ising model as one of the most simple approximation of magnetic materials\cite{Kadau2008,Hucht2009b}. Hamiltonian of the system is given by
+\begin{align}
+	\hat{H}:=	-J_{\rm bulk}	\sum_{\left(\bm{r}, \bm{r}'\right)\in\mathrm{b.c}}	 \hat{\sigma}_{\bm{r}}\hat{\sigma}_{\bm{r}'}
+				-J_{\rm b.c}	\sum_{\left(\bm{r}, \bm{r}'\right)\in\mathrm{b.c}}	 \hat{\sigma}_{\bm{r}}\hat{\sigma}_{\bm{r}'}
+				- J_{\rm s.p}	\sum_{\left(\bm{r}, \bm{r}'(t)\right)\in\mathrm{s.p}}\hat{\sigma}_{\bm{r}}\hat{\sigma}_{\bm{r}'(t)}\label{Hamiltonian}
+\end{align}
+where $J_{\rm bulk}$, $J_{\rm b.c}$, $J_{\rm s.p}$ denotes the intensity of spin pair interactions on bulk part, boundary parts and slip plane part of the system respectively (fig\ref{ModelDecomp}). Each of spin variables $\left\{\hat{\sigma}_{\bm{r}}\right\}$ has a value $1$ or $-1$ and couples with energy bath.
+
+\begin{figure}[htbp]
+	\begin{center}
+		\caption{Equivalence between moving two magnetic cylinders and square lattice Ising model with moving interactions. The former cylinders are one-dimensionally atacched and moving relatively to each other, and the latter Ising model are not "moving" but the interactions on a "slip plane" are changing with time.}
+		\label{ModelDecomp}
+	\end{center}
+\end{figure}
+
+We set the intensities to a same constant $J_{\rm bulk} = J_{\rm b.c} = J_{\rm s.p} \equiv J$ for simplicity, and consider ferromagnetic region $J > 0$. In a relative motion with a constant velocity $\bm{v}$, time dependent part of the Hamiltonian $\bm{r}'(t) = \bm{r}' + \bm{v}t$ puts the model into a non-equilibrium steady state, which depends on the temperature of energy bath $T$ and the relative velocity of motion $\bm{v}$.
+
+In non-equilibrium steady state regimes, frictional force $F$ is defined by
+\begin{align}
+	F:=\frac{1}{|\bm{v}|}\lim\limits_{t\to\infty}\frac{dE_{+}(t)}{dt}
+\end{align}
+where $E_{+}(t)$ is accumulated energy by the relative motion. The definition is consistent with that of general settings for models with friction. If an object were forced to move with relative velocity $v$ to a substrate, the external work and frictional heat correspond to pumping energy $E^{+}(t)$ and dessipation $E_{-}(t)$ respectively. Their absolute values are the same in infinite time limit $|E_{+}(\infty)|=|E_{-}(\infty)|$. Thus average work of frictinal force $W:=E_{-}(\infty)$ are directly calculated by pumping energy $|E_{+}(\infty)|$. We use the value of $E^{+}(t)$ to calculate frictional force, since in many cases fluctuation of pumping energy $\left(\Delta E_{+}(t)\right)^{2}$ is less in order than that of dissipation energy $\left(\Delta E_{-}(t)\right)^{2}$. To end the definition, we consider a dimensional analysis
+\begin{align}
+	W =& \int dx\;F(x) = \int \frac{dx}{dt}dt\;F\left(x(t)\right)\overset{t\to\infty, v=\text{const.}}{=} \int v dt\;F\left(x(\infty)\right),\\
+	\Leftrightarrow F =& \frac{1}{v}\frac{dW}{dt} = \frac{1}{v}\lim\limits_{t\to\infty}\frac{dE_{-}(t)}{dt} = \frac{1}{v}\lim\limits_{t\to\infty}\frac{dE_{+}(t)}{dt}\quad (\because P := \frac{dW}{dt} = vF).
+\end{align}
+Frictinal force $F$ is an extensive quantity to the size of slip plane $L_{x}$; therefore we define frictional force density as an intensive quantity
+\begin{align}
+	f:=\lim\limits_{S\to\infty}\frac{F}{S}\label{frictionalForce}.
+\end{align}
+Observable $f$ plays an important role of our discussion.
+
+\section{Numerical Analysis}
+
+From now we give the implementation on numerical analysis. In our model, quantities $dE_{+}(t)/dt$ and $dE_{-}(t)/dt$ describe pumped energy at slip plane and dissipation energy towards energy bath. Using Monte Carlo simulations, we describe their dynamics with approximation by stochastic processes.
+
+To describe non-eqilibrium behaviour of the model, we performed the algorithm different from ordinary equilibirum one (\ref{alg_NESF}).
+\begin{algorithm}
+	\caption{Non-equilibrium single spin flip algorithm}         
+	\label{alg_NESF}   
+\end{algorithm}
+
+This algorithm ensure a motion with the constant velocity $v$ and arbitrary time resolution proportional to the system size $N:=L_{x}\times L_{z}$, but also have a shortage that the range of $v$ are restricted to divisors of $N$. 
+
+\begin{align}
+	\hat{H}:=
+\end{align}
+
+

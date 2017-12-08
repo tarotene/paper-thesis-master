@@ -1,0 +1,69 @@
+% !TeX root = Body.tex
+\chapter{Numerical Simulations}
+
+\section{Setup of the Model}
+
+Sliding friction is a form of energy dissipation on the surface between a moving object and its substrate. The dissipated energy is originated in the kinetic energy of the moving object. We here consider constantly moving case in which an external force maintains the motion of the object with endless supply of its kinetic energy. This view leads to its \textit{non-equilibrium steady state}. When the system is in a non-equilibrium steady state, it is often easy to calculate several \textit{energy currents} such as the frictional heat, its power and so on. Applying the view to our case where two square lattices of the Ising model slide against each other, we can formulate the problem as follows.
+\begin{enumerate}
+	\item We prepare a square lattice of the Ising model of size $L_{x}\times L_{z}$ and impose periodic boundary conditions in the transverse ($x$) direction. We first set the system in the equilibrium state of a temperature $T$, whereas we set the open boundary conditions in the longitudinal ($z$) direction for the moment (\textcolor{red}{fig}).
+	\item We cut the system along the $x$-direction into two parts, maintaining interactions on the cut (\textcolor{red}{fig}).
+	\item We slide two parts along the cut plane with relative velocity $v$. In other words, we shift the upper half by a lattice constant every $1/v$ unit time. 
+\end{enumerate}
+
+The Hamiltonian of the system is given by
+\begin{align}
+&\hat{H}=\hat{H}_{\rm upper} + \hat{H}_{\rm lower} + \hat{H}_{\rm slip}(t),
+\end{align}
+where
+\begin{align}
+&\hat{H}_{\rm upper}:=-J_{\rm upper}\sum_{\langle i,j\rangle\in\mathrm{upper}}\hat{\sigma}_{i}\hat{\sigma}_{j}, \\
+&\hat{H}_{\rm lower}:=-J_{\rm lower}\sum_{\langle i,j\rangle\in\mathrm{lower}}\hat{\sigma}_{i}\hat{\sigma}_{j}, \\
+&\hat{H}_{\rm slip}(t):=-J_{\rm slip}\sum_{\langle i,j(t)\rangle\in\mathrm{slip}}\hat{\sigma}_{i}\hat{\sigma}_{j(t)}.
+\end{align}
+
+Shift operations lead the system to repeated \textit{pumping} and \textit{dissipation} processes as follows (\textcolor{red}{fig}):
+\begin{enumerate}
+	\item A shift operation excites the energy on the slip plane by the ammount $\langle\hat{H}_{\rm slip}(t')-\hat{H}_{\rm slip}(t)\rangle$.
+	\item The excited energy on the slip plane dispenses to the entire system $\langle\hat{H}_{\rm upper} + \hat{H}_{\rm lower} + \hat{H}_{\rm slip}(t)\rangle$.
+	\item The excited entire system relaxes toward the equilibrium the heat bath.
+\end{enumerate}
+The excited and relaxed amounts of energy per unit time correspond to the energy pumping and dissipation, respectively. The energy pumping $P(t)$ and dissipation $D(t)$ are given by
+\begin{align}
+P(t):=&\sum_{i_{v}=0}^{v-1}\left\langle \hat{H}_{\rm slip}\left(t'-1+\frac{i_{v}}{v}\right) - \hat{H}_{\rm slip}\left(t-1+\frac{i_{v}}{v}\right)\right\rangle_{\rm st},\\
+D(t):=&\sum_{i_{v}=0}^{v-1}\left\langle \hat{H}_{\rm slip}\left(t-1+\frac{i_{v}+1}{v}\right) - \hat{H}_{\rm slip}\left(t'-1+\frac{i_{v}}{v}\right)\right\rangle_{\rm st}.
+\end{align}
+
+\section{Definitions of Physical Quantities}
+
+We now consider the case in which that the system is in a non-equilibrium steady state. We define the frictional force density $f(L_{z}, T)$ by
+\begin{align}
+f(L_{z}, T):=\lim_{L_{x}\to\infty}\frac{F(L_{x}, L_{z}, T)}{L_{x}},
+\end{align}
+where $F(L_{x}, L_{z}, T)$ is the frictional force of a system of size $L_{x}\times L_{z}$ at a temperature $T$. We numerically formulate the  large-size limit $L_{x}\to\infty$ as follows.
+\begin{itembox}{Numerical large-size limit $L_{x}\to\infty$}
+	If the quantity $F(L_{x}, L_{z}, T)/L_{x}$ is independent on $L_{x}$, $F(L_{x}, L_{z}, T)/L_{x}$ is a good approximation for $f(L_{z}, T)$.
+\end{itembox}
+In numerical simulations, we calculate the frictional force $F(L_{x}, L_{z}, T)$ using its power $D(L_{x}, L_{z}, T)$ by the formula
+\begin{align}
+F(L_{x}, L_{z}, T)=\frac{D(L_{x}, L_{z}, T)}{v}\label{for:frictionalforce},
+\end{align}
+where the quantity $D(L_{x}, L_{z}, T)$ is the long-time limit of $D(t)$ for the lattice of $L_{x}\times L_{z}$ at a temperature $T$.
+
+We can easily verify the formula \eqref{for:frictionalforce} by considering general cases in which the frictional force and its power are both time dependent. Denoting the frictional force $F(x)$ at the position $x$, it holds that
+\begin{align}
+\int_{t_{0}}^{t_{1}}dt\;D(t)=\int_{x(t_{0})}^{x(t_{1})}dx\;F(x)=\int_{t_{0}}^{t_{1}}\frac{dx}{dt}dt\;F(x(t))=v\int_{t_{0}}^{t_{1}}dt\;F(x(t))\label{rel:PowerFrictionalforce},
+\end{align}
+for a time dependent $D(t)$, because $dx/dt=v$. Under the assumption of a non-equilibrium steady state, in the long-time limit, the integrands in both hand sides of the relation \eqref{rel:PowerFrictionalforce} are still equal to each other, and hence 
+\begin{align}
+D(L_{x}, L_{z}, T)=vF(L_{x}, L_{z}, T).
+\end{align}
+From now we call the quantity $D(L_{x}, L_{z}, T)$ \textit{energy dissipation}.
+
+Our models always reach non-equilibrium steady states in the long-time limit $t\to\infty$, which depend on the temperature $T$ and the sliding velocity $v$; We will prove in App. A. We use the fact that $\lim_{t\to\infty}|D(t)|=\lim_{t\to\infty}|P(t)|$ in order to calculate average value $\bar{D}$ with less fluctuation by using the value $\bar{P}$ \cite{Magiera2009a, Magiera2011, Magiera2011b}. We therefore have
+\begin{align}
+F(L_{x}, L_{z}, T)=\frac{P(L_{x}, L_{z}, T)}{v}\label{for:frictionalforce2}.
+\end{align}
+
+\section{Non-equilibrium Monte Carlo Simulation}
+
+Energy dissipation process towards the heat bath occurs via a spin flip. This fundamental processes do not only describe equilibrium states, but also non-equilibrium steady states for a fixed temperature $T$\cite{Glauber1963}. 

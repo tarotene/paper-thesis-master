@@ -1,0 +1,38 @@
+% !TeX root = Body.tex
+
+\chapter{Simulation Algorithms}
+
+\begin{algorithm}                      
+	\caption{Single Flip Algorithm for a Monte Carlo Time (Equilibrium)}         
+	\label{alg:SFAEMC}                          
+	\begin{algorithmic}                  
+	\FOR{$i_{\rm step} = 1, \dots, N_{\rm size}$}
+	\STATE randomly chose a spin
+	\STATE flip by the probability $\min\{1, \mathrm{e}^{\beta \Delta E}\}$
+	\ENDFOR
+	\STATE measurement
+	\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}                      
+	\caption{Single Flip Algorithm for a Monte Carlo Time (Non-equilibrium)}         
+	\label{alg:SFAEMC}                          
+	\begin{algorithmic} 
+		\STATE $\text{pump} = 0$  
+		\STATE $\text{diss} = 0$                     
+		\FOR {$i_{\rm v} = 1, \dots, v$}
+			\STATE $\text{prev}\Leftarrow \text{energy on the slip plane}$
+			\STATE sliding
+			\STATE $\text{next}\Leftarrow \text{energy on the slip plane}$
+			\STATE $\text{pump} = \text{pump} + (\text{next} - \text{prev})$
+			\\
+			\STATE $\text{prev}\Leftarrow \text{energy on the entire system}$
+			\FOR{$i_{\rm step} = 1, \dots, N_{\rm size}/v$}
+				\STATE flip by the probability $\min\{1, \mathrm{e}^{\beta \Delta E}\}$
+			\ENDFOR
+			\STATE $\text{next}\Leftarrow \text{energy on the entire system}$
+			\STATE $\text{diss} = \text{diss} + (\text{next} - \text{prev})$
+		\ENDFOR
+		\STATE{measurement}
+	\end{algorithmic}
+\end{algorithm}

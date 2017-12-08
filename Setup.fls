@@ -1,0 +1,10 @@
+PWD /Users/tarotene/Research/MyPapers/MasterThesis
+INPUT /usr/local/texlive/2017/texmf.cnf
+INPUT /usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2017/texmf.cnf
+INPUT /usr/local/texlive/2017/texmf-var/web2c/eptex/platex.fmt
+INPUT Setup.tex
+OUTPUT Setup.log
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+OUTPUT Setup.dvi

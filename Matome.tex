@@ -1,0 +1,83 @@
+\documentclass[a4paper]{jsarticle}
+\usepackage{geometry}
+\usepackage{ascmac}
+%\usepackage[jis2004]{otf}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{color}
+
+\title{修論用メモ}
+\author{杉本 健太朗}
+
+\begin{document}
+	\maketitle
+
+	%\tableofcontents
+	
+	\section{やったこと（１行）}
+	
+	非平衡モンテカルロシミュレーションを行い，$v=10$の場合に$f_{\mathcal{B}}(L_{z}, T)$を計算した．
+	
+	\section{物理量の定義}
+	
+	滑り摩擦とは，物体が滑り運動する際に滑り面を介して起こるエネルギー散逸のことである．このエネルギー散逸は物体の運動エネルギーを供給源として起こる．そこで，滑り運動する物体の相対速度を外力によって維持し，運動エネルギーが無限に供給され続ける状況を考える．これは，物体の非平衡定常状態を見ることに他ならず，摩擦力を時間に依存しない物理量として計算できるという点で便利である．これを2体のIsing模型が相対運動する状況に適用すると，次のように定式化できる．
+	\begin{enumerate}
+		\item $1$体の正方格子Ising模型を用意し，予め横方向（$x$）に周期境界条件を課す．系は予め平衡状態に緩和させておく．縦方向の境界条件は後で考える（\textcolor{red}{図}）．
+		\item 縦方向（$z$）中央で系を$2$体に切断する．このとき，切断面での相互作用は変えない（\textcolor{red}{図}）．
+		\item 分割された$2$体のIsing模型を互いに相対速度$v$で回す．格子系なので，$1/v$単位時間毎に格子定数$1$個分のシフトを行い，離散的に時間発展させる（\textcolor{red}{図}）．このとき，系のHamiltonianは
+		\begin{align}
+		&\hat{H}=\hat{H}_{\rm upper} + \hat{H}_{\rm lower} + \hat{H}_{\rm slip}(t)
+		\end{align}
+		で与えられる．ただし
+		\begin{align}
+		&\hat{H}_{\rm upper}:=-J_{\rm upper}\sum_{\langle i,j\rangle\in\mathrm{upper}}\hat{\sigma}_{i}\hat{\sigma}_{j}, \\
+		&\hat{H}_{\rm lower}:=-J_{\rm lower}\sum_{\langle i,j\rangle\in\mathrm{lower}}\hat{\sigma}_{i}\hat{\sigma}_{j}, \\
+		&\hat{H}_{\rm slip}(t):=-J_{\rm slip}\sum_{\langle i,j(t)\rangle\in\mathrm{slip}}\hat{\sigma}_{i}\hat{\sigma}_{j(t)}.
+		\end{align}
+	\end{enumerate}
+	以上が，$1$次元的に接触して滑り運動する$2$体のIsing模型のセットアップである．このとき，系のHamiltonianを滑り面部分$\hat{H}_{\rm slip}(t)$とそれ以外$\hat{H}_{0}:=\hat{H}_{\rm upper} + \hat{H}_{\rm lower}$に分けると，シフトによって滑り面のエネルギー$\langle\hat{H}_{\rm slip}(t)\rangle$が励起し，それが系全体$\langle\hat{H}_{0}\rangle + \langle\hat{H}_{\rm slip}(t)\rangle$に緩和した後，熱浴に散逸するという過程で定常的なエネルギー散逸を記述できる（\textcolor{red}{図}）．即ち，単位時間あたりの$\langle\hat{H}_{\rm slip}(t)\rangle$の励起がエネルギー注入$P(t)$に相当し，その直後の散逸がエネルギー散逸$D(t)$を与える．これらは，系のHamiltonianの期待値を用いて次のように書ける．
+	\begin{align}
+	P(t):=&\sum_{i_{v}=0}^{v-1}\left\langle \hat{H}_{\rm slip}\left(t'-1+\frac{i_{v}}{v}\right) - \hat{H}_{\rm slip}\left(t-1+\frac{i_{v}}{v}\right)\right\rangle\\
+	D(t):=&\sum_{i_{v}=0}^{v-1}\left\langle \hat{H}_{\rm slip}\left(t-1+\frac{i_{v}+1}{v}\right) - \hat{H}_{\rm slip}\left(t'-1+\frac{i_{v}}{v}\right)\right\rangle
+	\end{align}
+	
+	以下，系が非平衡定常状態にある場合を考える．
+	
+	摩擦力密度$f(L_{z}, T)$を次で定義する．
+	\begin{align}
+	f(L_{z}, T):=\lim_{L_{x}\to\infty}\frac{F(L_{x}, L_{z}, T)}{L_{x}}.
+	\end{align}
+	ただし，$F(L_{x}, L_{z}, T)$はサイズ$L_{x}, L_{z}$及び温度$T$の系における摩擦力である．
+	
+	計算機における極限$L_{x}\to\infty$は次のように定式化する．
+	\begin{itembox}{極限$L_{x}\to\infty$の判定}
+		もし，ある$L_{x, 1}, L_{x, 2}$（$L_{x, 1}<L_{x, 2}$）に対し，両辺の誤差の範囲で$F(L_{x, 1}, L_{z}, T)/L_{x, 1}\simeq F(L_{x, 2}, L_{z}, T)/L_{x, 2}$が成り立てば，$F(L_{x, 1}, L_{z}, T)/L_{x, 1}$及び$F(L_{x, 2}, L_{z}, T)/L_{x, 2}$が$f(L_{z}, T)$の良い近似を与える．
+	\end{itembox}
+	
+	摩擦力$F(L_{x}, L_{z}, T)$は次で定義する．
+	\begin{align}
+	F(L_{x}, L_{z}, T):=\frac{1}{v}\lim_{t\to\infty}D(L_{x}, L_{z}, T; t)\label{def:frictionalforce}.
+	\end{align}
+	ここで，$D(L_{x}, L_{z}, T; t)$は摩擦力$F(L_{x}, L_{z}, T)$による仕事の仕事率である．以下，量$D(L_{x}, L_{z}, T; t)$を\textbf{エネルギー散逸}と呼ぶ．定義式\eqref{def:frictionalforce}が摩擦力を正しく与えることは次のようにして確かめられる．位置$x$における摩擦力を$F(x)$とし，時刻$t_{0}$から$t_{1}$までに摩擦力$F(x)$がした仕事を$W_{-}$と書くと，次が成り立つ．
+	\begin{align}
+	W_{-}=&\int_{t_{0}}^{t_{1}}dt\;D(t)\\
+	=&\int_{x_{0}}^{x_{1}}dx\;F(x)=\int_{t_{0}}^{t_{1}}\frac{dx}{dt}dt\;F(x(t))\overset{dx/dt=v}{=}v\int_{t_{0}}^{t_{1}}dt\;F(x(t)).
+	\end{align}
+	非平衡定常状態では摩擦力$F(x(t))$とそのエネルギー散逸$D(t)$が時間変化しないため，$F(x(t))=D(t)/v$の関係がある．更に，任意のサイズのIsing模型で，熱浴の温度$T$及び滑り運動の相対速度$v$に依存した非平衡定常状態が存在し，無限時間極限$t\to\infty$で必ず非平衡定常状態に収束することが示される（後述）．よって，$\lim_{t\to\infty}F(x(t))=\lim_{t\to\infty}D(t)/v$が常に成り立つ．サイズ$L_{x}, L_{z}$及び温度$T$を定めて$F_{\mathcal{B}}(L_{x}, L_{z}, T):=\lim_{t\to\infty}F(x(t))$，$D(L_{x}, L_{z}, T; t):=D(t)$とおくと式\eqref{def:frictionalforce}を得る．
+	
+	計算機における極限$t\to\infty$は次のように定式化する．
+	\begin{itembox}{極限$t\to\infty$の判定}
+		もし，シミュレーション時間$L_{t}$が系の相関時間$\tau$に比べて十分長ければ，任意の物理量$A(t)$に対して平均値$\bar{A}:=\sum_{t=1}^{L_{t}}A(t)/L_{t}$が極限$\lim_{t\to\infty}A(t)$の良い近似を与える．
+	\end{itembox}
+	
+	摩擦力$F_{\mathcal{B}}(L_{x}, L_{z}, T)$は定義式\eqref{def:frictionalforce}から直接計算せず，外力による仕事の仕事率$P(L_{x}, L_{z}, T; t)$を用いて計算する．以下，量$P(L_{x}, L_{z}, T; t)$を\textbf{エネルギー注入}と呼ぶ．エネルギー注入$P(L_{x}, L_{z}, T; t)$は，エネルギー散逸$D(L_{x}, L_{z}, T; t)$よりも誤差が小さく，非平衡定常状態ではエネルギー散逸$D(L_{x}, L_{z}, T; t)$と絶対値が等しい[\textcolor{red}{文献: MagieraさんのHeisenberg論文}]．摩擦力$F_{\mathcal{B}}(L_{x}, L_{z}, T)$はその大きさが分かれば十分なので，エネルギー注入$P(L_{x}, L_{z}, T; t)$を用いると
+	\begin{align}
+	|F_{\mathcal{B}}(L_{x}, L_{z}, T)|=\frac{1}{v}\lim_{t\to\infty}|P(L_{x}, L_{z}, T; t)|\label{cal:frictionalforce}
+	\end{align}
+	と書ける．
+	
+	\section{計算機へのマッピング}
+	
+	熱浴へのエネルギー散逸は，系全体のスピンフリップによって起こる．エネルギー散逸の大きさは熱浴の温度$T$に依存し，高温では系のエントロピー増加が優先されて殆ど起こらないが，低温では系のエネルギー減少が優先されて適度に起こる．よって，モンテカルロシミュレーションを用いてエネルギー散逸を記述することができる．エネルギー散逸のある系のモンテカルロシミュレーションを特に非平衡モンテカルロと呼ぶことにする．
+	
+	非平衡モンテカルロ[\textcolor{red}{文献: 非平衡モンテカルロのレビュー}]は，平衡から遠い定常状態にある系の物理量を計算するためのサンプリング手法であり，よく知られた平衡モンテカルロの方法[\textcolor{red}{文献: 平衡モンテカルロのレビュー}]を拡張して行われる．
+\end{document}

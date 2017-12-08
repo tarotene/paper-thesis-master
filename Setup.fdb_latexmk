@@ -1,0 +1,16 @@
+# Fdb version 3
+["dvipdf"] 1512119782 "Setup.dvi" "Setup.pdf" "Setup" 1512119782
+  "Setup.dvi" 1512119781 1864 0f26645392b981ed4071664ed4c12544 "latex"
+  (generated)
+  "Setup.pdf"
+["latex"] 1512119781 "Setup.tex" "Setup.dvi" "Setup" 1512119782
+  "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1480098701 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf" 1494087824 32646 eadc4ca26cdbe7105ac7c593aa8c4f72 ""
+  "/usr/local/texlive/2017/texmf-var/web2c/eptex/platex.fmt" 1511935972 4346795 1733b9c4a1843cca013cdbd785a3b4cf ""
+  "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
+  "Setup.aux" 1512118525 8 a94a2480d3289e625eea47cd1b285758 ""
+  "Setup.tex" 1512119780 3407 10eb9b6d1f2d2c84f0ea6767c78d5153 ""
+  (generated)
+  "Setup.log"
+  "Setup.dvi"

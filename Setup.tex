@@ -1,0 +1,36 @@
+\chapter{Numerical Simulations}
+
+\section{Definitions of Physical Quantities}
+
+From now we consider the case that the system is in a non-equilibrium steady state. We define frictional force density $f_{\mathcal{B}}(L_{z}, T)$ by
+\begin{align}
+f_{\mathcal{B}}(L_{z}, T):=\lim_{L_{x}\to\infty}\frac{F_{\mathcal{B}}(L_{x}, L_{z}, T)}{L_{x}},
+\end{align}
+where $F_{\mathcal{B}}(L_{x}, L_{z}, T)$ is the frictional force of a system with a size $L_{x}\times L_{z}$ and a temperature $T$. We also formulate a numerical large size limit $L_{x}\to\infty$.
+\begin{itembox}{Numerical large size limit $L_{x}\to\infty$}
+	For certain $L_{x, 1}, L_{x, 2}$ ($L_{x, 1} < L_{x, 2}$), if it holds that
+	\begin{align}
+	\frac{F_{\mathcal{B}}(L_{x, 1}, L_{z}, T)}{L_{x, 1}}\simeq \frac{F_{\mathcal{B}}(L_{x, 2}, L_{z}, T)}{L_{x, 2}}
+	\end{align}
+	in the range of both hand sides, $F_{\mathcal{B}}(L_{x, 1}, L_{z}, T)/L_{x, 1}$ and $F_{\mathcal{B}}(L_{x, 2}, L_{z}, T)/L_{x, 2}$ give good approximations for $f_{\mathcal{B}}(L_{z}, T)$.
+\end{itembox}
+
+In numerical simulations, we calculate the frictional force $F_{\mathcal{B}}(L_{x}, L_{z}, T)$ using its power $D(L_{x}, L_{z}, T)$ by the formula
+\begin{align}
+F_{\mathcal{B}}(L_{x}, L_{z}, T)=\frac{D(L_{x}, L_{z}, T)}{v}\label{for:frictionalforce}.
+\end{align}
+
+We can easily verify the formula \eqref{for:frictionalforce} by considering general cases, in which the frictional force and its power are both time dependent. Denoting the frictional force $F(t)$ and its power $D(t)$ for simplicity, it holds that
+\begin{align}
+\int_{t_{0}}^{t_{1}}dt\;D(t)=\int_{x(t_{0})}^{x(t_{1})}dx\;F(x)=\int_{t_{0}}^{t_{1}}\frac{dx}{dt}dt\;F(x(t))\overset{dx/dt=v}{=}v\int_{t_{0}}^{t_{1}}dt\;F(x(t))\label{rel:PowerFrictionalforce}.
+\end{align}
+In the long time limit and postlating a non-equilibrium steady state, each integrand in both hand sides of the relation \eqref{rel:PowerFrictionalforce} has a same value. Then
+\begin{align}
+\lim_{t\to\infty}D(t)=v\lim_{t\to\infty}F(t)
+\end{align}
+holds. From now we call the quantity $D(L_{x}, L_{z}, T)$ \textit{energy dissipation}. Also in simulations, energy dissipation $D(L_{x}, L_{z}, T)$ is time dependent and we use its long time limit. We also formulate a numerical long time limit $t\to\infty$
+\begin{itembox}{Numerical long time limit $t\to\infty$}
+	If the simulation time $L_{t}$ is enough larger than the correlation time of a system $\tau$, for an arbitrary quantity $A(t)$, an average value $\bar{A}:=\sum_{t=1}^{L_{t}}A(t)/L_{t}$ gives a good approximation for $\lim_{t\to\infty}A(t)$.
+\end{itembox}
+
+Our models always reach non-equilibrium steady states  in the long time limit $t\to\infty$, whcih depend on the temperature $T$ and relative velocity of sliding $v$, and this fact are proved (\textcolor{red}{App. A}). Thus we can regard the long time limit $t\to\infty$ as the non-equilibrium steady state for any case.
