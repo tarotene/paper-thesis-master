@@ -1,6 +1,52 @@
 % !TeX root = Body.tex
-\chapter{Simulation Results}
+\chapter{Result of Simulation}
 
-\section{Behaviour of $f(L_{z}, T)$}
-Results.
+\section{Settings of the Parameters}
 
+In the simulation, we fixed the velocity to $v=10$ and the parameter regions for the temperatures $T$ and the longitudinal size $L_{z}$ are set as follows:
+\begin{align}
+\frac{k_{\rm B}T}{J}&\in\{0.0,0.1,0.2,\dots,1.9,2.0,2.02,2.04,\dots,2.48,2.50,2.6,2.7,\dots,5.0\},\\
+L_{z}&\in\{4,6,8,10,12,14,16\}.
+\end{align}
+For all the parameters, we relaxed the system for $5000$ [MCs] toward the equilibrium state and relaxed for $5000$ [MCs] toward the non-equilibrium steadty state by swicthing to nonzero $v$, using Metropolis probability $p_{\rm M}(T)$.
+
+The quantitis which we calculated are frictional force density $f(L_{z}, T)$, bulk energy density $\epsilon_{\rm b}(L_{z}, T)$ and bulk heat capacity $c_{\rm b}(L_{z}, T)$ for two cases that the boundary conditions on the $z$-direction are \textit{anti-parallel} and \textit{parallel}. For all the quantities, we performed \textit{sample average} over $480$ samples and \textit{time average} over the latter $4500$ [MCs]\footnote{This time length for averaging is based on the criterion that it is much longer than the correlation time of the system, and the former data over $5000 + 500$ [MCs] are unwanted. The correlation time for each parameter is estimated by checking the relaxation of $P(t)$ and $D(t)$.}. 
+
+\section{Behavior of Frictional Force Density $f(L_{z}, T)$}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.6\linewidth]{../../NumCalc/ClassicalSpinMC/FricDensP_Allsize_AP.eps}
+	\caption{The temperature $T$ dependence of the frictional force density $f(L_{z}, T)$ with the anti-parallel boundary condition along the $z$-direction for each longitudinal size $L_{z}$ are plotted.}
+\end{figure}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.6\linewidth]{../../NumCalc/ClassicalSpinMC/FricDensP_Allsize_P.eps}
+	\caption{The temperature $T$ dependence of the frictional force density $f(L_{z}, T)$ with the parallel boundary condition along the $z$-direction for each longitudinal size $L_{z}$ are plotted.}
+\end{figure}
+\pagebreak
+
+\section{Behavior of Bulk Energy Density $\epsilon_{\rm b}(L_{z}, T)$}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.6\linewidth]{../../NumCalc/ClassicalSpinMC/EnDens_Allsize_AP.eps}
+	\caption{The temperature $T$ dependence of the bulk energy density $\epsilon(L_{z}, T)$ with the anti-parallel boundary condition along the $z$-direction for each longitudinal size $L_{z}$ are plotted.}
+\end{figure}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.6\linewidth]{../../NumCalc/ClassicalSpinMC/EnDens_Allsize_P.eps}
+	\caption{The temperature $T$ dependence of the bulk energy density $\epsilon(L_{z}, T)$ with the parallel boundary condition along the $z$-direction for each longitudinal size $L_{z}$ are plotted.}
+\end{figure}
+\pagebreak
+
+\section{Behavior of Bulk Heat Capacity $c_{\rm b}(L_{z}, T)$}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.6\linewidth]{../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_AP.eps}
+	\caption{The temperature $T$ dependence of the bulk heat capacity $c(L_{z}, T)$ with the anti-parallel boundary condition along the $z$-direction for each longitudinal size $L_{z}$ are plotted.}
+\end{figure}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.6\linewidth]{../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_P.eps}
+	\caption{The temperature $T$ dependence of the bulk heat capacity $c(L_{z}, T)$ with the parallel boundary condition along the $z$-direction for each longitudinal size $L_{z}$ are plotted.}
+\end{figure}
+\pagebreak

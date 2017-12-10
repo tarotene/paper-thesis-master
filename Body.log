@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.12.2)  7 DEC 2017 18:46
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.12.2)  10 DEC 2017 22:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -179,10 +179,10 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: dvips.def on input line 99.
+Package graphics Info: Driver file: dvipdfmx.def on input line 99.
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/dvips.def
-File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
 ))
 \Gin@req@height=\dimen134
 \Gin@req@width=\dimen135
@@ -193,7 +193,7 @@ Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package color Info: Driver file: dvips.def on input line 147.
+Package color Info: Driver file: dvipdfmx.def on input line 147.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
@@ -275,7 +275,7 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: dvips.def on input line 225.
+Package xcolor Info: Driver file: dvipdfmx.def on input line 225.
 LaTeX Info: Redefining \color on input line 709.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -312,48 +312,44 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 \c@one=\count130
 
-(./Body.aux
-
-LaTeX Warning: Label `alg:SFAEMC' multiply defined.
-
-)
+(./Body.aux)
 \openout1 = `Body.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 59.
+(Font)              scaled to size 11.54663pt on input line 57.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 59.
+(Font)              scaled to size 11.54663pt on input line 57.
 \c@lstlisting=\count131
 \docmute@nestinglevel=\count132
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 19.95642pt on input line 64.
+(Font)              scaled to size 19.95642pt on input line 62.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 19.95642pt on input line 64.
+(Font)              scaled to size 19.95642pt on input line 62.
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 64.
+(Font)              scaled to size 13.85594pt on input line 62.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 64.
-LaTeX Font Info:    Try loading font information for U+msa on input line 64.
+(Font)              scaled to size 13.85594pt on input line 62.
+LaTeX Font Info:    Try loading font information for U+msa on input line 62.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 64.
+LaTeX Font Info:    Try loading font information for U+msb on input line 62.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -363,30 +359,30 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ]
 (./Acknowledgement.tex) [2]
 LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 71.
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 69.
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 71.
+(Font)              scaled to size 13.85594pt on input line 69.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 71.
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 69.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 71.
+(Font)              scaled to size 13.85594pt on input line 69.
  [3
 
 ] [4
 
 ]
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 23.94002pt on input line 77.
+(Font)              scaled to size 23.94002pt on input line 75.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 23.94002pt on input line 77.
+(Font)              scaled to size 23.94002pt on input line 75.
 LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <24.88> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 77.
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 75.
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 23.94002pt on input line 77.
+(Font)              scaled to size 23.94002pt on input line 75.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <24.88> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 77.
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 75.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 23.94002pt on input line 77.
+(Font)              scaled to size 23.94002pt on input line 75.
  (./Body.toc
 LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <12> not available
 (Font)              Font shape `JT1/hgt/m/n' tried instead on input line 1.
@@ -396,19 +392,23 @@ LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <12> not available
 (Font)              Font shape `JY1/hgt/m/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
 (Font)              scaled to size 11.54663pt on input line 1.
-)
+ [5])
 \tf@toc=\write3
 \openout3 = `Body.toc'.
 
- (./Introduction.tex [5]
-[6
-
-]
+ (./Introduction.tex
+[6]
 Chapter 1.
-) (./NumSim.tex [7] [8
+) (./NEPhaseTrans.tex [7
+
+] [8
 
 ]
 Chapter 2.
+) (./NumSim.tex [9] [10
+
+]
+Chapter 3.
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
 (Font)              scaled to size 16.62714pt on input line 4.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
@@ -433,10 +433,10 @@ LaTeX Font Info:    Font shape `JT1/hmc/m/it' will be
 (Font)              scaled to size 11.54663pt on input line 6.
 LaTeX Font Info:    Font shape `JY1/hmc/m/it' will be
 (Font)              scaled to size 11.54663pt on input line 6.
-[9]
+[11]
 Underfull \vbox (badness 1048) has occurred while \output is active []
 
- [10]
+ [12]
 Overfull \hbox (12.4786pt too wide) in paragraph at lines 45--47
 \OT1/cmr/m/n/12 In nu-mer-i-cal sim-u-la-tions, we cal-cu-late the fric-tional 
 force $\OML/cmm/m/it/12 F\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 L[]; L[]; T\OT1/cmr/
@@ -447,32 +447,86 @@ m/n/12 )$ us-ing its power $\OML/cmm/m/it/12 D\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
 
 Underfull \vbox (badness 1005) has occurred while \output is active []
 
- [11])
-(./Results.tex [12]
-Chapter 3.
-) (./Summary.tex [13
+ [13]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] [14
+ [14]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 75.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 7.69775pt on input line 78.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 7.69775pt on input line 78.
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 9.6222pt on input line 78.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 9.6222pt on input line 78.
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 6.73553pt on input line 78.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 6.73553pt on input line 78.
+LaTeX Font Info:    Font shape `JT1/hmc/m/it' will be
+(Font)              scaled to size 9.6222pt on input line 78.
+LaTeX Font Info:    Font shape `JY1/hmc/m/it' will be
+(Font)              scaled to size 9.6222pt on input line 78.
+ [15] [16])
+(./Results.tex [17] [18
 
 ]
 Chapter 4.
-) (./App_StochasticMatrices.tex [15] [16
+File: ../../NumCalc/ClassicalSpinMC/FricDensP_Allsize_AP.eps Graphic file (type
+ eps)
+<../../NumCalc/ClassicalSpinMC/FricDensP_Allsize_AP.eps>
+[19]
+File: ../../NumCalc/ClassicalSpinMC/FricDensP_Allsize_P.eps Graphic file (type 
+eps)
+<../../NumCalc/ClassicalSpinMC/FricDensP_Allsize_P.eps>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+File: ../../NumCalc/ClassicalSpinMC/EnDens_Allsize_AP.eps Graphic file (type ep
+s)
+<../../NumCalc/ClassicalSpinMC/EnDens_Allsize_AP.eps>
+File: ../../NumCalc/ClassicalSpinMC/EnDens_Allsize_P.eps Graphic file (type eps
+)
+<../../NumCalc/ClassicalSpinMC/EnDens_Allsize_P.eps>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+File: ../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_AP.eps Graphic file (type e
+ps)
+<../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_AP.eps>
+File: ../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_P.eps Graphic file (type ep
+s)
+<../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_P.eps>
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22]
+(./Summary.tex
+Chapter 5.
+) (./App_StochasticMatrices.tex [23
+
+] [24
 
 ]
 Appendix A.
-) (./App_SourceCodes.tex [17] [18
+) (./App_SourceCodes.tex [25] [26
 
 ]
 Appendix B.
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 7.69775pt on input line 21.
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 7.69775pt on input line 21.
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
 (Font)              scaled to size 5.77332pt on input line 21.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
 (Font)              scaled to size 5.77332pt on input line 21.
-) (./Body.bbl [19] [20
+) (./Body.bbl [27] [28
 
 ]
 
@@ -487,21 +541,18 @@ LaTeX Font Info:    Font shape `JT1/hgt/m/it' will be
 (Font)              scaled to size 11.54663pt on input line 11.
 LaTeX Font Info:    Font shape `JY1/hgt/m/it' will be
 (Font)              scaled to size 11.54663pt on input line 11.
-) [21] (./Body.aux)
+) [29] (./Body.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 6039 strings out of 493642
- 77007 string characters out of 6148748
- 149224 words of memory out of 5000000
- 9520 multiletter control sequences out of 15000+600000
- 26321 words of font info for 114 fonts, out of 8000000 for 9000
+ 6121 strings out of 493642
+ 78742 string characters out of 6148748
+ 148876 words of memory out of 5000000
+ 9582 multiletter control sequences out of 15000+600000
+ 28632 words of font info for 125 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 27i,11n,35p,744b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,11n,35p,1171b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Body.dvi (21 pages, 20680 bytes).
+Output written on Body.dvi (29 pages, 35364 bytes).

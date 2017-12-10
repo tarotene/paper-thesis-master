@@ -78,6 +78,16 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/docmute/docmute.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/docmute/docmute.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.cfg
 INPUT Body.aux
 INPUT Body.aux
 OUTPUT Body.aux
@@ -168,6 +178,8 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy
 OUTPUT Body.toc
 INPUT Introduction.tex
 INPUT Introduction.tex
+INPUT NEPhaseTrans.tex
+INPUT NEPhaseTrans.tex
 INPUT NumSim.tex
 INPUT NumSim.tex
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
@@ -186,8 +198,8 @@ INPUT Summary.tex
 INPUT Summary.tex
 INPUT App_StochasticMatrices.tex
 INPUT App_StochasticMatrices.tex
-INPUT App_FiniteSizeScaling.tex
-INPUT App_FiniteSizeScaling.tex
+INPUT App_SourceCodes.tex
+INPUT App_SourceCodes.tex
 INPUT Body.bbl
 INPUT Body.bbl
 INPUT Body.aux

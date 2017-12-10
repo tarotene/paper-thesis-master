@@ -61,9 +61,35 @@ From now we call the quantity $D(L_{x}, L_{z}, T)$ \textit{energy dissipation}.
 
 Our models always reach non-equilibrium steady states in the long-time limit $t\to\infty$, which depend on the temperature $T$ and the sliding velocity $v$; We will prove in App. A. We use the fact that $\lim_{t\to\infty}|D(t)|=\lim_{t\to\infty}|P(t)|$ in order to calculate average value $\bar{D}$ with less fluctuation by using the value $\bar{P}$ \cite{Magiera2009a, Magiera2011, Magiera2011b}. We therefore have
 \begin{align}
-F(L_{x}, L_{z}, T)=\frac{P(L_{x}, L_{z}, T)}{v}\label{for:frictionalforce2}.
+P(L_{x}, L_{z}, T)=vF(L_{x}, L_{z}, T)\label{for:frictionalforce2}.
 \end{align}
 
 \section{Non-equilibrium Monte Carlo Simulation}
 
-Energy dissipation process towards the heat bath occurs via a spin flip. This fundamental processes do not only describe equilibrium states, but also non-equilibrium steady states for a fixed temperature $T$\cite{Glauber1963}. 
+Energy dissipation process towards the heat bath occurs via a spin flip. This fundamental processes do not only describe equilibrium states, but also non-equilibrium steady states for a fixed temperature $T$\cite{Glauber1963}. Using Monte Carlo method, we can simulate this process.
+
+\subsection{Introduction the Time Scale to Ising Models}
+
+The Ising model which we deal with is a kind of kinetic Ising models\cite{Glauber1963}, in which its time dependent statistics plays several important roles. In order to calculate dynamical observables such as the frictional power \eqref{for:frictionalforce2} and its dissipation rate \eqref{for:frictionalforce}, we have to define \textit{a unit time} for finite size systems. We now consider the case in which a homogeneous spin chain of the volume $L$ and a heat bath with the temperature $T$ are interacting. This system are well described with enough large number of the spins. Denoting such a number $N$, we can consider two macroscopically equivalent models as follows:
+\begin{itemize}
+	\item An $N$-spin chain with the lattice constant $a=L/N$,
+	\item An $(M\times N)$-spin chain with the lattice constant $a=L/(M\times N)$,
+\end{itemize}
+where $M$ is the large number which have the same property as $N$. Since both of models well describe the system of volume $L$, typical time scale\footnote{If we use the same criterion, any time scale may be introduced. For example, we can define \textit{a typical time scale} as the time taken to flip all the spin.} of each system should be the same. And under the \textit{homogeneousness} assumption that for both models each spin is independently interacting with the heat bath, the dynamics of any spin in the former and that of any $M$-spins subsystem in the latter are effectively equivalent. Thus as long as we consider the dynamics of same volume systems, we can define the unit time scale using its number of spins. This concept can be easily implemented on the ordinary \textit{equilibrium} Monte Carlo simulation for classical spin systems.
+
+For the equilibrium Monte Carlo simulation, the most naive approach for the equilibrium state is the single flip algorithm, where we perform the sequence a random selection of the spin and its flipping with temperature dependent probability $p(T)$. We often use the Metropolis probability $p_{\rm M}(T):=\min\{1,\mathrm{e}^{-\frac{\Delta E}{k_{\rm B}T}}\}$ as the probability $p(T)$, where $\Delta E$ is the energy difference by the flipping. The Metropolis probability $ p_{\rm M}(T) $ have a good property, called \textit{detailed balanced condition}, which certainly leads the system towards the true equilibrium state with enough many repetition of the algorithm. This process and randomness well describes the interaction and the homogeneousness with the heat bath. We often call \textit{Monte Carlo step} a single process of the algorithm, and define \textit{Monte Carlo sweep} $N$-times process, where $N$ is the number of spins. According to the earlier discussion, the unit time in the system is nothing but the Monte Carlo sweep. Thus the more spins the system contains, the higher time resolution we can simulate with.
+
+\subsection{Slip Plane with the Velocity $v$}
+
+Using the introduced time scale, we can also introduce the slip plane with the velocity $v$ to the system with $N$-spins. Corresponding to the setup in Sec. 3.1, we perform the extended single flip algorithm as follows:
+\begin{enumerate}
+	\item \textbf{Shifting}: We shift the upper half by a lattice constant
+	\item \textbf{Flipping}: We perform ordinary single flips for $N/v$ times.
+	\item We repeat the process 1 + 2 for $(v-1)$ times.
+\end{enumerate}
+In the extended algorithm, the upper half slides with the velocity $v$ in a unit time at regular intervals. We prove the fact that this algorithm lead the system of any size to the non-equilibrium steady state depending the temperature $T$ and the velocity $v$.
+
+\subsection{Calculation Method}
+
+The observables which we are interested in are the frictional power $P(t)$ and its dissipation rate $D(t)$. In Monte Carlo simulations, the frictional power $P(t)$ is the energy difference by the shifting operation and the dissipation rate is that by the flipping for a unit time. Both observables have the same absolute value in the long time limit.
+
