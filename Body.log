@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.12.2)  10 DEC 2017 22:34
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.12.2)  12 DEC 2017 13:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -392,16 +392,16 @@ LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <12> not available
 (Font)              Font shape `JY1/hgt/m/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
 (Font)              scaled to size 11.54663pt on input line 1.
- [5])
+)
 \tf@toc=\write3
 \openout3 = `Body.toc'.
 
- (./Introduction.tex
-[6]
-Chapter 1.
-) (./NEPhaseTrans.tex [7
+ (./Introduction.tex [5]
+[6
 
-] [8
+]
+Chapter 1.
+) (./NEPhaseTrans.tex [7] [8
 
 ]
 Chapter 2.
@@ -434,9 +434,6 @@ LaTeX Font Info:    Font shape `JT1/hmc/m/it' will be
 LaTeX Font Info:    Font shape `JY1/hmc/m/it' will be
 (Font)              scaled to size 11.54663pt on input line 6.
 [11]
-Underfull \vbox (badness 1048) has occurred while \output is active []
-
- [12]
 Overfull \hbox (12.4786pt too wide) in paragraph at lines 45--47
 \OT1/cmr/m/n/12 In nu-mer-i-cal sim-u-la-tions, we cal-cu-late the fric-tional 
 force $\OML/cmm/m/it/12 F\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 L[]; L[]; T\OT1/cmr/
@@ -444,16 +441,9 @@ m/n/12 )$ us-ing its power $\OML/cmm/m/it/12 D\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
  L[]; L[]; T\OT1/cmr/m/n/12 )$
  []
 
-
-Underfull \vbox (badness 1005) has occurred while \output is active []
-
- [13]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14]
+[12]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 75.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
@@ -474,22 +464,22 @@ LaTeX Font Info:    Font shape `JT1/hmc/m/it' will be
 (Font)              scaled to size 9.6222pt on input line 78.
 LaTeX Font Info:    Font shape `JY1/hmc/m/it' will be
 (Font)              scaled to size 9.6222pt on input line 78.
- [15] [16])
-(./Results.tex [17] [18
-
-]
+ [13])
+(./Results.tex [14]
 Chapter 4.
 File: ../../NumCalc/ClassicalSpinMC/FricDensP_Allsize_AP.eps Graphic file (type
  eps)
 <../../NumCalc/ClassicalSpinMC/FricDensP_Allsize_AP.eps>
-[19]
 File: ../../NumCalc/ClassicalSpinMC/FricDensP_Allsize_P.eps Graphic file (type 
 eps)
 <../../NumCalc/ClassicalSpinMC/FricDensP_Allsize_P.eps>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20]
+ [15
+
+]
+[16]
 File: ../../NumCalc/ClassicalSpinMC/EnDens_Allsize_AP.eps Graphic file (type ep
 s)
 <../../NumCalc/ClassicalSpinMC/EnDens_Allsize_AP.eps>
@@ -499,7 +489,7 @@ File: ../../NumCalc/ClassicalSpinMC/EnDens_Allsize_P.eps Graphic file (type eps
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21]
+ [17]
 File: ../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_AP.eps Graphic file (type e
 ps)
 <../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_AP.eps>
@@ -509,24 +499,34 @@ s)
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22]
+ [18]
 (./Summary.tex
 Chapter 5.
-) (./App_StochasticMatrices.tex [23
+) (./App_StochasticMatrices.tex [19
 
-] [24
+] [20
 
 ]
 Appendix A.
-) (./App_SourceCodes.tex [25] [26
-
-]
-Appendix B.
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 5.77332pt on input line 21.
+(Font)              scaled to size 5.77332pt on input line 14.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 5.77332pt on input line 21.
-) (./Body.bbl [27] [28
+(Font)              scaled to size 5.77332pt on input line 14.
+[21]
+Overfull \hbox (10.30898pt too wide) in paragraph at lines 46--46
+[]\OT1/cmr/bx/n/17.28 Stochastic Ma-tri-ces for Non-Equilbrium Monte Carlo
+ []
+
+
+Overfull \hbox (41.87688pt too wide) in paragraph at lines 48--48
+[]\OT1/cmr/bx/n/17.28 Calculation Non-Equilbrium Ob-serv-ables by the Stochas-
+ []
+
+) (./App_SourceCodes.tex [22]
+Appendix B.
+) (./Body.bbl [23
+
+] [24
 
 ]
 
@@ -541,18 +541,18 @@ LaTeX Font Info:    Font shape `JT1/hgt/m/it' will be
 (Font)              scaled to size 11.54663pt on input line 11.
 LaTeX Font Info:    Font shape `JY1/hgt/m/it' will be
 (Font)              scaled to size 11.54663pt on input line 11.
-) [29] (./Body.aux)
+) [25] (./Body.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 6121 strings out of 493642
- 78742 string characters out of 6148748
- 148876 words of memory out of 5000000
- 9582 multiletter control sequences out of 15000+600000
+ 6123 strings out of 493642
+ 78772 string characters out of 6148748
+ 152897 words of memory out of 5000000
+ 9584 multiletter control sequences out of 15000+600000
  28632 words of font info for 125 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 27i,11n,35p,1171b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,13n,35p,1171b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Body.dvi (29 pages, 35364 bytes).
+Output written on Body.dvi (25 pages, 40816 bytes).

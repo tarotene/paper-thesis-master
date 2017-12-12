@@ -1,3 +1,48 @@
 % !TeX root = Body.tex
 
 \chapter{Proof of the existence of NESS}
+
+\section{Stochastic Matrices for Ordinary Monte Carlo Simulations}
+
+Monte Carlo simulation extracts the relevant subspace from the true state space instead of calculating the partition function of the system, using the stochastic process. The subspace depends on the temperature, where we can approximately calculate observables.
+
+We now consider a matrix form of the stochastic process. For example, one-dimensional Ising chain with $N$-spins has $2^{N}$ states, thus we can label each state by $i=1,2,\dots,2^{N}$. Under the assumption of stochastic time evolution, we can also define the probability $p_{i}(t)$ that the system is in the $i$-th state at a time $t$.
+
+Furthermore, we denote the conditional probability $\tilde{p}_{ij}(t)$ that the system is in the $j$-th state at a time $t$ and in the $i$-th state at the next time $t+1$, we can define the transition probability $M_{ij}$ from the $i$-th state to the $j$-th state by
+\begin{align}
+\tilde{p}_{ij}(t + 1) = M_{ij} p_{j}(t)\quad\text{for $1\leq i,j\leq 2^{N}$}.
+\end{align}
+From the property of $p_{i}(t)$ as the probability, it should hold that $\sum_{i=1}^{2^{N}}p_{i}(t)=1$ and $p_{i}(t) \ge 0$ ($i=1,2,\dots,2^{N}$). In addition, summation $\tilde{p}_{ij}(t)$ over all previous states $j=1,2,\dots,2^{N}$ is nothing but $p_{i}(t+1)$:
+\begin{align}
+p_{i}(t+1) = \sum_{j=1}^{2^{N}}\tilde{p}_{ij}(t + 1) = \sum_{j=1}^{2^{N}}M_{ij}p_{j}(t)\quad\text{for $1\leq i\leq 2^{N}$}.
+\end{align}
+Therefore the system can be described by the stochastic time evolution of the probability vector $\bm{p}(t):={}^{\rm t}\left(p_{1}(t),p_{2}(t),\dots,p_{2^{N}}(t)\right)$ by the stochastic matrix $\hat{M}:=\left(M_{ij}\right)$:
+\begin{align}
+\bm{p}(t + 1) = \hat{M}\bm{p}(t).
+\end{align}
+The normalization property of $\{p_{i}(t)\}$ is expressed as the $L^{1}$-norm property of $\bm{p}(t)$:
+\begin{align}
+\|\bm{p}(t)\|_{1} = 1,
+\end{align}
+where the $L^{1}$-norm is defined for any vector $\bm{x}={}^{\rm t}\left(x_{1},x_{2},\dots,x_{2^{N}}\right)$ by $\|\bm{x}\|:=\sum_{i=1}^{2^{N}}x_{i}$. And it leads that
+\begin{align}
+&\sum_{i=1}^{2^{N}}p_{i}(t + 1) = \sum_{i=1}^{2^{N}}\sum_{j=1}^{2^{N}}M_{ij}p_{j}(t) = \sum_{j=1}^{2^{N}} \left(\sum_{i=1}^{2^{N}}M_{ij}\right)p_{j}(t),\\
+\overset{\|\bm{p}(\bullet)\|_{1} = 1.}{\Longleftrightarrow} &\sum_{i=1}^{2^{N}}M_{ij} = 1\quad\text{for $1\leq i\leq 2^{N}$}\label{con:stochmat1}.
+\end{align}
+In addition, we impose the non-negative condition on $M_{ij}$ as the transition probability:
+\begin{align}
+M_{ij}\ge 0\quad\text{for $1\leq i,j\leq 2^{N}$}\label{con:stochmat2}.
+\end{align}
+Any matrix with conditions \eqref{con:stochmat1} and \eqref{con:stochmat2} is called \textit{stochastic matrix} and shows following interesting properties:
+\begin{itemize}
+	\item All absolute values of eigenvalue are less than or equal to $1$.
+	\item For any eigenvector $\bm{x}={}^{\rm t}\{x_{1},x_{2},\dots,x_{2^{N}}\}$ which does \textit{not} belong to 1, it holds that
+	\begin{align}
+		\sum_{i=1}^{2^{N}}x_{j}=0.
+	\end{align}
+\end{itemize}
+Furthermore, if we use Metropolis probability $p_{\rm M}(t)$
+
+\section{Stochastic Matrices for Non-Equilbrium Monte Carlo Simulations}
+
+\section{Calculation Non-Equilbrium Observables by the Stochastic Matrices}
