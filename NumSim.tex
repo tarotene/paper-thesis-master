@@ -16,17 +16,19 @@ The Hamiltonian of the system is given by
 \end{align}
 where
 \begin{align}
-&\hat{H}_{\rm upper}:=-J_{\rm upper}\sum_{\langle i,j\rangle\in\mathrm{upper}}\hat{\sigma}_{i}\hat{\sigma}_{j}, \\
-&\hat{H}_{\rm lower}:=-J_{\rm lower}\sum_{\langle i,j\rangle\in\mathrm{lower}}\hat{\sigma}_{i}\hat{\sigma}_{j}, \\
-&\hat{H}_{\rm slip}(t):=-J_{\rm slip}\sum_{\langle i,j(t)\rangle\in\mathrm{slip}}\hat{\sigma}_{i}\hat{\sigma}_{j(t)}.
+&\hat{H}_{\rm upper}:=-J\sum_{\langle i,j\rangle\in\mathrm{upper}}\hat{\sigma}_{i}\hat{\sigma}_{j}\label{ham:upper}, \\
+&\hat{H}_{\rm lower}:=-J\sum_{\langle i,j\rangle\in\mathrm{lower}}\hat{\sigma}_{i}\hat{\sigma}_{j}\label{ham:lower}, \\
+&\hat{H}_{\rm slip}(t):=-J\sum_{\langle i,j(t)\rangle\in\mathrm{slip}}\hat{\sigma}_{i}\hat{\sigma}_{j(t)}\label{ham:slip},
 \end{align}
-
+where \textit{upper}, \textit{lower} and \textit{slip} represent the set of interacting spin pairs the upper half, the lower half and the slip plane of the entire system.
 Shift operations lead the system to repeated \textit{pumping} and \textit{dissipation} processes as follows (\textcolor{red}{fig}):
 \begin{enumerate}
-	\item A shift operation excites the energy on the slip plane by the ammount $\langle\hat{H}_{\rm slip}(t')-\hat{H}_{\rm slip}(t)\rangle$.
-	\item The excited energy on the slip plane dispenses to the entire system $\langle\hat{H}_{\rm upper} + \hat{H}_{\rm lower} + \hat{H}_{\rm slip}(t)\rangle$.
-	\item The excited entire system relaxes toward the equilibrium the heat bath.
+	\item \textbf{Shifting}: A shift operation excites the energy on the slip plane by the ammount $\langle\hat{H}_{\rm slip}(t')-\hat{H}_{\rm slip}(t)\rangle_{\rm st}$. The letter $t'$ denotes the time just after the shift operation from the time $t$.
+	\item \textbf{Relaxing-1}: The excited energy on the slip plane dispenses to the entire system $\langle\hat{H}_{\rm upper} + \hat{H}_{\rm lower} + \hat{H}_{\rm slip}(t)\rangle_{\rm st}$.
+	\item \textbf{Relaxing-2}: The excited entire system relaxes toward the equilibrium the heat bath.
 \end{enumerate}
+We defined the steady state average $\langle\hat{A}\rangle_{\rm st}:=\sum_{i}A_{i}p^{(\rm st)}_{i}$ for an arbitrary observable $\hat{A}$, where $\{A\}_{i}$ are eigenvalues of $\hat{A}$ and $\{p^{(\rm st)}_{i}\}$ are steady state probability distribution. Note that the distribution $\{p^{(\rm st)}_{i}\}$ are quite different from the equilibrium (canonical) probability distribution $p^{(\rm eq)}_{i}\propto\exp\left[-E_{i}/k_{\rm B} T\right]$. In addition, the distribution $\{p^{(\rm st)}_{i}\}$ depends on the sliding velocity $v$, and therefore it has infinite number of families. 
+
 The excited and relaxed amounts of energy per unit time correspond to the energy pumping and dissipation, respectively. The energy pumping $P(t)$ and dissipation $D(t)$ are given by
 \begin{align}
 P(t):=&\sum_{i_{v}=0}^{v-1}\left\langle \hat{H}_{\rm slip}\left(t'-1+\frac{i_{v}}{v}\right) - \hat{H}_{\rm slip}\left(t-1+\frac{i_{v}}{v}\right)\right\rangle_{\rm st},\\
@@ -63,6 +65,14 @@ Our models always reach non-equilibrium steady states in the long-time limit $t\
 \begin{align}
 P(L_{x}, L_{z}, T)=vF(L_{x}, L_{z}, T)\label{for:frictionalforce2}.
 \end{align}
+We also define the bulk energy density $\epsilon_{\rm b}(L_{z}, T)$ as follows
+\begin{align}
+\epsilon_{\rm b}(L_{z}, T):=\lim_{L_{x}\to\infty}\frac{E_{\rm b}(L_{x}, L_{z}, T)}{L_{x}L_{z}},
+\end{align}
+where $E_{\rm b}(L_{x}, L_{z}, T)$ is the energy of entire system. Straitforwardly, we define the bulk heat capacity $c_{\rm b}(L_{z}, T)$ as follows
+\begin{align}
+c_{\rm b}(L_{z}, T):=\frac{\partial \epsilon_{\rm b}(L_{z}, T)}{\partial T}.
+\end{align}
 
 \section{Non-equilibrium Monte Carlo Simulation}
 
@@ -83,13 +93,13 @@ For the equilibrium Monte Carlo simulation, the most naive approach for the equi
 
 Using the introduced time scale, we can also introduce the slip plane with the velocity $v$ to the system with $N$-spins. Corresponding to the setup in Sec. 3.1, we perform the extended single flip algorithm as follows:
 \begin{enumerate}
-	\item \textbf{Shifting}: We shift the upper half by a lattice constant
+	\item \textbf{Shifting}: We shift the upper half by a lattice constant.
 	\item \textbf{Flipping}: We perform ordinary single flips for $N/v$ times.
 	\item We repeat the process 1 + 2 for $(v-1)$ times.
 \end{enumerate}
-In the extended algorithm, the upper half slides with the velocity $v$ in a unit time at regular intervals. We prove the fact that this algorithm lead the system of any size to the non-equilibrium steady state depending the temperature $T$ and the velocity $v$.
+In the extended algorithm, the upper half slides with the velocity $v$ in a unit time at regular intervals. We proved the fact that this algorithm lead the system of any size to the non-equilibrium steady state depending the temperature $T$ and the velocity $v$ (see app\ref{chap:ProofEx} in detail).
 
 \subsection{Calculation Method}
 
-The observables which we are interested in are the frictional power $P(t)$ and its dissipation rate $D(t)$. In Monte Carlo simulations, the frictional power $P(t)$ is the energy difference by the shifting operation and the dissipation rate is that by the flipping for a unit time. Both observables have the same absolute value in the long time limit.
+The observables which we are interested in are the frictional power $P(t)$ and its dissipation rate $D(t)$. In Monte Carlo simulations, the frictional power $P(t)$ and the dissipation rate $D(t)$ are the energy difference by the shifting operation and that by the flipping respectively, for a unit time. Both observables have the same absolute value in the long time limit.
 

@@ -9,14 +9,15 @@
 \evensidemargin=-5mm
 \textwidth=170mm
 
-%\renewcommand{\baselinestretch}{2}
+\renewcommand{\baselinestretch}{2}
+\usepackage{tikz}
+\usepackage{subcaption}
 \usepackage{amsmath,amsfonts,amsthm,amssymb}
 \usepackage{ascmac}
 \usepackage{algorithm}
 \usepackage{algorithmic}
 \usepackage{graphicx}
 \usepackage{color}
-\usepackage{subfigure}
 \usepackage{cite}
 \usepackage{dcolumn}
 \usepackage{bm}
@@ -24,8 +25,8 @@
 \usepackage{braket}
 \usepackage{setspace}
 \usepackage{docmute}
-\usepackage{xcolor}
 \usepackage{listings}
+\newcommand{\figref}[2][{}]{\hyperref[#2]{\figurename~\ref{#2}#1}} 
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -84,7 +85,8 @@ Moreover, fugafuga.
 
 \appendix
 \input{App_StochasticMatrices}
-\input{App_SourceCodes}
+%\input{App_SourceCodes}
+\input{App_ResSimDet}
 
 \bibliographystyle{unsrt}
 \bibliography{../../library.bib}

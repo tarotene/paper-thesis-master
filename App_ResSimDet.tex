@@ -1,0 +1,73 @@
+% !TeX root = Body.tex
+
+\chapter{Results of Simulations in More Detail}
+
+\section{Checking the Convergence in the Limit $L_{x}\to\infty$}
+\label{sec:convcheck}
+
+We now demonstrate that following two observables are converging at corresponding numerical large size limits.
+
+\begin{align}
+	f(L_{z}, T):=&\lim_{L_{x}\to\infty}\frac{F(L_{x}, L_{z}, T)}{L_{x}}\\
+	\epsilon_{\rm b}(L_{z}, T):=&\lim_{L_{x}\to\infty}\frac{E_{b}(L_{x}, L_{z}, T)}{L_{x}L_{z}}
+\end{align}
+
+Both of them have no dependence on $L_{x}$ and also do not diverge in the limit of $L_{z}$. Thus we can analyze these qualitative and pure dependence on $L_{z}$ and $T$. We use the aspect of $L_{x}=10L_{z}, 20L_{z}, \dots, 50L_{z}$ for checking the convergence in the limit $L_{x}/L_{z} \to \infty$ with fixed $L_{z}$.
+
+\subsection{Dependence of $F(L_{x}, L_{z}, T)/L_{x}$ on $L_{x}$ for each $L_{z}$}
+
+\begin{figure}[htbp]
+	\centering
+	\subcaptionbox{$L_{z}=4$\label{fig:ffdcheckfor004}}{\includegraphics[width=0.4\linewidth]{../../NumCalc/ClassicalSpinMC/FricDensP_Lz004.eps}}
+	\subcaptionbox{$L_{z}=6$\label{fig:ffdcheckfor006}}{\includegraphics[width=0.4\linewidth]{../../NumCalc/ClassicalSpinMC/FricDensP_Lz006.eps}}
+	
+	\subcaptionbox{$L_{z}=8$\label{fig:ffdcheckfor008}}{\includegraphics[width=0.4\linewidth]{../../NumCalc/ClassicalSpinMC/FricDensP_Lz008.eps}}
+	\subcaptionbox{$L_{z}=10$\label{fig:ffdcheckfor010}}{\includegraphics[width=0.4\linewidth]{../../NumCalc/ClassicalSpinMC/FricDensP_Lz010.eps}}
+	
+	\subcaptionbox{$L_{z}=12$\label{fig:ffdcheckfor012}}{\includegraphics[width=0.4\linewidth]{../../NumCalc/ClassicalSpinMC/FricDensP_Lz012.eps}}
+	\subcaptionbox{$L_{z}=14$\label{fig:ffdcheckfor014}}{\includegraphics[width=0.4\linewidth]{../../NumCalc/ClassicalSpinMC/FricDensP_Lz014.eps}}
+	
+	\subcaptionbox{$L_{z}=16$\label{fig:ffdcheckfor016}}{\includegraphics[width=0.4\linewidth]{../../NumCalc/ClassicalSpinMC/FricDensP_Lz016.eps}}
+	\caption{Each data shows $F(L_{x}, L_{z}, T)/L_{x}$ versus $T$.}
+	\label{fig:ffdcheck}
+\end{figure}
+
+We show that the quantity $F(L_{x}, L_{z}, T)/L_{x}$ has no dependence on $L_{x}$ at a sufficient large $L_{x}$ for each $L_{z}$. The following graphs are the temperature dependence of the frictional force density with each of boundary conditions along the $z$-direction for each of longitudinal size $L_{z} = 4, 6, 8, 10, 12, 14, 16$ (fig.\ref{fig:ffdcheck}).
+
+\subsection{Dependence of $E_{\rm b}(L_{x}, L_{z}, T)/(L_{x}L_{z})$ on $L_{x}$ for each $L_{z}$}
+
+\begin{figure}[htbp]
+	\centering
+	\subcaptionbox{$L_{z}=4$\label{fig:ebcheckfor004}}{\includegraphics[width=0.4\linewidth]{../../NumCalc/ClassicalSpinMC/EnDens_Lz004.eps}}
+	\subcaptionbox{$L_{z}=6$\label{fig:ebcheckfor006}}{\includegraphics[width=0.4\linewidth]{../../NumCalc/ClassicalSpinMC/EnDens_Lz006.eps}}
+	
+	\subcaptionbox{$L_{z}=8$\label{fig:ebcheckfor008}}{\includegraphics[width=0.4\linewidth]{../../NumCalc/ClassicalSpinMC/EnDens_Lz008.eps}}
+	\subcaptionbox{$L_{z}=10$\label{fig:ebcheckfor010}}{\includegraphics[width=0.4\linewidth]{../../NumCalc/ClassicalSpinMC/EnDens_Lz010.eps}}
+	
+	\subcaptionbox{$L_{z}=12$\label{fig:ebcheckfor012}}{\includegraphics[width=0.4\linewidth]{../../NumCalc/ClassicalSpinMC/EnDens_Lz012.eps}}
+	\subcaptionbox{$L_{z}=14$\label{fig:ebcheckfor014}}{\includegraphics[width=0.4\linewidth]{../../NumCalc/ClassicalSpinMC/EnDens_Lz014.eps}}
+	
+	\subcaptionbox{$L_{z}=16$\label{fig:ebcheckfor016}}{\includegraphics[width=0.4\linewidth]{../../NumCalc/ClassicalSpinMC/EnDens_Lz016.eps}}
+	\caption{Each data shows $E(L_{x}, L_{z}, T)/(L_{x}L_{z})$ versus $T$.}
+	\label{fig:ebcheck}
+\end{figure}
+
+We show that the quantity $E_{\rm b}(L_{x}, L_{z}, T)/L_{x}$ has no dependence on $L_{x}$ at a sufficient large $L_{x}$ for each $L_{z}$. The following graphs are the temperature dependence of the frictional force density with each of boundary conditions along the $z$-direction for each of longitudinal size $L_{z} = 4, 6, 8, 10, 12, 14, 16$ (fig.\ref{fig:ebcheck}).
+
+
+
+\section{Time Series of Observables}
+
+We now show the data which we use to calculate the long time limit of power  $P(t)$, dissipation rate $D(t)$ and bulk energy $E_{\rm b}(t)$.
+
+We can estimate the non-equilibrium correlation time of these observables, and then the valid interval in each time series are determined.
+
+\subsection{title}
+
+\subsubsection{title}
+
+\begin{figure}[htbp]
+	\centering
+	\subcaptionbox{$T=5.0$}{\includegraphics[width=0.4\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/pd_beta.200.eps}}
+	\subcaptionbox{$T=5.0$}{\includegraphics[width=0.4\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/pd_beta.200.eps}}
+\end{figure}
