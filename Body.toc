@@ -15,8 +15,9 @@
 \contentsline {chapter}{\numberline {5}Summary and Discussion}{23}
 \contentsline {chapter}{\numberline {A}Proof of the existence of NESS}{25}
 \contentsline {section}{\numberline {A.1}Stochastic Matrices for Ordinary Monte Carlo Simulations}{25}
-\contentsline {section}{\numberline {A.2}Stochastic Matrices for Non-Equilbrium Monte Carlo Simulations}{27}
-\contentsline {section}{\numberline {A.3}Calculation Non-Equilbrium Observables by the Stochastic Matrices}{27}
+\contentsline {subsection}{\numberline {A.1.1}Perron Frobenius Theorem for Stochastic Matrices}{27}
+\contentsline {section}{\numberline {A.2}Stochastic Matrices for Non-Equilbrium Monte Carlo Simulations}{28}
+\contentsline {section}{\numberline {A.3}Calculation Non-Equilbrium Observables by the Stochastic Matrices}{28}
 \contentsline {chapter}{\numberline {B}Results of Simulations in More Detail}{29}
 \contentsline {section}{\numberline {B.1}Checking the Convergence in the Limit $L_{x}\to \infty $}{29}
 \contentsline {subsection}{\numberline {B.1.1}Dependence of $F(L_{x}, L_{z}, T)/L_{x}$ on $L_{x}$ for each $L_{z}$}{31}

@@ -44,8 +44,23 @@ Any matrix with conditions \eqref{con:stochmat1} and \eqref{con:stochmat2} is ca
 \end{itemize}
 Furthermore, if we use the Metropolis probability $p_{\rm M}(t)$ the stochastic matrix $\hat{M}$ which corresponds to a Monte Carlo step satisfies following property so called \textit{strong connectivity}:
 \begin{align}
-content...
+\left(\hat{M}^{N_{0}}\right)_{ij}>0\quad\text{for arbitrary $(i,j)$ at a $N_{0}>0$}.
 \end{align}
+
+If the stochastic matrix for our considered Monte Carlo simulation satisfies the strong connectivity, we can maintain that the simulation certainly converges to the equilibrium state from the properties of corresponding stochastic matrix.
+
+\subsection{Perron Frobenius Theorem for Stochastic Matrices}
+
+We first define the column vector $\bm{d}:={}^{\rm t}\left(1,1,\dots,1\right)$. For any stochastic matrix $\hat{T}$, we have
+\begin{align}
+&\left({}^{\rm t}\hat{T}\bm{d}\right)_{i}=\sum_{j=1}^{N}\left({}^{t}T\right)_{ij}d_{j}=\sum_{j=1}^{N}T_{ji}d_{j}=\sum_{j=1}^{N}T_{ji}=1\quad\text{for $i=1,2,\dots,N$},\\
+\Longleftrightarrow\quad &{}^{\rm t}\hat{T}\bm{d} = \bm{d}.
+\end{align}
+Therefore the matrix ${}^{\rm t}\hat{T}$ has an eigenvalue $1$ at least. The Eigenequation for the matrix ${}^{\rm t}\hat{T}$ are rewritten as
+\begin{align}
+\det\left[\lambda \hat{I}_{N} - {}^{\rm t}\hat{T}\right] = \det\left[{}^{\rm t}\left(\lambda \hat{I}_{N} - \hat{T}\right)\right] = \det\left[\lambda \hat{I}_{N} - \hat{T}\right],
+\end{align}
+and then the set of eigenvalues of $\hat{T}$ is equal to that of ${}^{\rm t}\hat{T}$. Finally the matrix $\hat{T}$ has an eigenvalue $1$ at least.
 
 \section{Stochastic Matrices for Non-Equilbrium Monte Carlo Simulations}
 
