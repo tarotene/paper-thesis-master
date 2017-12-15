@@ -5,6 +5,8 @@
 
 \section{Stochastic Matrices for Ordinary Monte Carlo Simulations}
 
+\subsection{The Relation between Monte Carlo Simulations and Stochastic Matrices}
+
 Monte Carlo simulation extracts the relevant subspace from the true state space instead of calculating the partition function of the system, using the stochastic process. The subspace depends on the temperature, where we can approximately calculate observables.
 
 We now consider a matrix form of the stochastic process. For example, one-dimensional Ising chain with $N$-spins has $2^{N}$ states, thus we can label each state by $i=1,2,\dots,2^{N}$. Under the assumption of stochastic time evolution, we can also define the probability $p_{i}(t)$ that the system is in the $i$-th state at a time $t$.
@@ -47,21 +49,123 @@ Furthermore, if we use the Metropolis probability $p_{\rm M}(t)$ the stochastic 
 \left(\hat{M}^{N_{0}}\right)_{ij}>0\quad\text{for arbitrary $(i,j)$ at a $N_{0}>0$}.
 \end{align}
 
-If the stochastic matrix for our considered Monte Carlo simulation satisfies the strong connectivity, we can maintain that the simulation certainly converges to the equilibrium state from the properties of corresponding stochastic matrix.
+\subsection{Desired Conditions for Stochastic Matrices and their Results}
 
-\subsection{Perron Frobenius Theorem for Stochastic Matrices}
+If the stochastic matrix for our considered Monte Carlo simulation satisfies the strong connectivity, we can maintain that the simulation certainly converges to the equilibrium state from the properties of corresponding stochastic matrix.
 
 We first define the column vector $\bm{d}:={}^{\rm t}\left(1,1,\dots,1\right)$. For any stochastic matrix $\hat{T}$, we have
 \begin{align}
 &\left({}^{\rm t}\hat{T}\bm{d}\right)_{i}=\sum_{j=1}^{N}\left({}^{t}T\right)_{ij}d_{j}=\sum_{j=1}^{N}T_{ji}d_{j}=\sum_{j=1}^{N}T_{ji}=1\quad\text{for $i=1,2,\dots,N$},\\
 \Longleftrightarrow\quad &{}^{\rm t}\hat{T}\bm{d} = \bm{d}.
 \end{align}
-Therefore the matrix ${}^{\rm t}\hat{T}$ has an eigenvalue $1$ at least. The Eigenequation for the matrix ${}^{\rm t}\hat{T}$ are rewritten as
+Therefore the matrix ${}^{\rm t}\hat{T}$ has an eigenvalue $1$ at least. The eigenequation for the matrix ${}^{\rm t}\hat{T}$ are rewritten as
 \begin{align}
 \det\left[\lambda \hat{I}_{N} - {}^{\rm t}\hat{T}\right] = \det\left[{}^{\rm t}\left(\lambda \hat{I}_{N} - \hat{T}\right)\right] = \det\left[\lambda \hat{I}_{N} - \hat{T}\right],
 \end{align}
 and then the set of eigenvalues of $\hat{T}$ is equal to that of ${}^{\rm t}\hat{T}$. Finally the matrix $\hat{T}$ has an eigenvalue $1$ at least.
 
+A general eigenvalue equation of $\hat{T}$ can be written as
+\begin{align}
+\hat{T}\bm{x}_{\lambda} = \lambda\bm{x}_{\lambda}\label{eq:GenEigT},
+\end{align}
+where $\bm{x}_{\lambda}={}^{\rm t}\left(x_{\lambda,1},x_{\lambda,2},\dots,x_{\lambda,N}\right)$ is its eigenvector. We have
+\begin{align}
+&\left((\text{\textit{l.h.s} of \ref{eq:GenEigT}}),\bm{d}\right) = (\hat{T}\bm{x}_{\lambda},\bm{d}) = (\bm{x}_{\lambda},{}^{\rm t}\hat{T}\bm{d}) = (\bm{x}_{\lambda},\bm{d}),\\
+&\left((\text{\textit{r.h.s} of \ref{eq:GenEigT}}),\bm{d}\right) = (\lambda\bm{x}_{\lambda},\bm{d}) = \lambda(\bm{x}_{\lambda},\bm{d}).\\
+\Longleftrightarrow \quad& (1-\lambda)(\bm{x}_{\lambda},\bm{d}) = 0\quad\Longleftrightarrow \quad \lambda = 1\text{ or }(\bm{x}_{\lambda},\bm{d}) = 0.\\
+\Longleftrightarrow \quad& \sum_{i=1}^{N}x_{\lambda,i} = 0\quad\text{if $\lambda \neq 1$}.
+\end{align}
+
+We additionally define the vector $\bm{y}_{\lambda}:={}^{\rm t}\left(|x_{\lambda,1}|,|x_{\lambda,2}|,\dots,|x_{\lambda,N}|\right)$ for any $\lambda$. From the equation $\sum_{j=1}^{N}T_{ij}x_{\lambda,j}=\lambda x_{i}(i=1,2,\dots,N)$ we have
+\begin{align}
+|\sum_{j=1}^{N}T_{ij}x_{\lambda,j}| &\leq \sum_{j=1}^{N}T_{ij}|x_{\lambda,j}|\quad(\because T_{ij}\geq 0\quad\text{for $j=1,2,\dots,N$})\\
+&=\left(\hat{T}\bm{y}_{\lambda}\right)_{i}\quad\text{\text{for $i=1,2,\dots,N$}}\label{ineq:Ty}.
+\end{align}
+and the left hand side of \eqref{ineq:Ty} are rewritten as
+\begin{align}
+|\sum_{j=1}^{N}T_{ij}x_{\lambda,j}| = |\lambda x_{\lambda,j}| = |\lambda|\times |x_{\lambda,j}| = |\lambda|\times \left(\bm{y}_{\lambda}\right)_{j},
+\end{align}
+thus we have
+\begin{align}
+& |\lambda|\times \left(\bm{y}_{\lambda}\right)_{j} \leq \left(\hat{T}\bm{y}_{\lambda}\right)_{i},\\
+\Longleftrightarrow \quad& |\lambda|\times \left(\bm{y}_{\lambda},\bm{d}\right) \leq \left(\hat{T}\bm{y}_{\lambda},\bm{d}\right) = \left(\bm{y}_{\lambda},{}^{\rm t}\hat{T}\bm{d}\right) = \left(\bm{y}_{\lambda},\bm{d}\right), \\
+\Longleftrightarrow \quad& |\lambda| \leq 1.
+\end{align}
+
+\begin{itembox}{Weak Connectivity of the Matrix $\hat{T}$}
+	For an arbitrary $1\leq i,j\leq N$, if there exists an $n(i,j)>0$ such that
+	\begin{align}
+	\left(\hat{T}^{n(i,j)}\right)_{ij}>0,
+	\end{align}
+	the matrix $\hat{T}$ is called \textit{weakly connected}. Note that for any $n'>n(i,j)$ it does \textit{not} follows that $\left(\hat{T}^{n'}\right)>0$.
+\end{itembox}
+
+We denote the maximum value of $n(i,j)$ by $\displaystyle n_{\rm max}:=\max_{1\leq i,j\leq N}\left[n(i,j)\right]$ and define the matrix $\hat{\mathcal{T}}_{\epsilon}:=\left(\hat{I}_{N}+\epsilon \hat{T}\right)^{n_{\rm max}}(\epsilon>0)$. We have
+\begin{align}
+\left(\hat{\mathcal{T}}_{\epsilon}\right)_{ij} =& \left(\left(\hat{I}_{N}+\epsilon \hat{T}\right)^{n_{\rm max}}\right)_{ij} = \sum_{k=1}^{n_{\rm max}}\binom{n_{\rm max}}{k}\left({\hat{I}_{N}}^{k}\left(\epsilon \hat{T}\right)^{n_{\rm max}-k}\right)_{ij}\\
+=& \sum_{k=1}^{n_{\rm max}}\binom{n_{\rm max}}{k}\epsilon^{n_{\rm max}-k}\left(\hat{T}^{n_{\rm max}-k}\right)_{ij} \geq 0 \quad(\because T_{ij}>0)\quad\text{for $1\leq i,j\leq N$}.
+\end{align}
+
+For the eigenvector $\bm{x}_{1}={}^{\rm t}\left(x_{1,1},x_{1,2},\dots,x_{1,N}\right)$, which belongs to the eigenvalue $1$, it holds that
+\begin{align}
+\hat{\mathcal{T}}_{\epsilon}\bm{x}_{1} &= \sum_{k=1}^{n_{\rm max}}\binom{k}{n_{\rm max}}\epsilon^{n_{\rm max}-k}\hat{T}^{n_{\rm max}}\bm{x}_{1}\\
+&= \sum_{k=1}^{n_{\rm max}}\binom{k}{n_{\rm max}}\epsilon^{n_{\rm max}-k}\bm{x}_{1}\\
+&= (1+\epsilon)^{n_{\rm max}}\bm{x}_{1},
+\end{align}
+and each component is
+\begin{align}
+\sum_{j=1}^{N}\left(\hat{\mathcal{T}}_{\epsilon}\right)_{ij}x_{1,j} = (1+\epsilon)^{n_{\rm max}}x_{1,i}\quad\text{for $i=1,2,\dots,N$}\label{eq:EigEqTcal}.
+\end{align}
+
+Now we prove that phases of each component for the vector $\bm{x}_{1}$ are aligned together and all the components are positive. In other words, we can decompose the vector into a phase factor and a positive vector as follows
+\begin{align}
+\bm{x}_{1} = \mathrm{e}^{i\theta}\bm{u}_{1},
+\end{align}
+where all components of $\bm{u}_{1}$ are positive.
+
+If components of the vector $\bm{x}_{1}$ are \textit{not} aligned together such that $\sum_{i=1}^{N}|x_{1,i}|>|\sum_{i=1}^{N}x_{1,i}|$ holds, we have
+\begin{align}
+|\sum_{j=1}^{N}\hat{\mathcal{T}}_{ij}x_{1,j}| < \sum_{j=1}^{N}\hat{\mathcal{T}}_{ij}|x_{1,j}| = (1+\epsilon)^{n_{\rm max}}|x_{1,i}|.
+\end{align}
+On the other hand, the row-wise sum of the matrix $\hat{\mathcal{T}}_{\epsilon}$ are
+\begin{align}
+\sum_{i=1}^{N}\left(\hat{\mathcal{T}}_{\epsilon}\right)_{ij} = \sum_{k=1}^{n_{\rm max}}\binom{k}{n_{\rm max}}\epsilon^{n_{\rm max}-k}\sum_{i=1}^{N}\left(\hat{T}^{n_{\rm max}-k}\right)_{ij} = (1+\epsilon)^{n_{\rm max}}.
+\end{align}
+Then we have
+\begin{align}
+\sum_{i=1}^{N}\sum_{j=1}^{N}\hat{\mathcal{T}}_{ij}|x_{1,j}| = (1+\epsilon)^{n_{\rm max}}\sum_{j=1}^{N}|x_{1,j}| > (1+\epsilon)^{n_{\rm max}}\sum_{i=1}^{N}|x_{1,i}|,
+\end{align}
+but it is the contradiction caused from our assumption $\sum_{i=1}^{N}|x_{1,i}|>|\sum_{i=1}^{N}x_{1,i}|$. Furthermore the left hand side of \eqref{eq:EigEqTcal} is positive because that $n_{\rm max}$ is the maximum value of $n(i,j)$ which the element $\left({\hat{\mathcal{T}}_{ij}}^{n(i,j)}\right) > 0$, and then the right hand side is also positive. Then we have $x_{1,i}>0(i=1,2,\dots,N)$.
+
+Next we prove that the eigenspace of the matrix $\hat{\mathcal{T}}_{ij}$, which belongs to the eigenvalue $1$ is \textit{one-dimensional}. If we have two different eigenvectors, which belongs to the eigenvalue $1$, we can write their eigenequations by two different \textit{positive vectors} as
+\begin{align}
+\hat{T}\bm{u}_{1} = {u}_{1},\\
+\hat{T}\bm{v}_{1} = {v}_{1}.
+\end{align}
+For their any linear superposition, we also have
+\begin{align}
+\hat{T}(\bm{u}_{1} + t{v}_{1}) = \bm{u}_{1} + t{v}_{1}\quad\text{for any $t\in\mathbb{R}$}.
+\end{align}
+If two eigenvectors $\bm{u}_{1}$ and $\bm{v}_{1}$ are not aligned, we can make a non-trivial vector with a certain $t$ such that $\left(\bm{u}_{1} + t{v}_{1}\right)_{l} = 0$ for an $l$-th element. But it is the contradiction with the fact $x_{1,i}>0(i=1,2,\dots,N)$. Then we have no eigenspaces more than one, which belongs the eigenvalue $1$.
+
+In the end of this subsection, we will prove the existence of the limit $\lim_{N\to\infty}\hat{T}^{N}\bm{p}^{(0)}$ and its uniqueness with the condition called \textit{strong connectivity} of the matrix $\hat{T}^{N}$. This condition is summarized as follows.
+\begin{itembox}{Strong Connectivity of the Matrix $\hat{T}$}
+	If there exists a number $N_{0}>0$ such that
+	\begin{align}
+	\left(\hat{T}^{N_{0}}\right)_{ij}>0
+	\end{align}
+	for an arbitrary $1\leq i,j\leq N$, the matrix $\hat{T}$ is called \textit{strongly connected}.
+\end{itembox}
+
+The stochastic matrix which corresponds to a Monte Carlo simulation is often strongly connected, and hence we can ensure the uniqueness of long time limit for our Monte Carlo simulation.
+
+We first prove that there exists only the eigenvalue $1$ with its absolute value $1$. And then prove that $\lim_{N\to\infty}\hat{T}^{N}\bm{r} = \bm{0}$ for any $\bm{r}\in\mathbb{C}$ orthogonal to $\bm{d}$, and we can write any \textit{initial} vector $\bm{p}^{(0)}$ as the superposition of $\bm{u}_{1}$ and $\bm{r}$. These two facts lead to the relation $\lim_{N\to\infty}\hat{T}^{N}\bm{p}^{(0)} = \bm{u}_{1}/\|\bm{u}_{1}\|_{1}$.
+
+\subsection{Construction the Stochastic Matrix for Simple Systems}
+
+\textcolor{red}{Cite the mathematica results}.
+
 \section{Stochastic Matrices for Non-Equilbrium Monte Carlo Simulations}
 
 \section{Calculation Non-Equilbrium Observables by the Stochastic Matrices}
+

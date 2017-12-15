@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.12.2)  14 DEC 2017 17:43
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.12.2)  15 DEC 2017 16:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -788,26 +788,47 @@ Chapter 5.
 ]
 Appendix A.
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 5.77332pt on input line 15.
+(Font)              scaled to size 5.77332pt on input line 17.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 5.77332pt on input line 15.
+(Font)              scaled to size 5.77332pt on input line 17.
 [25]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26]
-Underfull \vbox (badness 5374) has occurred while \output is active []
+[27]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27]
-Overfull \hbox (10.30898pt too wide) in paragraph at lines 65--65
+ [28]
+Missing character: There is no ^^c2 in font cmr12!
+Missing character: There is no ^^a0 in font cmr12!
+Missing character: There is no ^^c2 in font cmr12!
+Missing character: There is no ^^a0 in font cmr12!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31]
+Overfull \hbox (10.30898pt too wide) in paragraph at lines 168--168
 []\OT1/cmr/bx/n/17.28 Stochastic Ma-tri-ces for Non-Equilbrium Monte Carlo
  []
 
 
-Overfull \hbox (41.87688pt too wide) in paragraph at lines 67--67
+Overfull \hbox (41.87688pt too wide) in paragraph at lines 170--170
 []\OT1/cmr/bx/n/17.28 Calculation Non-Equilbrium Ob-serv-ables by the Stochas-
  []
 
-) (./App_ResSimDet.tex [28]
+) (./App_ResSimDet.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
+[33] [34
+
+]
 Appendix B.
 File: ../../NumCalc/ClassicalSpinMC/FricDensP_Lz004.eps Graphic file (type eps)
 
@@ -833,10 +854,8 @@ File: ../../NumCalc/ClassicalSpinMC/FricDensP_Lz016.eps Graphic file (type eps)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29
-
-]
-[30]
+ [35]
+[36]
 File: ../../NumCalc/ClassicalSpinMC/EnDens_Lz004.eps Graphic file (type eps)
 <../../NumCalc/ClassicalSpinMC/EnDens_Lz004.eps>
 File: ../../NumCalc/ClassicalSpinMC/EnDens_Lz006.eps Graphic file (type eps)
@@ -859,7 +878,7 @@ File: ../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/pd_be
 ta.200.eps Graphic file (type eps)
 <../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/pd_beta.20
 0.eps>
-) (./Body.bbl [31] [32] [33] [34
+) (./Body.bbl [37] [38] [39] [40
 
 ]
 
@@ -874,18 +893,18 @@ LaTeX Font Info:    Font shape `JT1/hgt/m/it' will be
 (Font)              scaled to size 11.54663pt on input line 11.
 LaTeX Font Info:    Font shape `JY1/hgt/m/it' will be
 (Font)              scaled to size 11.54663pt on input line 11.
-) [35] (./Body.aux)
+) [41] (./Body.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 16380 strings out of 493642
- 302873 string characters out of 6148748
- 344172 words of memory out of 5000000
- 19628 multiletter control sequences out of 15000+600000
- 31303 words of font info for 136 fonts, out of 8000000 for 9000
+ 16391 strings out of 493642
+ 303002 string characters out of 6148748
+ 346172 words of memory out of 5000000
+ 19637 multiletter control sequences out of 15000+600000
+ 32004 words of font info for 138 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 55i,13n,54p,1171b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,14n,54p,1171b,991s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Body.dvi (35 pages, 56456 bytes).
+Output written on Body.dvi (41 pages, 71400 bytes).

@@ -15,13 +15,15 @@
 \contentsline {chapter}{\numberline {5}Summary and Discussion}{23}
 \contentsline {chapter}{\numberline {A}Proof of the existence of NESS}{25}
 \contentsline {section}{\numberline {A.1}Stochastic Matrices for Ordinary Monte Carlo Simulations}{25}
-\contentsline {subsection}{\numberline {A.1.1}Perron Frobenius Theorem for Stochastic Matrices}{27}
-\contentsline {section}{\numberline {A.2}Stochastic Matrices for Non-Equilbrium Monte Carlo Simulations}{28}
-\contentsline {section}{\numberline {A.3}Calculation Non-Equilbrium Observables by the Stochastic Matrices}{28}
-\contentsline {chapter}{\numberline {B}Results of Simulations in More Detail}{29}
-\contentsline {section}{\numberline {B.1}Checking the Convergence in the Limit $L_{x}\to \infty $}{29}
-\contentsline {subsection}{\numberline {B.1.1}Dependence of $F(L_{x}, L_{z}, T)/L_{x}$ on $L_{x}$ for each $L_{z}$}{31}
-\contentsline {subsection}{\numberline {B.1.2}Dependence of $E_{\rm b}(L_{x}, L_{z}, T)/(L_{x}L_{z})$ on $L_{x}$ for each $L_{z}$}{31}
-\contentsline {section}{\numberline {B.2}Time Series of Observables}{31}
-\contentsline {subsection}{\numberline {B.2.1}title}{31}
-\contentsline {subsubsection}{title}{31}
+\contentsline {subsection}{\numberline {A.1.1}The Relation between Monte Carlo Simulations and Stochastic Matrices}{25}
+\contentsline {subsection}{\numberline {A.1.2}Desired Conditions for Stochastic Matrices and their Results}{27}
+\contentsline {subsection}{\numberline {A.1.3}Construction the Stochastic Matrix for Simple Systems}{32}
+\contentsline {section}{\numberline {A.2}Stochastic Matrices for Non-Equilbrium Monte Carlo Simulations}{33}
+\contentsline {section}{\numberline {A.3}Calculation Non-Equilbrium Observables by the Stochastic Matrices}{33}
+\contentsline {chapter}{\numberline {B}Results of Simulations in More Detail}{35}
+\contentsline {section}{\numberline {B.1}Checking the Convergence in the Limit $L_{x}\to \infty $}{35}
+\contentsline {subsection}{\numberline {B.1.1}Dependence of $F(L_{x}, L_{z}, T)/L_{x}$ on $L_{x}$ for each $L_{z}$}{37}
+\contentsline {subsection}{\numberline {B.1.2}Dependence of $E_{\rm b}(L_{x}, L_{z}, T)/(L_{x}L_{z})$ on $L_{x}$ for each $L_{z}$}{37}
+\contentsline {section}{\numberline {B.2}Time Series of Observables}{37}
+\contentsline {subsection}{\numberline {B.2.1}title}{37}
+\contentsline {subsubsection}{title}{37}
