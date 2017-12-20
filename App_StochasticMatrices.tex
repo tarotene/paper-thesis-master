@@ -284,14 +284,16 @@ We additionally limit the class of stochastic matrices to that of strongly conne
 
 Once we get a strongly connected stochastic matrix $\hat{T}$, its stationary distribution $\bm{u}_{1}/\|\bm{u}_{1}\|_{1}$ is determined independently on the initial distribution. We can consider this procedure as a \textit{transformation} from the matrix $\hat{T}$ into the vector $\bm{u}_{1}/\|\bm{u}_{1}\|_{1}$. 
 
+\section{Construction of the Stochastic Matrix based on the Detailed Balanced Condition}
+
 On the other hand, we can also consider the inverse transformation. This means the \textit{construction} of the matrix $\hat{T}'$ with a \textit{desired} stationary distribution $\bm{p}'$. We can actually formulate such the procedure using the \textit{detailed balanced condition} as follows.
-\begin{itembox}{Detailed Balanced Condition}
-If a vector $\bm{p}'={}^{\rm t}(p'_{1},p'_{2},\dots,p'_{\Omega})$ is the stationary distribution of the stochastic matrix $\hat{T}'=\left(T'_{ij}\right)$, it holds that
-\begin{align}
-T'_{ij}p'_{j} = T'_{ji}p'_{i}\label{cond:D.B.C}
-\end{align}
-for $1\leq i,j\leq \Omega$.
-\end{itembox}
+\begin{definition}
+	If a vector $\bm{p}'={}^{\rm t}(p'_{1},p'_{2},\dots,p'_{\Omega})$ is the stationary distribution of the stochastic matrix $\hat{T}'=\left(T'_{ij}\right)$, it holds that
+	\begin{align}
+	T'_{ij}p'_{j} = T'_{ji}p'_{i}\label{cond:D.B.C}
+	\end{align}
+	for $1\leq i,j\leq \Omega$.
+\end{definition}
 This property is simplified by summing over the subscription $i$ as follows
 \begin{align}
 \sum_{i=1}^{\Omega}T'_{ij}p'_{j} = p'_{j} = \sum_{i=1}^{\Omega}T'_{ji}p'_{i} = \left(\hat{T}\bm{p}'\right)_{j},\quad\text{for $j=1,2,\dots,\Omega$}.
@@ -320,10 +322,6 @@ T_{ij}(\beta)=
 \end{align}
 The factor $1/N$ describes the equivalent selection of a spin to flip.
 
-\subsection{Construction of the Stochastic Matrix based on the Detailed Balanced Condition}
-
 \textcolor{red}{Cite the mathematica results}.
 
 \section{Stochastic Matrices and Non-Equilbrium Monte Carlo Simulations}
-
-\section{Calculation Non-Equilbrium Observables by the Stochastic Matrices}

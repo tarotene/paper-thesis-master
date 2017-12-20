@@ -1,8 +1,8 @@
 # Fdb version 3
-["bibtex Body"] 1513672429 "Body.aux" "Body.bbl" "Body" 1513672429
-  "../../library.bib" 1513671124 218028 86465b16fd41a336633d02b55ca2b9cb ""
+["bibtex Body"] 1513755613 "Body.aux" "Body.bbl" "Body" 1513755613
+  "../../library.bib" 1513750273 218663 b9c3e44128274ed587e948b430eb8ced ""
   "/usr/local/texlive/2017/texmf-dist/bibtex/bst/base/unsrt.bst" 1480098433 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "Body.aux" 1513670623 8237 d70f6718002ee1bb78ca5504d3b3bad2 ""
+  "Body.aux" 1513749468 8421 5a58a9d291d86f219b12a18f7ad57bb8 ""
   (generated)
   "Body.blg"
   "Body.bbl"
@@ -92,11 +92,11 @@
   "Setup.tex" 1512119780 3407 10eb9b6d1f2d2c84f0ea6767c78d5153 ""
   "Summary.tex" 1510209425 28 13fefa65417e970ead406a1e6b20531a ""
   (generated)
-  "Body.aux"
   "Body.dvi"
-  "Body.log"
+  "Body.aux"
   "Body.toc"
-["pdflatex"] 1513672429 "Body.tex" "Body.pdf" "Body" 1513672429
+  "Body.log"
+["pdflatex"] 1513755613 "Body.tex" "Body.pdf" "Body" 1513755613
   "../../NumCalc/ClassicalSpinMC/EnDens_Allsize_AP.eps" 1513165932 37402 f996a7ce09ee80426523ade40643d45d ""
   "../../NumCalc/ClassicalSpinMC/EnDens_Allsize_P.eps" 1513165932 37267 d3452fbfba8e01194ddb52a75467a172 ""
   "../../NumCalc/ClassicalSpinMC/EnDens_Lz004.eps" 1513165932 73018 74681281b601d01b2ff4c3ca3c211f1a ""
@@ -294,18 +294,18 @@
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
   "Acknowledgement.tex" 1512629931 376 ba869f1ba88a649ecf530fdaa856a65f ""
   "App_ResSimDet.tex" 1513609988 4705 46589893db635caf805802bedbe989fd ""
-  "App_StochasticMatrices.tex" 1513672428 25229 25d33c252f4fa757e5db0ef2b926180b ""
-  "Body.aux" 1513670623 8237 d70f6718002ee1bb78ca5504d3b3bad2 ""
-  "Body.bbl" 1513672429 1172 94e1df80f2bdf781961dc68748f4db6a "bibtex Body"
-  "Body.tex" 1513661921 1849 295cb4168f8d3ddc515a398b79c00e87 ""
-  "Body.toc" 1513670623 2583 d3cb301deaf8d323db528a1033897ad9 ""
-  "Introduction.tex" 1513662664 5476 cbb20065264bba446ed5a188055b9b76 ""
-  "NEPhaseTrans.tex" 1513656728 4236 58447a1a534fa7e0e67c101e34cd4726 ""
+  "App_StochasticMatrices.tex" 1513755612 25241 bdeac4c808e00981aaa7b148d65b64f8 ""
+  "Body.aux" 1513749468 8421 5a58a9d291d86f219b12a18f7ad57bb8 ""
+  "Body.bbl" 1513755613 1172 2e6e76c004a5767ba979f845027d85bf "bibtex Body"
+  "Body.tex" 1513745700 2038 90ff9be108a03a85e764dfae1c0457f4 ""
+  "Body.toc" 1513749468 2583 6591bfa6b740e7fcead953fd796007f3 ""
+  "Introduction.tex" 1513749645 7471 cf48444a91269637647d6bc6412b126f ""
+  "NEPhaseTrans.tex" 1513750139 4253 b14597d564d223cc838e5d67f15216a3 ""
   "NumSim.tex" 1513652225 11367 017666162bc17392db5a026f8ba1f3ec ""
   "Results.tex" 1513651196 8457 5fda28745b6e53d23e18cf1a726ceaed ""
   "Summary.tex" 1513584775 86 667b798f233e0b0ae39b721f9966d095 ""
   (generated)
-  "Body.pdf"
   "Body.log"
   "Body.toc"
   "Body.aux"
+  "Body.pdf"

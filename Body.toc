@@ -18,9 +18,8 @@
 \contentsline {chapter}{\numberline {A}Analysis based on Stochastic Matrices}{33}
 \contentsline {section}{\numberline {A.1}A Simple Example: Stochastic Ising Model with $N$-spins}{34}
 \contentsline {section}{\numberline {A.2}General Theory of Stochastic Matrices}{35}
-\contentsline {subsection}{\numberline {A.2.1}Construction of the Stochastic Matrix based on the Detailed Balanced Condition}{48}
-\contentsline {section}{\numberline {A.3}Stochastic Matrices and Non-Equilbrium Monte Carlo Simulations}{48}
-\contentsline {section}{\numberline {A.4}Calculation Non-Equilbrium Observables by the Stochastic Matrices}{48}
+\contentsline {section}{\numberline {A.3}Construction of the Stochastic Matrix based on the Detailed Balanced Condition}{46}
+\contentsline {section}{\numberline {A.4}Stochastic Matrices and Non-Equilbrium Monte Carlo Simulations}{48}
 \contentsline {chapter}{\numberline {B}Results of Simulations in More Detail}{49}
 \contentsline {section}{\numberline {B.1}Checking the Convergence in the Limit $L_{x}\to \infty $}{49}
 \contentsline {subsection}{\numberline {B.1.1}Dependence of $F(L_{x}, L_{z}, T)/L_{x}$ on $L_{x}$ for each $L_{z}$}{51}
