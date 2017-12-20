@@ -1,4 +1,41 @@
 % !TeX root = Body.tex
 \chapter{Introduction}
+%The system is one of the simplest model of two-dimensional magnetic friction. Its spatial and spin dimensionality are far from realistic materials around us. However, we can use several facts from the exact solution for the two-dimensional Ising model, which makes the analysis easier than higher-dimensional cases.
+The sliding friction in solids is a too complex problem to deal with, despite the fact that our daily lives are linked with it in various forms. One reason is that there is no general theory for various and a number of physical degrees of freedom, which determines the most important degree for the sliding friction as a phenomenon.
 
-The system is one of the simplest model of two-dimensional magnetic friction. Its spatial and spin dimensionality are far from realistic materials around us. However, we can use several facts from the exact solution for the two-dimensional Ising model, which makes the analysis easier than higher-dimensional cases.
+One may think that, with the skill of statistical mechanics, we can deal with the problem in a systematic manner. But there still remains several problems as follows:
+\begin{itemize}
+	\item \textbf{Problem1}: The sliding friction is essentially non-equilibrium phenomenon.
+	\item \textbf{Problem2}: We cannot directly observe the sliding surface.
+\end{itemize}
+
+In this chapter we introduce two of the most famous problems with dealing the frictional force as the problem of statistical mechanics. We give recent developments for solving these problems. We then propose the question related to a problem about the \textit{manipulation} of the sliding friction which occurs in highly lubricated solids. To this end we simplify the problem into a dimensional crossover in lattice systems.
+
+\section{Sliding Frictions as Non-Equilibrium Problems}
+We can regard the sliding friction as follows in an elementary manner. We consider an object $O$ and a substrate $S$, and let $S$ slide against $O$ with them contacting and an external force. When $O$ and $S$ interact with each other, the kinetic energy of $O$ given by the external force is expected to lose by the interaction, and then the entire system $O+S$ heats up (if they form a closed system) or an energy dissipation occurs from the system to external environment (if they form an open system). In the latter case, under the assumption that the dissipation process stationarily occurs, the frictional force $f_{\rm fric}$ take a constant value balancing with the external force. This setup is realized when we keep the external force $f_{\rm ext}$ so that the sliding velocity $v$ take a constant value. Then the frictional force $f_{\rm fric}$ is dealt with as a function of the sliding velocity as $f_{\rm fric}=f_{\rm fric}(v)$.
+
+The traditional way of statistical mechanics, called the linear response theory, appears to deal with the problem under the condition that the velocity $v$ is much smaller than the rate $\xi/\tau$, where $\xi$ and $\tau$ are the characteristic length and time of the system. But we already know well the phenomenon that the static frictional force is non-zero value for several systems. In such systems, we easily observe the non-linearity of the frictional force $f_{\rm fric}$ for the velocity $v$. This simply shows us the complexity of the problem which cannot be captured by applying the traditional way.
+
+Many researches have dealt with the problem using the numerical way or limiting to an extreme region of parameters to avoid attack with the perturbative way.
+
+\section{Impossibility of the Observation of the Sliding Surface}
+The dimensionality of the sliding surface is up to two-dimension, if that of the whole system is the three-dimension. Sliding surfaces of such systems are different in many ways from well-known two-dimensional surfaces of three-dimensional solids which have investigated for many years, then we cannot perform a direct observation of the sliding surface by apparatuses such as microscopes. The difficulty prevents us from revealing non-equilibrium properties of the sliding friction.
+
+There is the way to observe the contact plane with the microscope and an optically transparent matter, but most researches avoid a direct observations by measuring other observables to indirectly observe the contact plane.
+
+\section{Manipulating the Friction}
+
+Recent researches well revealed the nature of sliding frictions. This also leads us to conflict with a new problems about the friction in atomically microscopic systems.
+
+Ordinary frictions in solids are mostly governed by excitations of phonon degrees of freedom, because the contact plane is almost always rough than the scale of the atom. But once we get the contact plane highly lubricated, other degrees of freedom, such as the orbital and the spin of electrons, emerges as the main contribution to the friction, in addition to the phonon excitation. 
+
+We are already familiar with the most remarkable example of such a system in our daily lives, which is called \textit{micro electric mechanical system} (\textbf{MEMS}). MEMS plays an important role in the head of inkjet printers, the accelerometer in smartphones and so on. As an aspect of the MEMS, there are processed planes with an accuracy of a micrometer or a nanometer and they are also moving parts. Thus they inevitably experience the new type of the friction by operations. In addition the smaller size of these systems makes the problem more serious, because the rate of the surface area over the volume of a system become larger with the smaller size in general.
+
+Thus we have to tackle with the issue of manipulation the friction in such a smaller system by getting more fundamental knowledges of the friction.
+
+\section{Magnetic Friction}
+The way to manipulate the friction in such a small system is less understood than its nature. Thus we consider the manipulation of magnetic materials as an easier problem to analyze by lattice models and its simulations. 
+
+Frictions in such models themselves are a new type of the problem problems, and date back to the numerical research by Kadau et al.\cite{Kadau2008}. They have revealed that two square lattices of a Ising model which slide with each other experience the friction, depending on the temperature and the sliding velocity, by Monte Carlo simulations. Immediately after the research, it was revealed that the Ising model goes to a non-trivial non-equilibrium phase transitions (\textbf{NEPT}) in the high-velocity limit, where the two sliding models are decoupled in terms of the correlation between the two models and feel a mean field depending the magnetization of each other\cite{Hucht2009b}. By this treatment, we are able to access the novel critical point which is located in a higher temperature than the ordinal critical point in general for models with arbitrary dimensions and geometries (see Chapter \ref{ch:review}). In addition to the results, they developed a new algorithm which enables the analytical treatment in more detail and revealed the non-equilibrium critical point for arbitrary velocities. 
+
+Based on their results\cite{Hucht2009b}, we consider a dimensional crossover from one-dimension to two in Ising models with two fixed boundary conditions. In the one-dimensional limit the boundary conditions seem to have the most effect on the friction, whereas in the two-dimensional limit there seems to be no effects. Behaviors in the both limits for the free boundary condition correspond to the results\cite{Hucht2009b}. In this way we think the problem of the manipulation as the dimensionality with different boundary conditions. Simpler boundary conditions would be realized by experiments with the boundary spins of relatively moving magnets aligned.

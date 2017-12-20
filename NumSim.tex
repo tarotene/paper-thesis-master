@@ -1,14 +1,15 @@
 % !TeX root = Body.tex
-\chapter{Numerical Simulations}
+\chapter{Numerical Simulations}\label{chap:NumSim}
 
 \section{Setup of the Model}
 
-Sliding friction is a form of energy dissipation on the surface between a moving object and its substrate. The dissipated energy is originated in the kinetic energy of the moving object. We here consider constantly moving case in which an external force maintains the motion of the object with endless supply of its kinetic energy. This view leads to its \textit{non-equilibrium steady state}. When the system is in a non-equilibrium steady state, it is often easy to calculate several \textit{energy currents} such as the frictional heat, its power and so on. Applying the view to our case where two square lattices of the Ising model slide against each other, we can formulate the problem as follows.
+Sliding friction is a form of energy dissipation on the surface between a moving object and its substrate. The dissipated energy is originated in the kinetic energy of the moving object. We here consider constantly moving case in which an external force maintains the motion of the object with endless supply of its kinetic energy. This view leads to its \textit{non-equilibrium stationary state}. When the system is in a non-equilibrium stationary state, it is often easy to calculate several \textit{energy currents} such as the frictional heat, its power and so on. Applying the view to our case where two square lattices of the Ising model slide against each other, we can formulate the problem as follows.
 \begin{enumerate}
 	\item We prepare a square lattice of the Ising model of size $L_{x}\times L_{z}$ and impose periodic boundary conditions in the transverse ($x$) direction. We first set the system in the equilibrium state of a temperature $T$, whereas we set the open boundary conditions in the longitudinal ($z$) direction for the moment (\textcolor{red}{fig}).
 	\item We cut the system along the $x$-direction into two parts, maintaining interactions on the cut (\textcolor{red}{fig}).
 	\item We slide two parts along the cut plane with relative velocity $v$. In other words, we shift the upper half by a lattice constant every $1/v$ unit time. 
 \end{enumerate}
+\vspace{5.0\baselineskip}
 
 The Hamiltonian of the system is given by
 \begin{align}
@@ -21,13 +22,13 @@ where
 &\hat{H}_{\rm slip}(t):=-J\sum_{\langle i,j(t)\rangle\in\mathrm{slip}}\hat{\sigma}_{i}\hat{\sigma}_{j(t)}\label{ham:slip},
 \end{align}
 where \textit{upper}, \textit{lower} and \textit{slip} represent the set of interacting spin pairs the upper half, the lower half and the slip plane of the entire system.
-Shift operations lead the system to repeated \textit{pumping} and \textit{dissipation} processes as follows (\textcolor{red}{fig}):
+Shift operations lead the system to repeated \textit{pumping} and \textit{dissipation} processes as follows:
 \begin{enumerate}
 	\item \textbf{Shifting}: A shift operation excites the energy on the slip plane by the ammount $\langle\hat{H}_{\rm slip}(t')-\hat{H}_{\rm slip}(t)\rangle_{\rm st}$. The letter $t'$ denotes the time just after the shift operation from the time $t$.
 	\item \textbf{Relaxing-1}: The excited energy on the slip plane dispenses to the entire system $\langle\hat{H}_{\rm upper} + \hat{H}_{\rm lower} + \hat{H}_{\rm slip}(t)\rangle_{\rm st}$.
 	\item \textbf{Relaxing-2}: The excited entire system relaxes toward the equilibrium the heat bath.
 \end{enumerate}
-We defined the steady state average $\langle\hat{A}\rangle_{\rm st}:=\sum_{i}A_{i}p^{(\rm st)}_{i}$ for an arbitrary observable $\hat{A}$, where $\{A\}_{i}$ are eigenvalues of $\hat{A}$ and $\{p^{(\rm st)}_{i}\}$ are steady state probability distribution. Note that the distribution $\{p^{(\rm st)}_{i}\}$ are quite different from the equilibrium (canonical) probability distribution $p^{(\rm eq)}_{i}\propto\exp\left[-E_{i}/k_{\rm B} T\right]$. In addition, the distribution $\{p^{(\rm st)}_{i}\}$ depends on the sliding velocity $v$, and therefore it has infinite number of families. 
+We defined the stationary state average $\langle\hat{A}\rangle_{\rm st}:=\sum_{i}A_{i}p^{(\rm st)}_{i}$ for an arbitrary observable $\hat{A}$, where $\{A\}_{i}$ are eigenvalues of $\hat{A}$ and $\{p^{(\rm st)}_{i}\}$ are stationary state probability distribution. Note that the distribution $\{p^{(\rm st)}_{i}\}$ are quite different from the equilibrium (canonical) probability distribution $p^{(\rm eq)}_{i}\propto\exp\left[-E_{i}/k_{\rm B} T\right]$. In addition, the distribution $\{p^{(\rm st)}_{i}\}$ depends on the sliding velocity $v$, and therefore it has infinite number of families. 
 
 The excited and relaxed amounts of energy per unit time correspond to the energy pumping and dissipation, respectively. The energy pumping $P(t)$ and dissipation $D(t)$ are given by
 \begin{align}
@@ -37,7 +38,7 @@ D(t):=&\sum_{i_{v}=0}^{v-1}\left\langle \hat{H}_{\rm slip}\left(t-1+\frac{i_{v}+
 
 \section{Definitions of Physical Quantities}
 
-We now consider the case in which that the system is in a non-equilibrium steady state. We define the frictional force density $f(L_{z}, T)$ by
+We now consider the case in which that the system is in a non-equilibrium stationary state. We define the frictional force density $f(L_{z}, T)$ by
 \begin{align}
 f(L_{z}, T):=\lim_{L_{x}\to\infty}\frac{F(L_{x}, L_{z}, T)}{L_{x}},
 \end{align}
@@ -55,13 +56,13 @@ We can easily verify the formula \eqref{for:frictionalforce} by considering gene
 \begin{align}
 \int_{t_{0}}^{t_{1}}dt\;D(t)=\int_{x(t_{0})}^{x(t_{1})}dx\;F(x)=\int_{t_{0}}^{t_{1}}\frac{dx}{dt}dt\;F(x(t))=v\int_{t_{0}}^{t_{1}}dt\;F(x(t))\label{rel:PowerFrictionalforce},
 \end{align}
-for a time dependent $D(t)$, because $dx/dt=v$. Under the assumption of a non-equilibrium steady state, in the long-time limit, the integrands in both hand sides of the relation \eqref{rel:PowerFrictionalforce} are still equal to each other, and hence 
+for a time dependent $D(t)$, because $dx/dt=v$. Under the assumption of a non-equilibrium stationary state, in the long-time limit, the integrands in both hand sides of the relation \eqref{rel:PowerFrictionalforce} are still equal to each other, and hence 
 \begin{align}
 D(L_{x}, L_{z}, T)=vF(L_{x}, L_{z}, T).
 \end{align}
 From now we call the quantity $D(L_{x}, L_{z}, T)$ \textit{energy dissipation}.
 
-Our models always reach non-equilibrium steady states in the long-time limit $t\to\infty$, which depend on the temperature $T$ and the sliding velocity $v$; We will prove in App. A. We use the fact that $\lim_{t\to\infty}|D(t)|=\lim_{t\to\infty}|P(t)|$ in order to calculate average value $\bar{D}$ with less fluctuation by using the value $\bar{P}$ \cite{Magiera2009a, Magiera2011, Magiera2011b}. We therefore have
+Our models always reach non-equilibrium stationary states in the long-time limit $t\to\infty$, which depend on the temperature $T$ and the sliding velocity $v$; We will prove in App. A. We use the fact that $\lim_{t\to\infty}|D(t)|=\lim_{t\to\infty}|P(t)|$ in order to calculate average value $\bar{D}$ with less fluctuation by using the value $\bar{P}$ \cite{Magiera2009a, Magiera2011, Magiera2011b}. We therefore have
 \begin{align}
 P(L_{x}, L_{z}, T)=vF(L_{x}, L_{z}, T)\label{for:frictionalforce2}.
 \end{align}
@@ -69,14 +70,14 @@ We also define the bulk energy density $\epsilon_{\rm b}(L_{z}, T)$ as follows
 \begin{align}
 \epsilon_{\rm b}(L_{z}, T):=\lim_{L_{x}\to\infty}\frac{E_{\rm b}(L_{x}, L_{z}, T)}{L_{x}L_{z}},
 \end{align}
-where $E_{\rm b}(L_{x}, L_{z}, T)$ is the energy of entire system. Straitforwardly, we define the bulk heat capacity $c_{\rm b}(L_{z}, T)$ as follows
+where $E_{\rm b}(L_{x}, L_{z}, T)$ is the energy of entire system. Straightforwardly, we define the bulk heat capacity $c_{\rm b}(L_{z}, T)$ as follows
 \begin{align}
 c_{\rm b}(L_{z}, T):=\frac{\partial \epsilon_{\rm b}(L_{z}, T)}{\partial T}.
 \end{align}
 
 \section{Non-equilibrium Monte Carlo Simulation}
 
-Energy dissipation process towards the heat bath occurs via a spin flip. This fundamental processes do not only describe equilibrium states, but also non-equilibrium steady states for a fixed temperature $T$\cite{Glauber1963}. Using Monte Carlo method, we can simulate this process.
+Energy dissipation process towards the heat bath occurs via a spin flip. This fundamental processes do not only describe equilibrium states, but also non-equilibrium stationary states for a fixed temperature $T$\cite{Glauber1963}. Using Monte Carlo method, we can simulate this process.
 
 \subsection{Introduction the Time Scale to Ising Models}
 
@@ -97,7 +98,7 @@ Using the introduced time scale, we can also introduce the slip plane with the v
 	\item \textbf{Flipping}: We perform ordinary single flips for $N/v$ times.
 	\item We repeat the process 1 + 2 for $(v-1)$ times.
 \end{enumerate}
-In the extended algorithm, the upper half slides with the velocity $v$ in a unit time at regular intervals. We proved the fact that this algorithm lead the system of any size to the non-equilibrium steady state depending the temperature $T$ and the velocity $v$ (see app\ref{chap:ProofEx} in detail).
+In the extended algorithm, the upper half slides with the velocity $v$ in a unit time at regular intervals. We proved the fact that this algorithm lead the system of any size to the non-equilibrium stationary state depending the temperature $T$ and the velocity $v$ (see appendix \ref{chap:ProofEx} in detail).
 
 \subsection{Calculation Method}
 
