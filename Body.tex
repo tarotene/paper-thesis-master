@@ -9,6 +9,13 @@
 \evensidemargin=-5mm
 \textwidth=170mm
 
+\usepackage[style=phys,articletitle=false,%
+biblabel=brackets,chaptertitle=false,pageranges=false,%
+backend=bibtex]{biblatex}
+\DeclarePrefChars{'-}
+\addbibresource{../../library.bib}
+
+\usepackage{todonotes}
 \renewcommand{\baselinestretch}{2}
 \usepackage{tikz}
 %\usepackage{mediabb}
@@ -19,7 +26,6 @@
 \usepackage{algorithmic}
 \usepackage{graphicx}
 \usepackage{color}
-\usepackage{cite}
 \usepackage{dcolumn}
 \usepackage{bm}
 \usepackage{book tabs}
@@ -27,29 +33,8 @@
 \usepackage{setspace}
 \usepackage{docmute}
 \usepackage{listings}
-\newcommand{\figref}[2][{}]{\hyperref[#2]{\figurename~\ref{#2}#1}} 
-
-\definecolor{codegreen}{rgb}{0,0.6,0}
-\definecolor{codegray}{rgb}{0.5,0.5,0.5}
-\definecolor{codepurple}{rgb}{0.58,0,0.82}
-\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
-
-\lstset{ %
-	backgroundcolor=\color{backcolour},
-	commentstyle=\color{codegreen},
-	keywordstyle=\color{blue},
-	numberstyle=\tiny\color{codegray},
-	stringstyle=\color{codepurple},
-	basicstyle=\scriptsize,
-	breakatwhitespace=false,
-	breaklines=true,
-	captionpos=b,
-	keepspaces=true,
-	showspaces=false,
-	showstringspaces=false,
-	showtabs=false,
-	tabsize=2
-}
+\usepackage[colorlinks]{hyperref}
+%\newcommand{\figref}[2][{}]{\hyperref[#2]{\figurename~\ref{#2}#1}}
 
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}[section]
@@ -68,20 +53,15 @@
 \author{Kentaro Sugimoto \\ Department of Physics, The University of Tokyo }
 \date{\today}
 \maketitle
-
 \input{Acknowledgement}
-
 \clearpage
-
 \begin{center}
 \large{{\bf Abstract}}
 \end{center}
-
 In the present thesis, hogehoge.
 Moreover, fugafuga.
-
+\listoftodos
 \tableofcontents
-
 \input{Introduction}
 \input{NEPhaseTrans}
 \input{NumSim}
@@ -89,13 +69,9 @@ Moreover, fugafuga.
 %\input{Setup_}
 \input{Results}
 \input{Summary}
-
 \appendix
 \input{App_StochasticMatrices}
 %\input{App_SourceCodes}
-\input{App_ResSimDet}
-
-\bibliographystyle{unsrt}
-\bibliography{../../library.bib}
-
+%\input{App_ResSimDet}
+\printbibliography
 \end{document}

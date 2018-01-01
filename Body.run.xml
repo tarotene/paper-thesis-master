@@ -41,10 +41,11 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="1">
+  <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>Body.bcf</file>
+      <file>Body.aux</file>
+      <file>Body-blx.bib</file>
     </provides>
     <requires type="dynamic">
       <file>Body.bbl</file>
@@ -52,22 +53,27 @@
     <requires type="static">
       <file>blx-dm.def</file>
       <file>blx-compat.def</file>
+      <file>blx-bibtex.def</file>
       <file>biblatex.def</file>
+      <file>phys.bbx</file>
+      <file>numeric-comp.bbx</file>
       <file>numeric.bbx</file>
       <file>standard.bbx</file>
-      <file>numeric.cbx</file>
+      <file>phys.cbx</file>
+      <file>numeric-comp.cbx</file>
       <file>biblatex.cfg</file>
       <file>english.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="1">
-    <generic>biber</generic>
+  <external package="biblatex" priority="5" active="0">
+    <generic>bibtex</generic>
     <cmdline>
-      <binary>biber</binary>
+      <binary>bibtex</binary>
+      <option>-min-crossrefs 2</option>
       <infile>Body</infile>
     </cmdline>
     <input>
-      <file>Body.bcf</file>
+      <file>Body.aux</file>
     </input>
     <output>
       <file>Body.bbl</file>
@@ -76,10 +82,14 @@
       <file>Body.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>Body.bcf</file>
+      <file>Body.aux</file>
+      <file>Body-blx.bib</file>
     </requires>
     <requires type="editable">
       <file>../../library.bib</file>
+    </requires>
+    <requires type="static">
+      <file>biblatex.bst</file>
     </requires>
   </external>
 </requests>

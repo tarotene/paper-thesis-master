@@ -1,0 +1,26 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Sliding Frictions as Non-Equilibrium Problems}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Impossibility of the Observation of the Sliding Surface}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Manipulating the Friction}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Magnetic Friction}{chapter.1}% 5
+\BOOKMARK [0][-]{chapter.2}{Velocity-driven Non-equilibrium Phase Transition in Ising Models}{}% 6
+\BOOKMARK [0][-]{chapter.3}{Numerical Simulations}{}% 7
+\BOOKMARK [1][-]{section.3.1}{Setup of the Model}{chapter.3}% 8
+\BOOKMARK [1][-]{section.3.2}{Definitions of Physical Quantities}{chapter.3}% 9
+\BOOKMARK [1][-]{section.3.3}{Non-equilibrium Monte Carlo Simulation}{chapter.3}% 10
+\BOOKMARK [2][-]{subsection.3.3.1}{Introduction the Time Scale to Ising Models}{section.3.3}% 11
+\BOOKMARK [2][-]{subsection.3.3.2}{Slip Plane with the Velocity v}{section.3.3}% 12
+\BOOKMARK [2][-]{subsection.3.3.3}{Calculation Method}{section.3.3}% 13
+\BOOKMARK [0][-]{chapter.4}{Results}{}% 14
+\BOOKMARK [1][-]{section.4.1}{Stochastic Matrices and Non-Equilbrium Monte Carlo Simulations}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.2}{Non-equilibrium Monte Carlo Simulations}{chapter.4}% 16
+\BOOKMARK [2][-]{subsection.4.2.1}{Frictional Force Density f\(Lz, T\)}{section.4.2}% 17
+\BOOKMARK [2][-]{subsection.4.2.2}{Bulk Energy Density b\(Lz, T\)}{section.4.2}% 18
+\BOOKMARK [2][-]{subsection.4.2.3}{Temperature Derivatives f\(Lz, T\)/T, b\(Lz, T\)/T}{section.4.2}% 19
+\BOOKMARK [2][-]{subsection.4.2.4}{Checking the Convergence in the Limit Lx}{section.4.2}% 20
+\BOOKMARK [0][-]{chapter.5}{Summary and Discussion}{}% 21
+\BOOKMARK [0][-]{appendix.A}{Analysis based on Stochastic Matrices}{}% 22
+\BOOKMARK [1][-]{section.A.1}{A Simple Example: Stochastic Ising Model with N-spins}{appendix.A}% 23
+\BOOKMARK [1][-]{section.A.2}{General Theory of Stochastic Matrices}{appendix.A}% 24
+\BOOKMARK [1][-]{section.A.3}{Construction of the Stochastic Matrix based on the Detailed Balanced Condition}{appendix.A}% 25
+\BOOKMARK [2][-]{subsection.A.3.1}{Metropolis Matrix for the Model of the Size 22}{section.A.3}% 26

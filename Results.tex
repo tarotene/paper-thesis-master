@@ -1,64 +1,306 @@
 % !TeX root = Body.tex
-\chapter{Results of Simulations}
+\chapter{Results}
 
-In this chapter, we show the results of Monte Carlo simulations of the Ising models. To discuss the dependence of the frictional force density $f(L_{z}, T)$ and the bulk energy density $\epsilon_{\rm b}(L_{z}, T)$ on the size $L_{z}$ and the temperature $T$ with the fixed velocity $v=10$, we performed the numerical large size limit $L_{x}\to\infty$ with the fixed $L_{z}$ and $T$ (see appendix \ref{appsec:convcheck}). To get the observables in the non-equilibrium stationary state, we performed the equilibration process for $5000$ sweeps and the stationarization process for $5000$ sweeps for all given parameters. The convergence of the observables to the equilibrium value and the stationary value for these time regions respectively are checked carefully.
+In this chapter, we first prove that the Monte Carlo simulation necessarily converges to a unique NESS, which depends only on the temperature $T$ and the sliding velocity $v$, from arbitrary initial conditions by a view of stochastic matrices (see Sec.~\ref{sec:StochMatNEMC}). We next show the results of the frictional force density $f(L_{z}, T)$, the bulk energy density $\epsilon_{\rm b}(L_{z}, T)$ and their temperature derivatives by Monte Carlo simulations (see Sec.~\ref{sec:NEMCs}). We also show, in particular, the numerical large size limit $L_{x}\to\infty$ with the fixed $L_{z}$ and $T$  converges (see Subsec.~\ref{appsec:convcheck}). To get the observables in the non-equilibrium stationary state, we performed the equilibration process for $5000$ sweeps and the stationarization process for $5000$ sweeps for all given parameters. The convergence of the observables to the equilibrium value and the stationary value for these time regions respectively are checked carefully.
 
-The range of parameters in our simulation is as follows. We computed the value of $f(L_{z}, T)$ for temperatures $k_{\rm B}T/J\in\{0.0,0.1,0.2,\dots,1.9,2.0,2.02,2.04,\dots,2.48,2.50,2.6,2.7,\dots,5.0\}$ and sizes $L_{z}\in\{4,6,8,10,12,14,16,32,64\}$ with the two boundary conditions, the  anti-parallel and the parallel. For the anti-parallel boundary the initial state is set to the domain-wall state, where spin variables $\sigma_{i}$ in the upper half of the system are the same value as the upper boundary, and in the lower half as the lower boundary. For the parallel boundary the initial state is set to the magnetized state, where all spin variables $\sigma_{i}$ are the same value as both of boundaries. The reason why we used these initial states is that they are the most natural ground states which correpond to each of the boundary conditions.
+The range of parameters in our simulation is as follows. We computed the value of $f(L_{z}, T)$ for temperatures $k_{\rm B}T/J\in\{0.0,0.1,0.2,\dots,1.9,2.0,2.02,2.04,\dots,2.48,2.50,2.6,2.7,\dots,5.0\}$ and sizes $L_{z}\in\{4,6,8,10,12,14,16,32,64\}$ with the two boundary conditions, the  anti-parallel and the parallel. For the anti-parallel boundary the initial state is set to the domain-wall state, where spin variables $\sigma_{i}$ in the upper half of the system are the same value as the upper boundary, and in the lower half as the lower boundary. For the parallel boundary the initial state is set to the magnetized state, where all spin variables $\sigma_{i}$ are the same value as both of boundaries. The reason why we used these initial states is that they are the most natural ground states which correpond to each of boundary conditions.
 
 All the simulations are performed by the single flip algorithm with the Metropolis rate. We performed these simulations for $480$ samples for all parameters and averaged them, and then averaged along the time direction.
 
-In addition, we also show their temperature derivatives to discuss the phase transitions.
+\section{Stochastic Matrices and Non-Equilbrium Monte Carlo Simulations}\label{sec:StochMatNEMC}
 
-\section{Frictional Force Density $f(L_{z}, T)$}
-
-We show the behavior of the frictional force density $f(L_{z}, T)$ (see Figure \ref{fig:fricDens_Allsize}). For both  boundary conditions, the anti-parallel and the parallel, extremely smaller sizes such as $L_{z}=4,6$ make greater differences from its value for the current maximum size $L_{z}=64$, where an asymptotic behavior emerges. We can expect that for more larger sizes such as $L_{z}=128,256,\dots$ makes no longer great differences from that of $L_{z}=64$, thus we can say that the system reaches \textit{two-dimension} in the vicinity of the size $L_{z}=16$.
-
-An additional important aspect is the difference between the values for anti-parallel and the parallel boundary conditions. In the former case, the smaller size $L_{z}$ makes the greater value of the frictional force density $f(L_{z}, T)$. On the other hand, the latter case indicates the reverse behavior that smaller size $L_{z}$ makes the smaller value of the frictional force density $f(L_{z}, T)$. This physical meaning is that the size $L_{z}$ and the correlation length of the system along the $z$-direction $\xi_{z}(\beta)$ become comparable, and then the system behaves as the one-dimension for the smaller size $L_{z}$, whereas much greater size $L_{z}$ than the correlation length $\xi_{z}(\beta)$ makes the system two-dimensional. Note that for $L_{z}=64$ behaviors for both cases are similar to each other and we can expect that these behaviors reach to the results by Kadau\cite{Kadau2008}.
+We prove that our Monte Carlo simulations converges to a NESS with the Metropolis rate. The result below can be easily generalized to cases with an arbitrary rate. We construct the following stochastic matrix, which corresponds to a Monte Carlo sweep in the model with magnetic friction:
+\begin{align}
+\hat{T}(\beta,v):=\left[\left\{\hat{M}(\beta)\right\}^{V/v}\hat{S}\right]^{v},
+\end{align}
+where $v\in\{\text{Divisors of }V\}$ and $V:=L_{x}\times L_{z}$. The matrix $\hat{M}(\beta)$ and $\hat{S}$ express a Monte Carlo step at a temperature $T$ and sliding the upper-half by a lattice constant, respectively for the model of size $L_{x}\times L_{z}$. The matrix $\hat{T}(\beta,v)$ describes a time evolution for a Monte Carlo sweeps, because the matrix have the $(V/v)$th power of $\hat{M}(\beta)$. The matrix $\hat{M}(\beta)$ and $\hat{S}$ also have a sparse structure and a structure similar to the unit matrix, respectively (see Figs.~\ref{fig:ArrayPlotM}, \ref{fig:ArrayPlotS}). Note that corresponding to the dense structure of the matrix $\left\{\hat{M}(\beta)\right\}^{V}$, the matrix $\hat{T}(\beta,v)$ is also dense; see Fig.~\ref{fig:ArrayPlotT}. 
 
 \begin{figure}[htbp]
 	\centering
-	\subcaptionbox{Anti-parallel boundary condition\label{fig:fricDens_Allsize_AP}}{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/fricDensP_Allsize_AP.eps}}
-	\subcaptionbox{Parallel boundary condition\label{fig:fricDens_Allsize_P}}{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/fricDensP_Allsize_P.eps}}
+	\subcaptionbox{\label{fig:ArrayPlotM}}[0.32\linewidth]{\missingfigure[figwidth=0.3\linewidth]{}}
+	\subcaptionbox{\label{fig:ArrayPlotS}}[0.32\linewidth]{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/ArrayPlotS_Detailed.pdf}}
+	\subcaptionbox{\label{fig:ArrayPlotT}}[0.32\linewidth]{\missingfigure[figwidth=0.3\linewidth]{}}
 	
-	\caption{The temperature $T$ dependence of the frictional force density $f(L_{z}, T)$ with the parallel boundary condition along the $z$-direction for each longitudinal size $L_{z}$ are plotted.}
+	\caption{Array plots of matrices for the model of size $L_{x}=2, L_{z}=2$ and at the temperature $\beta=0.1$. (a) $\hat{M}(\beta)$. (b) $\hat{S}(\beta)$. (c) $\hat{T}(\beta,v)$}
+\end{figure}
+
+The task of diagonalizing the Matrix $\hat{T}(\beta,v)$ is the same as that of $\left\{\hat{M}(\beta)\right\}^{V/v}\hat{S}$, which corresponds to a time evolution for $(1/v)$ Monte Carlo sweeps. We show eigenvalue distributions of $\left\{\hat{M}(\beta)\right\}^{V/v}$ and $\left\{\hat{M}(\beta)\right\}^{V/v}\hat{S}$ for the model of size $L_{x}=2,L_{z}=2$ (see Figs.~\ref{fig:EigDistT}, \ref{fig:EigDistM}). These eigenvalue distributions are similar to each other, reflecting that both of them correspond to 
+ a time evolution for $(1/v)$ Monte Carlo sweeps.
+ 
+\begin{figure}[htbp]
+	\centering
+	\subcaptionbox{\label{fig:EigDistT}}[0.49\linewidth]{\missingfigure[figwidth=0.45\linewidth]{}}
+	\subcaptionbox{\label{fig:EigDistM}}[0.49\linewidth]{\missingfigure[figwidth=0.45\linewidth]{}}
+	
+	\caption{Eigenvalue distributions of matrices for the model of size $L_{x}=2, L_{z}=2$ and at the temperature $\beta=0.1$. (a) $\left\{\hat{M}(\beta)\right\}^{V/v}$. (b) $\left\{\hat{M}(\beta)\right\}^{V/v}\hat{S}$.}
+\end{figure}
+
+\section{Non-equilibrium Monte Carlo Simulations}\label{sec:NEMCs}
+
+\subsection{Frictional Force Density $f(L_{z}, T)$}
+
+We show the behavior of the frictional force density $f(L_{z}, T)$ (see Fig.~\ref{fig:fricDens_Allsize}). 
+
+For both boundary conditions, $f(L_{z}, T)$ has reaches to the results in Ref.~\cite{Kadau2008} with the size $L_{z}=64$. Then the size $L_{z}=64$ is a good approximation for the limit of $L_{z}\to\infty$. In addition, $f(L_{z}, T)$ increases with smaller size $L_{z}$ than $L_{z}=64$ for the anti-parallel boundary, whereas $f(L_{z}, T)$ decreases for the parallel boundary. The width of increase and decrease become as large as the maximum frictional force density $\max_{T,L_{z}}\left[f(L_{z}, T)\right]$.
+
+Their physical meaning is that when the size $L_{z}$ becomes larger than the correlation length of the system along the $z$-direction $\xi_{z}(\beta)$, the system behaves as the two-dimension and the effects of boundary condition in the limit of $L_{z}\to\infty$, whereas the smaller $L_{z}$ than $\xi_{z}(\beta)$ makes the system one-dimensional. We can consider these behavior as a kind of size-driven dimensional crossovers. 
+
+\begin{figure}[htbp]
+	\centering
+	\subcaptionbox{\label{fig:fricDens_Allsize_AP}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/fricDensP_Allsize_AP.eps}}
+	\subcaptionbox{\label{fig:fricDens_Allsize_P}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/fricDensP_Allsize_P.eps}}
+	
+	\caption{Temperature dependences of $f(L_{z}, T)$ with each boundary condition. (a) The anti-parallel boundary. (b) The parallel boundary.}
 	\label{fig:fricDens_Allsize}
 \end{figure}
 
-We additionally show the behavior of its temperature derivative $\partial f(L_{z}, T)/\partial T$ (see Figure \ref{fig:dFricDens_Allsize}). These exhibits the crossover-driven divergence at characteristic temperatures, near $T=2.40$ for both boundary conditions to reflect the steeper slopes of the frictional force density $f(L_{z}, T)$. If we regards the peak $T_{\rm peak}(L_{z})$ as the pseudo critical point for all sizes $L_{z}=4,6,8,10,12,14,16,32,64$, where $\partial^{2} f(L_{z}, T)/\partial T^{2}|_{T=T_{\rm peak}(L_{z})} = 0$, we can recognize the shift of peaks toward the higher temperature for the anti-parallel boundary, whereas peaks shifts toward the lower for the parallel boundary. These describes the effects of the boundary condition which acts on the system as an effective field, and the effects are enhanced by the smaller $L_{z}$. Namely the anti-parallel boundary acts as a demagnetizing field such that the pseudo critical point $T_{\rm peak}(L_{z})$ shifts toward the lower, and the parallel boundary acts as a magnetizing field such that the pseudo critical point $T_{\rm peak}(L_{z})$ shifts toward the higher.
+%Remarkably peaks $\{T_{\rm peak}(L_{z})\}$ for both boundaries hit the temperature higher than the ordinary critical point $T_{\rm c}=2/\log\left[1+\sqrt{2}\right]$. This implies that both the ordinary phase transition and the non-equilibrium phase transition occur at two different temperatures.
 
-Remarkably peaks $\{T_{\rm peak}(L_{z})\}$ for both boundaries hit the temperature higher than the ordinary critical point $T_{\rm c}=2/\log\left[1+\sqrt{2}\right]$. This implies that both the ordinary phase transition and the non-equilibrium phase transition occur at two different temperatures.
+\subsection{Bulk Energy Density $\epsilon_{\rm b}(L_{z}, T)$}
 
-\begin{figure}[htbp]
-	\centering
-	\subcaptionbox{Anti-parallel boundary condition\label{fig:dFricDens_Allsize_AP}}{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_AP.eps}}
-	\subcaptionbox{Parallel boundary condition\label{fig:dFricDens_Allsize_P}}{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_P.eps}}
-	
-	\caption{The temperature $T$ dependence of the temperature derivative $\partial f(L_{z}, T)/\partial T$ with the parallel boundary condition along the $z$-direction for each longitudinal size $L_{z}$ are plotted.}
-	\label{fig:dFricDens_Allsize}
-\end{figure}
-
-\section{Bulk Energy Density $\epsilon_{\rm b}(L_{z}, T)$}
-
-We show the behavior of the bulk energy density $\epsilon_{\rm b}(L_{z}, T)$ (see Figure \ref{fig:EnDens_Allsize}). As same as frictional force densities $f(L_{z}, T)$, bulk energy densities $\epsilon_{\rm b}(L_{z}, T)$ indicates an asymtotic behavior.
-
-In the anti-parallel case, the smaller size $L_{z}$ makes the system well disorder. On the other hand, the parallel case indicates no drastic change driven by the smaller size $L_{z}$.
+We show the behavior of the bulk energy density $\epsilon_{\rm b}(L_{z}, T)$ (see Figure \ref{fig:EnDens_Allsize}). As same as frictional force densities $f(L_{z}, T)$, bulk energy densities $\epsilon_{\rm b}(L_{z}, T)$ indicates an asymptotic behavior in the limit of $L_{z}\to\infty$ and a qualitative difference in the limit of $L_{z}\to+0$, reflecting the dimensional crossover.
 
 \begin{figure}[htbp]
 	\centering
-	\subcaptionbox{Anti-parallel boundary condition\label{fig:EnDens_Allsize_AP}}{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/EnDens_Allsize_AP.eps}}
-	\subcaptionbox{Parallel boundary condition\label{fig:EnDens_Allsize_P}}{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/EnDens_Allsize_P.eps}}
+	\subcaptionbox{\label{fig:EnDens_Allsize_AP}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/EnDens_Allsize_AP.eps}}
+	\subcaptionbox{\label{fig:EnDens_Allsize_P}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/EnDens_Allsize_P.eps}}
 	
-	\caption{The temperature $T$ dependence of the bulk energy density $\epsilon_{\rm b}(L_{z}, T)$ with the parallel boundary condition along the $z$-direction for each longitudinal size $L_{z}$ are plotted.}
+	\caption{Temperature dependences of $\epsilon_{\rm b}(L_{z}, T)$ with each boundary condition. (a) The anti-parallel boundary. (b) The parallel boundary.}
 	\label{fig:EnDens_Allsize}
 \end{figure}
 
-We additionally show the behavior of the heat capacity $c_{\rm b}(L_{z},T)=\partial \epsilon_{\rm b}(L_{z}, T)/\partial T$ as its temperature derivative (see Figure \ref{fig:dFricDens_Allsize}). The behavior is similar to that of the temperature derivative of the frictional force density $\partial f(L_{z}, T)/\partial T$ in terms of the peak $T_{\rm peak}(L_{z})$ for enough larger sizes.
+\subsection{Temperature Derivatives $\partial f(L_{z}, T)/\partial T$, $c_{\rm b}(L_{z}, T)$}
+
+We additionally show the behavior of temperature derivatives $\partial f(L_{z}, T)/\partial T$, $c_{\rm b}(L_{z},T)$ (see Fig.~\ref{fig:dFricDens_Allsize}, \ref{fig:dEnDens_Allsize}).
+
+Both of them exhibit sharp peaks at characteristic temperatures near $T=2.40$ for both boundary conditions for the largest size $L_{z}=64$, then are expected to diverge in the limit of $L_{z}\to\infty$. This imply that these diverge for the limit of $L_{z}\to\infty$. If we regards the peaks $T_{\rm peak}(L_{z})$ as the pseudo critical point for each size $L_{z}$, we can think that the critical point shifts toward low temperature for the anti-parallel boundary and toward high temperature for the parallel boundary. This view gives us the clear insight that the anti-parallel boundary acts as a \textit{disordering} field such that the temperature of the system rises, and the parallel boundary acts as a \textit{ordering} field such that the temperature of the system drops. The changes in the effective temperature of the system are most enhanced in the limit of $L_{z}\to+0$.
 
 \begin{figure}[htbp]
 	\centering
-	\subcaptionbox{Anti-parallel boundary condition\label{fig:dEnDens_Allsize_AP}}{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_AP.eps}}
-	\subcaptionbox{Parallel boundary condition\label{fig:dEnDens_Allsize_P}}{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_P.eps}}
+	\subcaptionbox{\label{fig:dFricDens_Allsize_AP}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_AP.eps}}
+	\subcaptionbox{\label{fig:dFricDens_Allsize_P}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_P.eps}}
 	
-	\caption{The temperature $T$ dependence of the bulk energy density $\epsilon(L_{z}, T)$ with the parallel boundary condition along the $z$-direction for each longitudinal size $L_{z}$ are plotted.}
+	\caption{Temperature dependences of $c_{\rm b}(L_{z}, T)$ with each boundary condition. (a) The anti-parallel boundary. (b) The parallel boundary.}
+	\label{fig:dFricDens_Allsize}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\subcaptionbox{\label{fig:dEnDens_Allsize_AP}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_AP.eps}}
+	\subcaptionbox{\label{fig:dEnDens_Allsize_P}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_P.eps}}
+	
+	\caption{Temperature dependences of $\epsilon_{\rm b}(L_{z}, T)/\partial T$ with each boundary condition. (a) The anti-parallel boundary. (b) The parallel boundary.}
 	\label{fig:dEnDens_Allsize}
 \end{figure}
+
+Note that the frictional force density $\partial f(L_{z}, T)/\partial T$ and the bulk energy density $\epsilon_{\rm b}(L_{z}, T)/\partial T$ exhibit an asymptotic and divergent behavior to a function of temperature $T$, and its peak near $T=2.40$ shows a good agreement with the NEPT point for $v=10$ with the Metropolis rate in Ref.~\cite{Hucht2009b} (see Fig.~\ref{fig:NEPTinIsing}). We can regard the divergent behavior as the intrinsic NEPT independent of the boundary condition, because the effect of boundary conditions vanishes in the limit of $L_{z}\to\infty$, .
+
+We also consider the reason why not only the heat capacity $c(L_{z}, T)$ but also the temperature derivative of the frictional force density $\partial f(L_{z}, T)/\partial T$ shows the divergent behavior. The frictional force density $f(L_{z}, T)$ is estimated by the difference between the expectation value of the energy before the sliding and after over every $1/v$ Monte Carlo sweeps. Then it will be natural to think that both of two kinds of the expectation value have a singularity near $T=2.40$, and these singularities do not cancel with the subtraction.
+
+\subsection{Checking the Convergence in the Limit $L_{x}\to\infty$}
+\label{appsec:convcheck}
+
+We now demonstrate that the following two observables are converging in the large size limit.
+
+\begin{align}
+f(L_{z}, T):=&\lim_{L_{x}\to\infty}\frac{F(L_{x}, L_{z}, T)}{L_{x}},\\
+\epsilon_{\rm b}(L_{z}, T):=&\lim_{L_{x}\to\infty}\frac{E_{b}(L_{x}. L_{z}, T)}{L_{x}L_{z}}.
+\end{align}
+
+We use the aspect of $L_{x}=10L_{z}, 20L_{z}, \dots, 50L_{z}$ for checking the convergence in the limit $L_{x}/L_{z} \to \infty$ with fixed $L_{z}$.
+
+\subsubsection{Dependence of $F(L_{x}, L_{z}, T)/L_{x}$ on $L_{x}$ for each $L_{z}$}
+
+We show that the quantity $F(L_{x}, L_{z}, T)/L_{x}$ has no dependence on $L_{x}$ for sufficient large size $L_{x}$ for each size $L_{z}$. Figures~\ref{fig:ffdcheck1}, \ref{fig:ffdcheck2} show the temperature dependence of the frictional force density under each boundary condition along the $z$-direction for each of longitudinal size $L_{z} = 4, 6, 8, 10, 12, 14, 16$ (fig.\ref{fig:ffdcheck}).
+
+\begin{figure}[htbp]
+	\centering
+	\subcaptionbox{\label{fig:ffdcheckfor004}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/FricDensP_Lz004.eps}}
+	\subcaptionbox{\label{fig:ffdcheckfor006}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/FricDensP_Lz006.eps}}
+	
+	\subcaptionbox{\label{fig:ffdcheckfor008}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/FricDensP_Lz008.eps}}
+	\subcaptionbox{\label{fig:ffdcheckfor010}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/FricDensP_Lz010.eps}}
+	
+	\subcaptionbox{\label{fig:ffdcheckfor012}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/FricDensP_Lz012.eps}}
+	
+	\caption{Each data shows $F(L_{x}, L_{z}, T)/L_{x}$ versus $T$. (a) $L_{z}=4$. (b) $L_{z}=6$. (c) $L_{z}=8$. (d) $L_{z}=10$. (e) $L_{z}=12$.}
+	\label{fig:ffdcheck1}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	
+	\subcaptionbox{\label{fig:ffdcheckfor014}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/FricDensP_Lz014.eps}}
+	\subcaptionbox{\label{fig:ffdcheckfor016}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/FricDensP_Lz016.eps}}
+	
+	\subcaptionbox{\label{fig:ffdcheckfor032}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/FricDensP_Lz032.eps}}
+	\subcaptionbox{\label{fig:ffdcheckfor064}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/FricDensP_Lz064.eps}}
+	
+	\caption{Each data shows $F(L_{x}, L_{z}, T)/L_{x}$ versus $T$. (a) $L_{z}=14$. (b) $L_{z}=16$. (c) $L_{z}=32$. (d) $L_{z}=64$.}
+	\label{fig:ffdcheck2}
+\end{figure}
+
+\subsubsection{Dependence of $E_{\rm b}(L_{x}, L_{z}, T)/(L_{x}L_{z})$ on $L_{x}$ for each $L_{z}$}
+
+We show that the quantity $E_{\rm b}(L_{x}, L_{z}, T)/L_{x}$ has no dependence on $L_{x}$ at a sufficient large $L_{x}$ for each $L_{z}$. The following graphs are the temperature dependence of the frictional force density with each of boundary conditions along the $z$-direction for each of longitudinal size $L_{z} = 4, 6, 8, 10, 12, 14, 16$ (fig.\ref{fig:ebcheck}).
+
+\begin{figure}[htbp]
+	\centering
+	\subcaptionbox{\label{fig:ebcheckfor004}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/EnDens_Lz004.eps}}
+	\subcaptionbox{\label{fig:ebcheckfor006}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/EnDens_Lz006.eps}}
+	
+	\subcaptionbox{\label{fig:ebcheckfor008}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/EnDens_Lz008.eps}}
+	\subcaptionbox{\label{fig:ebcheckfor010}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/EnDens_Lz010.eps}}
+	
+	\subcaptionbox{\label{fig:ebcheckfor012}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/EnDens_Lz012.eps}}
+	
+	\caption{Each data shows $E(L_{x}, L_{z}, T)/(L_{x}L_{z})$ versus $T$. (a) $L_{z}=4$. (b) $L_{z}=6$. (c) $L_{z}=8$. (d) $L_{z}=10$. (e) $L_{z}=12$.}
+	\label{fig:ebcheck1}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\subcaptionbox{\label{fig:ebcheckfor014}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/EnDens_Lz014.eps}}
+	\subcaptionbox{\label{fig:ebcheckfor016}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/EnDens_Lz016.eps}}
+	
+	\subcaptionbox{\label{fig:ebcheckfor032}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/EnDens_Lz032.eps}}
+	\subcaptionbox{\label{fig:ebcheckfor064}}[0.49\linewidth]{\includegraphics[width=0.45\linewidth]{../../NumCalc/ClassicalSpinMC/EnDens_Lz064.eps}}
+	
+	\caption{Each data shows $E(L_{x}, L_{z}, T)/(L_{x}L_{z})$ versus $T$. (a) $L_{z}=14$. (b) $L_{z}=16$. (c) $L_{z}=32$. (d) $L_{z}=64$.}
+	\label{fig:ebcheck2}
+\end{figure}
+
+%\section{Time Series of Observables}\label{appsec:timeconvcheck}
+%
+%\renewcommand\thefigure{\thesection.\arabic{figure}}
+%\renewcommand\thesubfigure{\thefigure.\arabic{subfigure}}
+%
+%We now show the data which we use to calculate the long time limit of power  $P(t)$, dissipation rate $D(t)$ and bulk energy $E_{\rm b}(t)$.
+%
+%We can estimate the non-equilibrium correlation time of these observables, and then the valid interval in each time series are determined.
+%
+%\subsection{Bulk Energy Densities for the Anti-parallel Boundary Condition}
+%
+%\subsubsection{With the Size of $L_{z}=4$, $L_{x}=40$}
+%\begin{figure}[htbp]
+%	\centering
+%	\subcaptionbox{$k_{\rm B}T/J=5.0$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.200.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=4.9$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.204.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=4.8$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.208.eps}}
+%
+%	\subcaptionbox{$k_{\rm B}T/J=4.7$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.212.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=4.6$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.217.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=4.5$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.222.eps}}
+%
+%	\subcaptionbox{$k_{\rm B}T/J=4.4$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.227.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=4.3$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.232.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=4.2$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.238.eps}}
+%
+%	\subcaptionbox{$k_{\rm B}T/J=4.1$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.243.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=4.0$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.250.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=3.9$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.256.eps}}
+%
+%	\subcaptionbox{$k_{\rm B}T/J=3.8$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.263.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=3.7$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.270.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=3.6$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.277.eps}}
+%	
+%	\caption{Each data shows $\epsilon_{\rm b}(L_{x}, L_{z}, T)/(L_{x}L_{z})$ versus $t$.}
+%\end{figure}
+%
+%\begin{figure}[htbp]
+%	\centering
+%	\subcaptionbox{$k_{\rm B}T/J=3.5$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.285.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=3.4$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.294.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=3.3$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.303.eps}}
+%
+%	\subcaptionbox{$k_{\rm B}T/J=3.2$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.312.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=3.1$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.322.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=3.0$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.333.eps}}
+%
+%	\subcaptionbox{$k_{\rm B}T/J=2.9$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.344.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=2.8$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.357.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=2.7$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.370.eps}}
+%
+%	\subcaptionbox{$k_{\rm B}T/J=2.6$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.384.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=2.50$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.400.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=2.48$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.403.eps}}
+%
+%	\subcaptionbox{$k_{\rm B}T/J=2.46$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.406.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=2.44$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.409.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=2.42$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.413.eps}}
+%	
+%	\caption{Each data shows $\epsilon_{\rm b}(L_{x}, L_{z}, T)/(L_{x}L_{z})$ versus $t$.}
+%\end{figure}
+%
+%\begin{figure}[htbp]
+%	\centering
+%	\subcaptionbox{$k_{\rm B}T/J=2.40$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.416.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=2.38$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.420.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=2.36$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.423.eps}}
+%
+%	\subcaptionbox{$k_{\rm B}T/J=2.34$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.427.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=2.32$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.431.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=2.30$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.434.eps}}
+%
+%	\subcaptionbox{$k_{\rm B}T/J=2.26$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.442.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=2.24$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.446.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=2.22$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.450.eps}}
+%
+%	\subcaptionbox{$k_{\rm B}T/J=2.20$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.454.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=2.18$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.458.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=2.16$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.462.eps}}
+%
+%	\subcaptionbox{$k_{\rm B}T/J=2.14$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.467.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=2.12$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.471.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=2.10$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.476.eps}}
+%	\caption{Each data shows $\epsilon_{\rm b}(L_{x}, L_{z}, T)/(L_{x}L_{z})$ versus $t$.}
+%\end{figure}
+%
+%\begin{figure}[htbp]
+%	\centering
+%	\subcaptionbox{$k_{\rm B}T/J=2.08$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.480.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=2.06$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.485.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=2.04$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.490.eps}}
+%
+%	\subcaptionbox{$k_{\rm B}T/J=2.02$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.495.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=1.9$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.526.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=1.8$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.555.eps}}
+%
+%	\subcaptionbox{$k_{\rm B}T/J=1.7$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.588.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=1.6$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.625.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=1.5$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.666.eps}}
+%
+%	\subcaptionbox{$k_{\rm B}T/J=1.4$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.714.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=1.3$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.769.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=1.2$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.833.eps}}
+%
+%	\subcaptionbox{$k_{\rm B}T/J=1.1$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta.909.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=1.0$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta1.000.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=0.9$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta1.111.eps}}
+%	\caption{Each data shows $\epsilon_{\rm b}(L_{x}, L_{z}, T)/(L_{x}L_{z})$ versus $t$.}
+%\end{figure}
+%
+%\begin{figure}[htbp]
+%	\centering
+%	\subcaptionbox{$k_{\rm B}T/J=0.8$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta1.250.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=0.7$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta1.428.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=0.6$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta1.666.eps}}
+%
+%	\subcaptionbox{$k_{\rm B}T/J=0.5$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta2.000.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=0.4$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta2.500.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=0.3$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta3.333.eps}}
+%
+%	\subcaptionbox{$k_{\rm B}T/J=0.2$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta5.000.eps}}
+%	\subcaptionbox{$k_{\rm B}T/J=0.1$}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinMC/dat/Lz004Lx0040Ly__Vel10/antiparallel/ed_beta10.000.eps}}
+%	\caption{Each data shows $\epsilon_{\rm b}(L_{x}, L_{z}, T)/(L_{x}L_{z})$ versus $t$.}
+%\end{figure}
+%
+%\subsubsection{With the Size of $L_{z}=4$, $L_{x}=80$}
+%
+%\subsubsection{With the Size of $L_{z}=4$, $L_{x}=120$}
+%
+%\subsubsection{With the Size of $L_{z}=4$, $L_{x}=160$}
+%
+%\subsubsection{With the Size of $L_{z}=4$, $L_{x}=200$}
+%
+%\subsection{Bulk Energy Densities for the Parallel Boundary Condition}

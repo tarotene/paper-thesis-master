@@ -348,19 +348,3 @@ By the fact, we can see the existence of its unique stationary state as the long
 	\subcaptionbox{$\beta=\infty$\label{fig:fuga}}{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_BetaInfinity.pdf}}
 	\caption{The distributions of eigenvalues for $\hat{M}^{[2,2]}(\beta)$.}\label{fig:EigDistMbeta}
 \end{figure}
-
-\section{Stochastic Matrices and Non-Equilbrium Monte Carlo Simulations}
-
-We extended the Metropolis matrix which we constructed in the previous subsection to construct a new type of stochastic matrix, which corresponds to the model of magnetic friction.
-\begin{align}
-\hat{T}^{[L_{x},L_{z}]}(\beta,v):=\left[\left\{\hat{M}^{[L_{x},L_{z}]}(\beta)\right\}^{\frac{L_{x}\times L_{z}}{v}}\hat{S}^{[L_{x},L_{z}]}\right]^{v}\quad v\in\{\text{Divisors of $L{x}\times L{z}$}\},
-\end{align}
-where the matrix $\hat{S}^{[L_{x},L_{z}]}$ expresses the operation of sliding the model of size $L_{x}\times L_{z}$ by a lattice constant, and possesses the similar structure of elements to the unit matrix (See Figure \ref{fig:ArrayPlotS}).
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=0.5\linewidth]{../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/ArrayPlotS_Detailed.pdf}
-	\caption{The array plot of $\hat{S}^{[2,2]}$.}\label{fig:ArrayPlotS}
-\end{figure}
-
-The matrix $\hat{T}^{[L_{x},L_{z}]}(\beta,v)$ describes a time evolution for a MC sweeps, because the matrix have the $L_{x}\times L_{z}$-th power of $\hat{M}^{[L_{x},L_{z}]}(\beta)$. The task of diagonalizing the Matrix $\hat{T}^{[L_{x},L_{z}]}(\beta,v)$ is same as that of $\left\{\hat{M}^{[L_{x},L_{z}]}(\beta)\right\}^{\frac{L_{x}\times L_{z}}{v}}\hat{S}^{[L_{x},L_{z}]}$\footnote{This corresponds to a time evolution for $1/v$ MC sweeps.}. The matrix $\left\{\hat{M}^{[L_{x},L_{z}]}(\beta)\right\}^{\frac{L_{x}\times L_{z}}{v}}\hat{S}^{[L_{x},L_{z}]}$ is also strongly connected and thus have a unique stationary state (See Figure \textcolor{red}{FigNum}). The distribution of eigenvalues of $\left\{\hat{M}^{[L_{x},L_{z}]}(\beta)\right\}^{\frac{L_{x}\times L_{z}}{v}}\hat{S}^{[L_{x},L_{z}]}$ is similar to that of $\left\{\hat{M}^{[L_{x},L_{z}]}(\beta)\right\}^{\frac{L_{x}\times L_{z}}{v}}$.
