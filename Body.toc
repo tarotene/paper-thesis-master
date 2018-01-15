@@ -1,57 +1,49 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Introduction}{9}{chapter.1}
+\contentsline {chapter}{\numberline {1}Introduction}{7}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Sliding Frictions as Non-Equilibrium Problems}{10}{section.1.1}
+\contentsline {section}{\numberline {1.1}Sliding Frictions as Non-Equilibrium Problems}{7}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Impossibility of the Observation of the Sliding Surface}{11}{section.1.2}
+\contentsline {section}{\numberline {1.2}Impossibility of the Observation of the Sliding Surface}{8}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Manipulating the Friction}{11}{section.1.3}
+\contentsline {section}{\numberline {1.3}Manipulating the Friction}{8}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Magnetic Friction}{12}{section.1.4}
+\contentsline {section}{\numberline {1.4}Magnetic Friction}{9}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Velocity-driven Non-equilibrium Phase Transition in Ising Models}{15}{chapter.2}
+\contentsline {chapter}{\numberline {2}Velocity-driven Non-equilibrium Phase Transition in Ising Models}{11}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Numerical Simulations}{21}{chapter.3}
+\contentsline {chapter}{\numberline {3}Numerical Simulations}{17}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Setup of the Model}{21}{section.3.1}
+\contentsline {section}{\numberline {3.1}Setup of the Model}{17}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Definitions of Physical Quantities}{23}{section.3.2}
+\contentsline {section}{\numberline {3.2}Definitions of Physical Quantities}{19}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Non-equilibrium Monte Carlo Simulation}{25}{section.3.3}
+\contentsline {section}{\numberline {3.3}Non-equilibrium Monte Carlo Simulation}{20}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Introduction the Time Scale to Ising Models}{25}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.1}Introduction of the Time Scale to Ising Models}{20}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Slip Plane with the Velocity $v$}{26}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}Slip Plane with the Velocity $v$}{21}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}Calculation Method}{27}{subsection.3.3.3}
+\contentsline {chapter}{\numberline {4}Results}{23}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Results}{29}{chapter.4}
+\contentsline {section}{\numberline {4.1}Observed Quantities}{23}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Stochastic Matrices and Non-Equilbrium Monte Carlo Simulations}{30}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Frictional Force Density $f(L_{z}, T)$}{23}{subsection.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Non-equilibrium Monte Carlo Simulations}{32}{section.4.2}
+\contentsline {subsection}{\numberline {4.1.2}Bulk Energy Density $\epsilon _{\rm b}(L_{z}, T)$}{24}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Frictional Force Density $f(L_{z}, T)$}{32}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.1.3}Temperature Derivatives $\partial f(L_{z}, T)/\partial T$ and $c_{\rm b}(L_{z}, T)$}{24}{subsection.4.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Bulk Energy Density $\epsilon _{\rm b}(L_{z}, T)$}{32}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.2}Checking the Convergence in the Limit $L_{x}\to \infty $}{29}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}Temperature Derivatives $\partial f(L_{z}, T)/\partial T$, $\partial \epsilon _{\rm b}(L_{z}, T)/\partial T$}{34}{subsection.4.2.3}
+\contentsline {chapter}{\numberline {5}Summary and Discussion}{35}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.4}Checking the Convergence in the Limit $L_{x}\to \infty $}{35}{subsection.4.2.4}
+\contentsline {chapter}{\numberline {A}Analysis based on Stochastic Matrices}{37}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Dependence of $F(L_{x}, L_{z}, T)/L_{x}$ on $L_{x}$ for each $L_{z}$}{36}{section*.12}
+\contentsline {section}{\numberline {A.1}A Simple Example: Stochastic Ising Model with $N$-spins}{37}{section.A.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Dependence of $E_{\rm b}(L_{x}, L_{z}, T)/(L_{x}L_{z})$ on $L_{x}$ for each $L_{z}$}{36}{section*.15}
+\contentsline {section}{\numberline {A.2}General Theory of Stochastic Matrices}{38}{section.A.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Summary and Discussion}{41}{chapter.5}
+\contentsline {section}{\numberline {A.3}Construction of the Stochastic Matrix based on the Detailed Balanced Condition}{45}{section.A.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Analysis based on Stochastic Matrices}{43}{appendix.A}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}A Simple Example: Stochastic Ising Model with $N$-spins}{44}{section.A.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}General Theory of Stochastic Matrices}{45}{section.A.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Construction of the Stochastic Matrix based on the Detailed Balanced Condition}{56}{section.A.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.3.1}Metropolis Matrix for the Model of the Size $2\times 2$}{58}{subsection.A.3.1}
+\contentsline {subsection}{\numberline {A.3.1}Metropolis Matrix for the Model of the Size $3\times 2$}{46}{subsection.A.3.1}

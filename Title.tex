@@ -1,0 +1,48 @@
+\documentclass[a4,10pt,dvipdfmx]{article}
+
+\usepackage{geometry}
+\usepackage{otf}
+
+\makeatletter
+
+\def\@thesis{Master Thesis}
+\def\id#1{\def\@id{#1}}
+\def\department#1{\def\@department{#1}}
+
+\def\@maketitle{
+\begin{center}
+{\huge \@thesis \par} %修士論文と記載される部分
+\vspace{29mm}
+{\huge \@title \par}% 論文のタイトル部分
+\vspace{50mm}
+{\huge \@author}% 氏名
+
+\vspace{5mm}
+{\LARGE \@date\par} % 提出年月日部分
+\vspace{20mm}
+{\Large \@department \par} % 所属部分
+%{\Large 学籍番号　\@id \par} % 学籍番号部分
+\end{center}
+\par\vskip 1.5em
+}
+
+\makeatother
+
+\title{Effects of Boundary Conditions \\
+	on Magnetic Friction\\
+（磁気摩擦における境界条件の効果）}
+\date{\today}
+\author{Kentaro Sugimoto}
+
+\department{
+\textit{Department of Physics, Graduate School of Science,\\
+The University of Tokyo,\\
+5-1-5 Kashiwanoha, Kashiwa-city, Chiba 277-8574, Japan}
+}
+%\id{}
+
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\end{document}

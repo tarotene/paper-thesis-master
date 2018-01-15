@@ -10,6 +10,16 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/bk12.clo
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/bk12.clo
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.sty
@@ -22,12 +32,8 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
@@ -230,8 +236,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.st
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
-INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/auxhook.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/auxhook.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
@@ -328,21 +332,55 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT NEPhaseTrans.tex
 INPUT NEPhaseTrans.tex
-INPUT 1dIsingAfterTwoWalks.pdf
-INPUT extractbb -B cropbox -O 1dIsingAfterTwoWalks.pdf
+INPUT Fig2Modified.pdf
+INPUT extractbb -B cropbox -O Fig2Modified.pdf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT 2dIsingAfterTwoWalks.pdf
-INPUT extractbb -B cropbox -O 2dIsingAfterTwoWalks.pdf
-INPUT NEPTIsing.pdf
-INPUT extractbb -B cropbox -O NEPTIsing.pdf
+INPUT Fig3Modified.pdf
+INPUT extractbb -B cropbox -O Fig3Modified.pdf
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib5.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm
+INPUT Fig15.pdf
+INPUT extractbb -B cropbox -O Fig15.pdf
 INPUT NumSim.tex
 INPUT NumSim.tex
-INPUT ../../Slides/Ingredients/03-CutIsing.pdf
-INPUT ../../Slides/Ingredients/03-CutIsing.xbb
+INPUT CutIsing.pdf
+INPUT extractbb -B cropbox -O CutIsing.pdf
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM1_B0-1_Detailed.png
+INPUT extractbb -B cropbox -O ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM1_B0-1_Detailed.png
+INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotS_Detailed.png
+INPUT extractbb -B cropbox -O ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotS_Detailed.png
+INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotT6_B0-1_Detailed.png
+INPUT extractbb -B cropbox -O ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotT6_B0-1_Detailed.png
+INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_EigDist_M6_Beta0-1.png
+INPUT extractbb -B cropbox -O ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_EigDist_M6_Beta0-1.png
+INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_EigDist_T6_Beta0-1.png
+INPUT extractbb -B cropbox -O ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_EigDist_T6_Beta0-1.png
 INPUT Results.tex
 INPUT Results.tex
-INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/ArrayPlotS_Detailed.pdf
-INPUT extractbb -B cropbox -O ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/ArrayPlotS_Detailed.pdf
+INPUT ../../NumCalc/ClassicalSpinMC/fricDensP_Allsize_AP_.eps
+INPUT ../../NumCalc/ClassicalSpinMC/fricDensP_Allsize_AP_.eps
+INPUT ../../NumCalc/ClassicalSpinMC/fricDensP_Allsize_P_.eps
+INPUT ../../NumCalc/ClassicalSpinMC/fricDensP_Allsize_P_.eps
+INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Allsize_AP_.eps
+INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Allsize_AP_.eps
+INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Allsize_P_.eps
+INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Allsize_P_.eps
+INPUT ../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_AP_Bar.eps
+INPUT ../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_AP_Bar.eps
+INPUT ../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_P_Bar.eps
+INPUT ../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_P_Bar.eps
+INPUT ../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_AP_Bar.eps
+INPUT ../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_AP_Bar.eps
+INPUT ../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_P_Bar.eps
+INPUT ../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_P_Bar.eps
+INPUT NEPTIsing_.pdf
+INPUT extractbb -B cropbox -O NEPTIsing_.pdf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
@@ -350,34 +388,10 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam1
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
-INPUT ../../NumCalc/ClassicalSpinMC/fricDensP_Allsize_AP.eps
-INPUT ../../NumCalc/ClassicalSpinMC/fricDensP_Allsize_AP.eps
-INPUT ../../NumCalc/ClassicalSpinMC/fricDensP_Allsize_P.eps
-INPUT ../../NumCalc/ClassicalSpinMC/fricDensP_Allsize_P.eps
-INPUT ../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_AP.eps
-INPUT ../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_AP.eps
-INPUT ../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_P.eps
-INPUT ../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_P.eps
-INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Allsize_AP.eps
-INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Allsize_AP.eps
-INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Allsize_P.eps
-INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Allsize_P.eps
-INPUT ../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_AP.eps
-INPUT ../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_AP.eps
-INPUT ../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_P.eps
-INPUT ../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_P.eps
 INPUT ../../NumCalc/ClassicalSpinMC/FricDensP_Lz004.eps
 INPUT ../../NumCalc/ClassicalSpinMC/FricDensP_Lz004.eps
-INPUT ../../NumCalc/ClassicalSpinMC/FricDensP_Lz006.eps
-INPUT ../../NumCalc/ClassicalSpinMC/FricDensP_Lz006.eps
 INPUT ../../NumCalc/ClassicalSpinMC/FricDensP_Lz008.eps
 INPUT ../../NumCalc/ClassicalSpinMC/FricDensP_Lz008.eps
-INPUT ../../NumCalc/ClassicalSpinMC/FricDensP_Lz010.eps
-INPUT ../../NumCalc/ClassicalSpinMC/FricDensP_Lz010.eps
-INPUT ../../NumCalc/ClassicalSpinMC/FricDensP_Lz012.eps
-INPUT ../../NumCalc/ClassicalSpinMC/FricDensP_Lz012.eps
-INPUT ../../NumCalc/ClassicalSpinMC/FricDensP_Lz014.eps
-INPUT ../../NumCalc/ClassicalSpinMC/FricDensP_Lz014.eps
 INPUT ../../NumCalc/ClassicalSpinMC/FricDensP_Lz016.eps
 INPUT ../../NumCalc/ClassicalSpinMC/FricDensP_Lz016.eps
 INPUT ../../NumCalc/ClassicalSpinMC/FricDensP_Lz032.eps
@@ -386,16 +400,8 @@ INPUT ../../NumCalc/ClassicalSpinMC/FricDensP_Lz064.eps
 INPUT ../../NumCalc/ClassicalSpinMC/FricDensP_Lz064.eps
 INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Lz004.eps
 INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Lz004.eps
-INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Lz006.eps
-INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Lz006.eps
 INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Lz008.eps
 INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Lz008.eps
-INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Lz010.eps
-INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Lz010.eps
-INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Lz012.eps
-INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Lz012.eps
-INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Lz014.eps
-INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Lz014.eps
 INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Lz016.eps
 INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Lz016.eps
 INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Lz032.eps
@@ -404,45 +410,33 @@ INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Lz064.eps
 INPUT ../../NumCalc/ClassicalSpinMC/EnDens_Lz064.eps
 INPUT Summary.tex
 INPUT Summary.tex
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 INPUT App_StochasticMatrices.tex
 INPUT App_StochasticMatrices.tex
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib5.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti8.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
-INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/ArrayPlotM1_Beta0-1_Detailed.pdf
-INPUT extractbb -B cropbox -O ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/ArrayPlotM1_Beta0-1_Detailed.pdf
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
-INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/ArrayPlotM2_Beta0-1_Detailed.pdf
-INPUT extractbb -B cropbox -O ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/ArrayPlotM2_Beta0-1_Detailed.pdf
-INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/ArrayPlotM3_Beta0-1_Detailed.pdf
-INPUT extractbb -B cropbox -O ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/ArrayPlotM3_Beta0-1_Detailed.pdf
-INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/ArrayPlotM4_Beta0-1_Detailed.pdf
-INPUT extractbb -B cropbox -O ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/ArrayPlotM4_Beta0-1_Detailed.pdf
-INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_Beta0.pdf
-INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_Beta0.xbb
-INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_Beta0-1.pdf
-INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_Beta0-1.xbb
-INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_BetaInfinity.pdf
-INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_BetaInfinity.xbb
+INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM1_B0-1_Detailed.png
+INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM2_B0-1_Detailed.png
+INPUT extractbb -B cropbox -O ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM2_B0-1_Detailed.png
+INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM3_B0-1_Detailed.png
+INPUT extractbb -B cropbox -O ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM3_B0-1_Detailed.png
+INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM4_B0-1_Detailed.png
+INPUT extractbb -B cropbox -O ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM4_B0-1_Detailed.png
+INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM5_B0-1_Detailed.png
+INPUT extractbb -B cropbox -O ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM5_B0-1_Detailed.png
+INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM6_B0-1_Detailed.png
+INPUT extractbb -B cropbox -O ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM6_B0-1_Detailed.png
+INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_IT.png
+INPUT extractbb -B cropbox -O ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_IT.png
+INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_Beta0-1.png
+INPUT extractbb -B cropbox -O ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_Beta0-1.png
+INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_AZ.png
+INPUT extractbb -B cropbox -O ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_AZ.png
 INPUT Body.aux
 INPUT ./Body.out
 INPUT ./Body.out
 INPUT Body.run.xml
 OUTPUT Body.run.xml
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
@@ -455,6 +449,7 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb

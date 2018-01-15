@@ -4,68 +4,65 @@
 \section{Setup of the Model}\label{sec:SetupModel}
 Sliding friction is a form of energy dissipation on the surface between a moving object and its substrate. The dissipated energy is originated in the kinetic energy of the moving object. We here consider a constantly moving case in which an external force maintains the motion of the object with endless supply of its kinetic energy. This view leads to its \textit{non-equilibrium stationary state}. When the system is in a non-equilibrium stationary state, it is often easy to calculate \textit{energy currents} such as the frictional heat, its power and so on. Applying the view to our case in which two square lattices of the Ising model slide against each other, we can formulate the problem as follows; see Fig.~\ref{fig:CutIsing}.
 \begin{enumerate}
-	\item We prepare a square lattice of the Ising model of size $L_{x}\times L_{z}$ and impose periodic boundary conditions in the transverse ($x$) direction. We first set the system in the equilibrium state of a temperature $T$, whereas we set the open boundary conditions in the longitudinal ($z$) direction for the moment.
+	\item We prepare a square lattice of the Ising model of size $L_{x}\times L_{z}$ and impose periodic boundary conditions in the transverse ($x$) direction, whereas we set the open boundary conditions in the longitudinal ($z$) direction for the moment. We first set the system in the equilibrium state of a temperature $T$.
 	\item We cut the system along the $x$-direction into two parts, maintaining interactions on the cut.
 	\item We slide two parts along the cut plane with relative velocity $v$. In other words, we shift the upper half by a lattice constant every $1/v$ unit time. 
 \end{enumerate}
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.25\linewidth]{../../Slides/Ingredients/03-CutIsing.pdf}
+	\includegraphics[width=0.40\linewidth]{CutIsing.pdf}
 	\caption{Two cylinders of the Ising model sliding with the velocity $v$.}
 	\label{fig:CutIsing}
 \end{figure}
-
 The Hamiltonian of the system is given by
 \begin{align}
-&\hat{H}=\hat{H}_{\rm upper} + \hat{H}_{\rm lower} + \hat{H}_{\rm slip}(t),
+&H=H_{\rm upper} + H_{\rm lower} + H_{\rm slip}(t),
 \end{align}
 where
 \begin{align}
-&\hat{H}_{\rm upper}:=-J\sum_{\langle i,j\rangle\in\mathrm{upper}}\hat{\sigma}_{i}\hat{\sigma}_{j}\label{ham:upper}, \\
-&\hat{H}_{\rm lower}:=-J\sum_{\langle i,j\rangle\in\mathrm{lower}}\hat{\sigma}_{i}\hat{\sigma}_{j}\label{ham:lower}, \\
-&\hat{H}_{\rm slip}(t):=-J\sum_{\langle i,j(t)\rangle\in\mathrm{slip}}\hat{\sigma}_{i}\hat{\sigma}_{j(t)}\label{ham:slip}
+&H_{\rm upper}:=-J\sum_{\langle i,j\rangle\in\mathrm{upper}}\sigma_{i}\sigma_{j}\label{ham:upper}, \\
+&H_{\rm lower}:=-J\sum_{\langle i,j\rangle\in\mathrm{lower}}\sigma_{i}\sigma_{j}\label{ham:lower}, \\
+&H_{\rm slip}(t):=-J\sum_{\langle i,j(t)\rangle\in\mathrm{slip}}\sigma_{i}\sigma_{j(t)}\label{ham:slip}
 \end{align}
-upper, lower and slip representing the set of interacting spin pairs on the upper half, the lower half and the slip plane, respectively.
+with the subscripts upper, lower and slip representing the set of neighboring spin pairs on the upper half, the lower half and the slip plane, respectively.
+
 Shift operations lead the system to repeated \textit{pumping} and \textit{dissipation} processes as follows:
 \begin{enumerate}
-	\item \textbf{Shift}: A shift operation excites the energy on the slip plane by the amount $\langle\hat{H}_{\rm slip}(t')-\hat{H}_{\rm slip}(t)\rangle_{\rm st}$. The letter $t'$ denotes the time just after the shift operation at time $t$.
-	\item \textbf{Relax-1}: The excited energy on the slip plane $\langle\hat{H}_{\rm slip}(t')-\hat{H}_{\rm slip}(t)\rangle_{\rm st}$ dissipates to the entire system.
-	\item \textbf{Relax-2}: The excited entire system relaxes towards the equilibrium.
+	\item \textbf{Shift}: A shift operation excites the energy on the slip plane by the amount $\langle H_{\rm slip}(t')-H_{\rm slip}(t)\rangle_{\rm st}$. The letter $t'$ denotes the time just after the shift operation at time $t$.
+	\item \textbf{Relax 1}: The excited energy on the slip plane $\langle H_{\rm slip}(t')-H_{\rm slip}(t)\rangle_{\rm st}$ dissipates to the entire system.
+	\item \textbf{Relax 2}: The excited entire system relaxes towards the equilibrium.
 \end{enumerate}
-We defined the stationary state average $\langle\hat{A}\rangle_{\rm st}:=\sum_{i}A_{i}p^{(\rm st)}_{i}$ for an arbitrary observable $\hat{A}$, where $\{A\}_{i}$ are eigenvalues of $\hat{A}$ and $\{p^{(\rm st)}_{i}\}$ is the stationary-state probability distribution, which is different from the equilibrium (canonical) probability distribution $p^{(\rm eq)}_{i}\propto\exp\left[-E_{i}/k_{\rm B} T\right]$. Note that the distribution $\{p^{(\rm st)}_{i}\}$ depends on the sliding velocity $v$. 
-
-The excited and relaxed amounts of energy per unit time correspond to the energy pumping and dissipation, respectively. The energy pumping $P(t)$ and dissipation $D(t)$ are given by
-\begin{align}
-P(t):=&\sum_{i_{v}=0}^{v-1}\left\langle \hat{H}_{\rm slip}\left(t'-1+\frac{i_{v}}{v}\right) - \hat{H}_{\rm slip}\left(t-1+\frac{i_{v}}{v}\right)\right\rangle_{\rm st},\\
-D(t):=&\sum_{i_{v}=0}^{v-1}\left\langle \hat{H}_{\rm slip}\left(t-1+\frac{i_{v}+1}{v}\right) - \hat{H}_{\rm slip}\left(t'-1+\frac{i_{v}}{v}\right)\right\rangle_{\rm st},
-\end{align}
-respectively. $P(t)$ and $D(t)$ correspond to the energy difference due to the \textbf{Shift} and the \textbf{Relax} processed, respectively. Note that absolute values of $P(t)$ and $D(t)$ become equal to each other in the non-equilibrium stationary state, by its definition.
+Our model always reaches a non-equilibrium stationary states in the long-time limit $t\to\infty$, which depends on the temperature $T$ and the sliding velocity $v$; see Sec.~\ref{subsec:SlipPlaneWithV} for the proof. We define the stationary state average $\langle A\rangle_{\rm st}:=\sum_{i}A_{i}p^{(\rm st)}_{i}$ for an arbitrary observable $A$, where $\{A_{i}\}$ are observed values of $A$ and $p^{(\rm st)}_{i}$ denotes the stationary-state probability distribution, which is different from the equilibrium (canonical) probability distribution $p^{(\rm eq)}_{i}\propto\exp\left[-E_{i}/k_{\rm B} T\right]$.
 
 \section{Definitions of Physical Quantities}
-We now consider the case in which the system is in a non-equilibrium stationary state. We denote by $P(L_{x}, L_{z}, T)$ and $D(L_{x}, L_{z}, T)$ the long-time limit of energy pumping $P(t)$ and dissipation $D(t)$ for a system of size $L_{x}\times L_{z}$ at the temperature $T$. We define the frictional force density $f(L_{z}, T)$ by
+The excited and relaxed amounts of energy per unit time correspond to the energy pumping and dissipation, respectively. The energy pumping $P(t)$ and the energy dissipation $D(t)$ are given by
 \begin{align}
-f(L_{z}, T):=\lim_{L_{x}\to\infty}\frac{F(L_{x}, L_{z}, T)}{L_{x}}.
+P(t):=&\sum_{i_{v}=0}^{v-1}\left[ H_{\rm slip}\left(t'-1+\frac{i_{v}}{v}\right) - H_{\rm slip}\left(t-1+\frac{i_{v}}{v}\right)\right]\label{def:Pump},\\
+D(t):=&\sum_{i_{v}=0}^{v-1}\left[ H\left(t-1+\frac{i_{v}+1}{v}\right) - H\left(t'-1+\frac{i_{v}}{v}\right)\right]\label{def:Diss},
 \end{align}
+respectively. They correspond to the energy differences due to the \textbf{Shift} and the \textbf{Relax} processes. Note that we obtain the former and the latter by the slip plane and the entire system, respectively, and that the absolute values of $P(t)$ and $D(t)$ become equal to each other in the non-equilibrium stationary state.
 
-In numerical simulations, we calculate the frictional force $F(L_{x}, L_{z}, T)$ using its power $D(L_{x}, L_{z}, T)$ by the formula
+We now consider the case in which the system is in a non-equilibrium stationary state. We denote by $P(L_{x}, L_{z}, T)$ and $D(L_{x}, L_{z}, T)$ the long-time limit of the energy pumping $P(t)$ and the energy dissipation $D(t)$, respectively, for a system of size $L_{x}\times L_{z}$ at the temperature $T$: $P(L_{x},L_{z},T)=\langle P(t)\rangle_{\rm st}$, $D(L_{x},L_{z},T)=\langle D(t)\rangle_{\rm st}$. We define the frictional force density $f(L_{z}, T)$ by
+\begin{align}
+f(L_{z}, T):=\lim_{L_{x}\to\infty}\frac{F(L_{x}, L_{z}, T)}{L_{x}},
+\end{align}
+where $F(L_{x}, L_{z}, T)$ is the long-time limit of the frictional force. We can calculate the frictional force $F(L_{x}, L_{z}, T)$ using its power $D(L_{x}, L_{z}, T)$ by the formula
 \begin{align}
 F(L_{x}, L_{z}, T)=\frac{D(L_{x}, L_{z}, T)}{v}\label{for:frictionalforce}.
 \end{align}
-
-We can easily verify the formula \eqref{for:frictionalforce} by considering general cases in which the frictional force and its power are both time dependent. Denoting the frictional force $F(x)$ at the position $x$, it holds that
+We can verify the formula \eqref{for:frictionalforce} by considering general cases in which the frictional force and its power are both time dependent. Denoting the frictional force $F(x)$ at the position $x$, we have
 \begin{align}
 \int_{t_{0}}^{t_{1}}dt\;D(t)=\int_{x(t_{0})}^{x(t_{1})}dx\;F(x)=\int_{t_{0}}^{t_{1}}\frac{dx}{dt}dt\;F(x(t))=v\int_{t_{0}}^{t_{1}}dt\;F(x(t))\label{rel:PowerFrictionalforce}
 \end{align}
-for a time dependent $D(t)$, because $dx/dt=v$. Under the assumption of a non-equilibrium stationary state, the integrands in both-hand sides of the relation \eqref{rel:PowerFrictionalforce} are still equal to each other in the long-time limit, and hence 
+for a time-dependent $D(t)$, because $dx/dt=v$. Under the assumption of a non-equilibrium stationary state, the integrands in both-hand sides of the relation \eqref{rel:PowerFrictionalforce} are still equal to each other in the long-time limit, and hence we have
 \begin{align}
 D(L_{x}, L_{z}, T)=vF(L_{x}, L_{z}, T).
 \end{align}
-From now we call the quantity $D(L_{x}, L_{z}, T)$ the \textit{energy dissipation}.
 
-Our model always reaches a non-equilibrium stationary states in the long-time limit $t\to\infty$, which depends on the temperature $T$ and the sliding velocity $v$; We will prove it in .~\ref{chap:ProofEx}. We use the fact that $\lim_{t\to\infty}|D(t)|=\lim_{t\to\infty}|P(t)|$ in order to estimate the average $\bar{D}$; the average $\bar{P}$ has less statistical fluctuation~\cite{Magiera2009a, Magiera2011, Magiera2011b}. We therefore have
+We use the fact that $\lim_{t\to\infty}|D(t)|=\lim_{t\to\infty}|P(t)|$ in order to estimate $D(t)$ because the Monte Carlo estimate of $P(t)$ has less statistical fluctuation~\cite{Magiera2009a, Magiera2011, Magiera2011b}. In the long-time limit, we therefore have
 \begin{align}
-P(L_{x}, L_{z}, T)=vF(L_{x}, L_{z}, T)\label{for:frictionalforce2}.
+f(L_{x}, L_{z}, T)=\lim_{L_{x}\to\infty}\frac{P(L_{x}, L_{z}, T)}{vL_{x}}\label{for:frictionalforce2}.
 \end{align}
 We also define the bulk energy density $\epsilon_{\rm b}(L_{z}, T)$ as follows:
 \begin{align}
@@ -77,24 +74,60 @@ c_{\rm b}(L_{z}, T):=\frac{\partial \epsilon_{\rm b}(L_{z}, T)}{\partial T}.
 \end{align}
 
 \section{Non-equilibrium Monte Carlo Simulation}
-The dissipation process towards the heat bath occurs via a spin flip. This fundamental processes do not only describe equilibrium states but also non-equilibrium stationary states at a fixed temperature $T$~\cite{Glauber1963}. Using Monte Carlo method, we simulate this process.
+The dissipation process towards the heat bath occurs via a spin flip. This fundamental processes do not only describe the equilibrium state but also the non-equilibrium stationary state at a fixed temperature $T$~\cite{Glauber1963}. Using the Monte Carlo method, we simulate this process.
 
-\subsection{Introduction the Time Scale to Ising Models}
-In order to calculate dynamical observables such as the frictional power \eqref{for:frictionalforce2} and its dissipation rate \eqref{for:frictionalforce}, we have to define \textit{a unit time} for finite size systems. 
+\subsection{Introduction of the Time Scale to Ising Models}
+In order to calculate dynamical observables such as the frictional power \eqref{def:Pump} and its dissipation rate \eqref{def:Diss}, we have to define \textit{a unit time} for the simulation of the finite-size system. 
 
-For the equilibrium Monte Carlo simulation, the most naive approach for the equilibrium state is the single-spin-flip algorithm, where we perform the sequence of a random selection of a spin and its flip with a temperature dependent probability $p(T)$. Whatever we use as the probability for the Monte Caro simulation should satisfy a good property, called \textit{detailed balanced condition}, which certainly leads the system towards the true equilibrium state with enough repetition of the sequence. For example, we often use the Metropolis probability $p_{\rm M}(T):=\min\{1,\mathrm{e}^{-\frac{\Delta E}{k_{\rm B}T}}\}$ as the probability $p(T)$, where $\Delta E$ is the energy difference due to the flip. We often call a \textit{Monte Carlo step} a single process of the algorithm, and define a \textit{Monte Carlo sweep} by $N$ Monte Carlo steps, where $N$ is the number of spins.
+For the equilibrium Monte Carlo simulation, the most naive approach for the equilibrium state is the single-spin-flip algorithm, where we perform the sequence of a random selection of a spin and its flip with a temperature-dependent probability $p(T)$. We use the probability that satisfies the \textit{detailed balanced condition}, which certainly leads the system towards the true equilibrium state with enough repetition of the sequence. For example, we often use the Metropolis probability $p_{\rm M}(T):=\min\{1,\mathrm{e}^{-\frac{\Delta E}{k_{\rm B}T}}\}$ as the probability $p(T)$, where $\Delta E$ is the energy difference due to the flip. We often call a \textit{Monte Carlo step} a single process of the algorithm, and define a \textit{Monte Carlo sweep} by $N$ Monte Carlo steps, where $N$ is the number of spins.
 
-Which do we have to define a unit time by a Monte Carlo step or a Monte Carlo sweep? Its answer can be seen in the following manner: We often assume that a statistical mechanical model are coupling to a heat bath by each local degree of freedom. The temperature of the system is kept constant by the heat bath and exchanges its energy with the heat bath through local degrees of freedom. It is most natural to assume that the frequency of the exchanging process is dependent only on the temperature of the heat bath. Thus the total number of times exchanged are proportional to the number of degrees of freedom of the system. It is justified to define a unit time by a Monte Carlo sweep. Note that the more spins the system contains, the higher time resolution we can simulate with.
+Which should we use as a unit time, a Monte Carlo step or a Monte Carlo sweep? Its answer can be found in the following manner. We usually assume that a statistical mechanical system is coupled to a heat bath by every local degree of freedom. The temperature of the system is kept constant by the heat bath, and the system exchanges its energy with the heat bath through local degrees of freedom. It is most natural to assume that the equilibrium relaxation of a macroscopic system takes place in the same time scale if the volume of the system is doubled. Thus the number of times of the energy exchanges is proportional to the total number of degrees of freedom of the system. This justifies to define a unit time by a Monte Carlo sweep; the relaxation time would be proportional to the total number of degrees of freedom if we used the Monte Carlo steps for a unit time.
 
-\subsection{Slip Plane with the Velocity $v$}
-Using the introduced time scale, we can also introduce the slip plane with the velocity $v$ to the system with $N$ spins. Corresponding to the setup in Sec.~\ref{sec:SetupModel}, we perform an extended single-spin-flip algorithm as follows:
+\subsection{Slip Plane with the Velocity $v$}\label{subsec:SlipPlaneWithV}
+Using the introduced time scale, we can also introduce the sliding velocity $v$ of the system with $N$ spins, where $N=L_{x}\times L_{z}$. Corresponding to the setup in Sec.~\ref{sec:SetupModel}, we perform an extended single-spin-flip algorithm as follows:
 \begin{enumerate}
 	\item \textbf{Shift}: We shift the upper half of the lattice by a lattice constant.
-	\item \textbf{Flip}: We perform ordinary single flips for $N/v$ times.
+	\item \textbf{Flip}: We perform ordinary single flips for $(N/v)$ times, which is the $(1/v)$ fraction of a Monte Carlo sweep.
 	\item We repeat the processes 1 and 2 for $v$ times.
 \end{enumerate}
-In the extended algorithm, the upper half slides with the velocity $v$ in a unit time at regular intervals. We proved the fact that this algorithm leads the system of any size to a non-equilibrium stationary state depending on the temperature $T$ and the velocity $v$ (see App.~\ref{chap:ProofEx} for details).
+In the extended algorithm, the upper half slides with the velocity $v$ in a unit time at regular intervals. The frictional power $P(t)$ and the dissipation rate $D(t)$ are measured in Monte Carlo simulations as the energy differences for a unit time due to the shift and the flip operation, respectively. Both observables have the same absolute value in the long-time limit.
 
-\subsection{Calculation Method}
-The observables that we are interested in are the frictional power $P(t)$ and its dissipation rate $D(t)$. In Monte Carlo simulations, they are the energy difference for a unit time due to the shift and the flip operation, respectively. Both observables have the same absolute value in the long-time limit.
+We prove that this algorithm leads the system of any size to a non-equilibrium stationary state which depends on the temperature $T$ and the velocity $v$. The above algorithm is represented by the following matrix for a Monte Carlo sweep:
+\begin{align}
+\hat{T}(\beta,v):=\left[\left(\hat{M}(\beta)\right)^{N/v}\hat{S}\right]^{v},
+\end{align}
+where $v\in\{\text{Divisors of }N\}$. The matrix $\hat{M}(\beta)$ and $\hat{S}$ express a Monte Carlo step at a temperature $T$ and sliding of the upper half by a lattice constant, respectively, for the model of size $N=L_{x}\times L_{z}$. The matrix $\hat{T}(\beta,v)$ describes the time evolution for a Monte Carlo sweep, because the matrix have the $N$th power of $\hat{M}(\beta)$. We now decompose the matrix $\hat{T}(\beta,v)$ into the $(1/v)$ fraction $\left(\hat{M}(\beta)\right)^{N/v}\hat{S}$.
+The matrices $\hat{M}(\beta)$ and $\hat{S}$ belong to the class called \textit{stochastic matrices}, whose definition is given by following properties:
+\begin{itemize}
+	\item Each element is greater than or equal to zero;
+	\item Each row-wise total sum of elements is normalized to unity.
+\end{itemize}
+The product of two stochastic matrices is also a stochastic matrix. Indeed if we have two $\Omega$-dimensional stochastic matrices $\hat{A}$ and $\hat{B}$, we have
+\begin{align}
+\sum_{i=1}^{\Omega}(\hat{A}\hat{B})_{ij} = \sum_{i=1}^{\Omega}\sum_{k=1}^{\Omega}A_{ik}B_{kj} = \sum_{k=1}^{\Omega}\left(\sum_{i=1}^{\Omega}A_{ik}\right)B_{kj} = \sum_{k=1}^{\Omega}B_{kj} = 1 \quad\text{for $1\leq j\leq \Omega$},
+\end{align}
+and therefore the matrix $\left(\hat{M}(\beta)\right)^{N/v}\hat{S}$ is also a stochastic matrix. Any stochastic matrix has at least the eigenvalue $1$ (see App.~\ref{chap:ProofEx}), and therefore the matrix $\left(\hat{M}(\beta)\right)^{N/v}\hat{S}$ has also the eigenvalue $1$. Our simulations therefore reach a unique non-equilibrium stationary state with the temperature $T$ and the velocity $v$ from \textit{arbitrary} initial states.
+%\todo{A crucial drawback is found!}
+
+The matrices $\hat{M}(\beta)$ and $\hat{S}$ have sparse structures as demonstrated in Figs.~\ref{fig:ArrayPlot}(\subref{fig:ArrayPlotM}) and (\subref{fig:ArrayPlotS}), respectively, whereas the matrix $\hat{T}(\beta,v)$ has a dense structure as in Fig.~\ref{fig:ArrayPlot}(\subref{fig:ArrayPlotT}). The task of diagonalizing the matrix $\hat{T}(\beta,v)$ is the same as that of $\left(\hat{M}(\beta)\right)^{N/v}\hat{S}$, which corresponds to the time evolution for the $(1/v)$ fraction of a Monte Carlo sweep. We show in Fig.~\ref{fig:EigDist} the eigenvalue distributions of $\left(\hat{M}(\beta)\right)^{N/v}$ and $\left(\hat{M}(\beta)\right)^{N/v}\hat{S}$ for the model of size $L_{x}=3,L_{z}=2$. These eigenvalue distributions are somewhat similar to each other, reflecting that both of them correspond to 
+the time evolution for the same time.
+
+\begin{figure}[htbp]
+	\centering
+	\subcaptionbox{\label{fig:ArrayPlotM}}[0.32\linewidth]{\includegraphics[width=0.30\linewidth]{../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM1_B0-1_Detailed.png}}
+	\subcaptionbox{\label{fig:ArrayPlotS}}[0.32\linewidth]{\raisebox{0.0\height}{\includegraphics[width=0.285\linewidth]{../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotS_Detailed.png}}}
+	\subcaptionbox{\label{fig:ArrayPlotT}}[0.32\linewidth]{\includegraphics[width=0.310\linewidth]{../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotT6_B0-1_Detailed.png}}
+	
+	\caption{The array plots of matrices for the model of size $L_{x}=3, L_{z}=2$ and at the temperature $T=10$: (\subref{fig:ArrayPlotM}) $\hat{M}(\beta)$; (\subref{fig:ArrayPlotS}) $\hat{S}$; (\subref{fig:ArrayPlotT}) $\hat{T}(\beta,v)$.}
+	\label{fig:ArrayPlot}
+\end{figure}
+
+\begin{figure}[htbp]
+	\centering
+	\subcaptionbox{\label{fig:EigDistM6}}[0.49\linewidth]{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_EigDist_M6_Beta0-1.png}}
+	\subcaptionbox{\label{fig:EigDistT6}}[0.49\linewidth]{\includegraphics[width=0.3\linewidth]{../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_EigDist_T6_Beta0-1.png}}
+	
+	\caption{Eigenvalue distributions of matrices for the model of size $L_{x}=3, L_{z}=2$ and at the temperature $T=10$:  (\subref{fig:EigDistM6}) $\left\{\hat{M}(\beta)\right\}^{N/v}$; (\subref{fig:EigDistT6}) $\left\{\hat{M}(\beta)\right\}^{N/v}\hat{S}$.}
+	\label{fig:EigDist}
+\end{figure}
 

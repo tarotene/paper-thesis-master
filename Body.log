@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.12.2)  1 JAN 2018 15:50
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.12.2)  9 JAN 2018 22:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -24,20 +24,46 @@ File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen118
 )
-(/usr/local/texlive/2017/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty
-Package: otf 2013/11/17 v1.7b6 psitau, u0.18 ttk
+(/usr/local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count91
+\Gm@cntv=\count92
+\c@Gm@tempcnt=\count93
+\Gm@bindingoffset=\dimen119
+\Gm@wd@mp=\dimen120
+\Gm@odd@mp=\dimen121
+\Gm@even@mp=\dimen122
+\Gm@layoutwidth=\dimen123
+\Gm@layoutheight=\dimen124
+\Gm@layouthoffset=\dimen125
+\Gm@layoutvoffset=\dimen126
+\Gm@dimlist=\toks16
+)
+(/usr/local/texlive/2017/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty
+Package: otf 2013/11/17 v1.7b6 psitau, u0.18 ttk
+
 (/usr/local/texlive/2017/texmf-dist/tex/platex/japanese-otf/ajmacros.sty
 Package: ajmacros 2005/12/25 13:52 iNOUE Koich! <inoue@ma.ns.musashi-tech.ac.jp
 >
-\@tempcntc=\count91
-\@tempcntd=\count92
-\@tempcnte=\count93
-\@tempcntf=\count94
+\@tempcntc=\count94
+\@tempcntd=\count95
+\@tempcnte=\count96
+\@tempcntf=\count97
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2017/11/21 v3.9 programmable bibliographies (PK/JW/AB)
@@ -56,9 +82,6 @@ Package ifluatex Info: LuaTeX not detected.
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-)
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -67,7 +90,7 @@ Package pdftexcmds Info: \pdfdraftmode not found.
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2017/11/22 v2.5 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count95
+\etb@tempcnta=\count98
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
@@ -84,7 +107,7 @@ Package etexcmds Info: Could not find \expanded.
 )))
 (/usr/local/texlive/2017/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count96
+\lrq@indent=\count99
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -99,49 +122,49 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 (/usr/local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write3
-\integerpart=\count97
-\decimalpart=\count98
+\integerpart=\count100
+\decimalpart=\count101
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
-\c@tabx@nest=\count99
-\c@listtotal=\count100
-\c@listcount=\count101
-\c@liststart=\count102
-\c@liststop=\count103
-\c@citecount=\count104
-\c@citetotal=\count105
-\c@multicitecount=\count106
-\c@multicitetotal=\count107
-\c@instcount=\count108
-\c@maxnames=\count109
-\c@minnames=\count110
-\c@maxitems=\count111
-\c@minitems=\count112
-\c@citecounter=\count113
-\c@savedcitecounter=\count114
-\c@uniquelist=\count115
-\c@uniquename=\count116
-\c@refsection=\count117
-\c@refsegment=\count118
-\c@maxextratitle=\count119
-\c@maxextratitleyear=\count120
-\c@maxextradate=\count121
-\c@maxextraalpha=\count122
-\c@abbrvpenalty=\count123
-\c@highnamepenalty=\count124
-\c@lownamepenalty=\count125
-\c@maxparens=\count126
-\c@parenlevel=\count127
-\blx@tempcnta=\count128
-\blx@tempcntb=\count129
-\blx@tempcntc=\count130
-\blx@maxsection=\count131
-\blx@maxsegment@0=\count132
-\blx@notetype=\count133
-\blx@parenlevel@text=\count134
-\blx@parenlevel@foot=\count135
-\blx@sectionciteorder@0=\count136
+\c@tabx@nest=\count102
+\c@listtotal=\count103
+\c@listcount=\count104
+\c@liststart=\count105
+\c@liststop=\count106
+\c@citecount=\count107
+\c@citetotal=\count108
+\c@multicitecount=\count109
+\c@multicitetotal=\count110
+\c@instcount=\count111
+\c@maxnames=\count112
+\c@minnames=\count113
+\c@maxitems=\count114
+\c@minitems=\count115
+\c@citecounter=\count116
+\c@savedcitecounter=\count117
+\c@uniquelist=\count118
+\c@uniquename=\count119
+\c@refsection=\count120
+\c@refsegment=\count121
+\c@maxextratitle=\count122
+\c@maxextratitleyear=\count123
+\c@maxextradate=\count124
+\c@maxextraalpha=\count125
+\c@abbrvpenalty=\count126
+\c@highnamepenalty=\count127
+\c@lownamepenalty=\count128
+\c@maxparens=\count129
+\c@parenlevel=\count130
+\blx@tempcnta=\count131
+\blx@tempcntb=\count132
+\blx@tempcntc=\count133
+\blx@maxsection=\count134
+\blx@maxsegment@0=\count135
+\blx@notetype=\count136
+\blx@parenlevel@text=\count137
+\blx@parenlevel@foot=\count138
+\blx@sectionciteorder@0=\count139
 \labelnumberwidth=\skip43
 \labelalphawidth=\skip44
 \biblabelsep=\skip45
@@ -152,9 +175,9 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 \bibhang=\skip50
 \blx@bcfin=\read1
 \blx@bcfout=\write4
-\c@mincomprange=\count137
-\c@maxcomprange=\count138
-\c@mincompwidth=\count139
+\c@mincomprange=\count140
+\c@maxcomprange=\count141
+\c@mincompwidth=\count142
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -163,74 +186,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'phys.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count140
-\c@savedafterword=\count141
-\c@annotator=\count142
-\c@savedannotator=\count143
-\c@author=\count144
-\c@savedauthor=\count145
-\c@bookauthor=\count146
-\c@savedbookauthor=\count147
-\c@commentator=\count148
-\c@savedcommentator=\count149
-\c@editor=\count150
-\c@savededitor=\count151
-\c@editora=\count152
-\c@savededitora=\count153
-\c@editorb=\count154
-\c@savededitorb=\count155
-\c@editorc=\count156
-\c@savededitorc=\count157
-\c@foreword=\count158
-\c@savedforeword=\count159
-\c@holder=\count160
-\c@savedholder=\count161
-\c@introduction=\count162
-\c@savedintroduction=\count163
-\c@namea=\count164
-\c@savednamea=\count165
-\c@nameb=\count166
-\c@savednameb=\count167
-\c@namec=\count168
-\c@savednamec=\count169
-\c@translator=\count170
-\c@savedtranslator=\count171
-\c@shortauthor=\count172
-\c@savedshortauthor=\count173
-\c@shorteditor=\count174
-\c@savedshorteditor=\count175
-\c@labelname=\count176
-\c@savedlabelname=\count177
-\c@institution=\count178
-\c@savedinstitution=\count179
-\c@lista=\count180
-\c@savedlista=\count181
-\c@listb=\count182
-\c@savedlistb=\count183
-\c@listc=\count184
-\c@savedlistc=\count185
-\c@listd=\count186
-\c@savedlistd=\count187
-\c@liste=\count188
-\c@savedliste=\count189
-\c@listf=\count190
-\c@savedlistf=\count191
-\c@location=\count192
-\c@savedlocation=\count193
-\c@organization=\count194
-\c@savedorganization=\count195
-\c@origlocation=\count196
-\c@savedoriglocation=\count197
-\c@origpublisher=\count198
-\c@savedorigpublisher=\count199
-\c@publisher=\count266
-\c@savedpublisher=\count267
-\c@language=\count268
-\c@savedlanguage=\count269
-\c@origlanguage=\count270
-\c@savedoriglanguage=\count271
-\c@pageref=\count272
-\c@savedpageref=\count273
+\c@afterword=\count143
+\c@savedafterword=\count144
+\c@annotator=\count145
+\c@savedannotator=\count146
+\c@author=\count147
+\c@savedauthor=\count148
+\c@bookauthor=\count149
+\c@savedbookauthor=\count150
+\c@commentator=\count151
+\c@savedcommentator=\count152
+\c@editor=\count153
+\c@savededitor=\count154
+\c@editora=\count155
+\c@savededitora=\count156
+\c@editorb=\count157
+\c@savededitorb=\count158
+\c@editorc=\count159
+\c@savededitorc=\count160
+\c@foreword=\count161
+\c@savedforeword=\count162
+\c@holder=\count163
+\c@savedholder=\count164
+\c@introduction=\count165
+\c@savedintroduction=\count166
+\c@namea=\count167
+\c@savednamea=\count168
+\c@nameb=\count169
+\c@savednameb=\count170
+\c@namec=\count171
+\c@savednamec=\count172
+\c@translator=\count173
+\c@savedtranslator=\count174
+\c@shortauthor=\count175
+\c@savedshortauthor=\count176
+\c@shorteditor=\count177
+\c@savedshorteditor=\count178
+\c@labelname=\count179
+\c@savedlabelname=\count180
+\c@institution=\count181
+\c@savedinstitution=\count182
+\c@lista=\count183
+\c@savedlista=\count184
+\c@listb=\count185
+\c@savedlistb=\count186
+\c@listc=\count187
+\c@savedlistc=\count188
+\c@listd=\count189
+\c@savedlistd=\count190
+\c@liste=\count191
+\c@savedliste=\count192
+\c@listf=\count193
+\c@savedlistf=\count194
+\c@location=\count195
+\c@savedlocation=\count196
+\c@organization=\count197
+\c@savedorganization=\count198
+\c@origlocation=\count199
+\c@savedoriglocation=\count266
+\c@origpublisher=\count267
+\c@savedorigpublisher=\count268
+\c@publisher=\count269
+\c@savedpublisher=\count270
+\c@language=\count271
+\c@savedlanguage=\count272
+\c@origlanguage=\count273
+\c@savedoriglanguage=\count274
+\c@pageref=\count275
+\c@savedpageref=\count276
 \shorthandwidth=\skip51
 \shortjournalwidth=\skip52
 \shortserieswidth=\skip53
@@ -258,13 +281,13 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2017/11/21 v3.9 biblatex compatibility (PK/JW/AB)
-\c@textcitecount=\count274
-\c@textcitetotal=\count275
-\c@textcitemaxnames=\count276
-\c@biburlnumpenalty=\count277
-\c@biburlucpenalty=\count278
-\c@biburllcpenalty=\count279
-\c@smartand=\count280
+\c@textcitecount=\count277
+\c@textcitetotal=\count278
+\c@textcitemaxnames=\count279
+\c@biburlnumpenalty=\count280
+\c@biburlucpenalty=\count281
+\c@biburllcpenalty=\count282
+\c@smartand=\count283
 )
 Package biblatex Info: Trying to load bibliography style 'phys'...
 Package biblatex Info: ... file 'phys.bbx' found.
@@ -286,8 +309,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2017/11/21 v3.9 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count281
-\c@bbx:relatedtotal=\count282
+\c@bbx:relatedcount=\count284
+\c@bbx:relatedtotal=\count285
 ))))
 Package biblatex Info: Trying to load citation style 'phys'...
 Package biblatex Info: ... file 'phys.cbx' found.
@@ -299,8 +322,8 @@ Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 File: numeric-comp.cbx 2017/11/21 v3.9 biblatex citation style (PK/JW/AB)
-\c@cbx@tempcnta=\count283
-\c@cbx@tempcntb=\count284
+\c@cbx@tempcnta=\count286
+\c@cbx@tempcntb=\count287
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -319,49 +342,14 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 ))
-(/usr/local/texlive/2017/texmf-dist/tex/latex/todonotes/todonotes.sty
-Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
-Package: todonotes 2012/07/25
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks16
-\XKV@tempa@toks=\toks17
-)
-\XKV@depth=\count285
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-(/usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: dvipdfmx.def on input line 225.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
-File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
-)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
-\pgfutil@everybye=\toks18
-\pgfutil@tempdima=\dimen119
-\pgfutil@tempdimb=\dimen120
+\pgfutil@everybye=\toks17
+\pgfutil@tempdima=\dimen127
+\pgfutil@tempdimb=\dimen128
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
 sts.tex))
@@ -388,38 +376,41 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: dvipdfmx.def on input line 99.
-)
-\Gin@req@height=\dimen121
-\Gin@req@width=\dimen122
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
+))
+\Gin@req@height=\dimen129
+\Gin@req@width=\dimen130
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks19
-\pgfkeys@temptoks=\toks20
+\pgfkeys@pathtoks=\toks18
+\pgfkeys@temptoks=\toks19
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
 ode.tex
-\pgfkeys@tmptoks=\toks21
+\pgfkeys@tmptoks=\toks20
 ))
-\pgf@x=\dimen123
-\pgf@y=\dimen124
-\pgf@xa=\dimen125
-\pgf@ya=\dimen126
-\pgf@xb=\dimen127
-\pgf@yb=\dimen128
-\pgf@xc=\dimen129
-\pgf@yc=\dimen130
+\pgf@x=\dimen131
+\pgf@y=\dimen132
+\pgf@xa=\dimen133
+\pgf@ya=\dimen134
+\pgf@xb=\dimen135
+\pgf@yb=\dimen136
+\pgf@xc=\dimen137
+\pgf@yc=\dimen138
 \w@pgf@writea=\write5
 \r@pgf@reada=\read2
-\c@pgf@counta=\count286
-\c@pgf@countb=\count287
-\c@pgf@countc=\count288
-\c@pgf@countd=\count289
-\t@pgf@toka=\toks22
-\t@pgf@tokb=\toks23
-\t@pgf@tokc=\toks24
+\c@pgf@counta=\count288
+\c@pgf@countb=\count289
+\c@pgf@countc=\count290
+\c@pgf@countd=\count291
+\t@pgf@toka=\toks21
+\t@pgf@tokb=\toks22
+\t@pgf@tokc=\toks23
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -434,30 +425,45 @@ File: pgfsys-dvipdfmx.def 2014/07/09  (rcs-revision 1.14)
 df.def
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )
-\pgfsys@objnum=\count290
+\pgfsys@objnum=\count292
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count291
-\pgfsyssoftpath@bigbuffer@items=\count292
+\pgfsyssoftpath@smallbuffer@items=\count293
+\pgfsyssoftpath@bigbuffer@items=\count294
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-))
+)) (/usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: dvipdfmx.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen131
-\pgfmath@count=\count293
+\pgfmath@dimen=\dimen139
+\pgfmath@count=\count295
 \pgfmath@box=\box43
-\pgfmath@toks=\toks25
-\pgfmath@stack@operand=\toks26
-\pgfmath@stack@operation=\toks27
+\pgfmath@toks=\toks24
+\pgfmath@stack@operand=\toks25
+\pgfmath@stack@operation=\toks26
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex
@@ -478,25 +484,25 @@ code.tex)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count294
+\c@pgfmathroundto@lastzeros=\count296
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen132
-\pgf@picmaxx=\dimen133
-\pgf@picminy=\dimen134
-\pgf@picmaxy=\dimen135
-\pgf@pathminx=\dimen136
-\pgf@pathmaxx=\dimen137
-\pgf@pathminy=\dimen138
-\pgf@pathmaxy=\dimen139
-\pgf@xx=\dimen140
-\pgf@xy=\dimen141
-\pgf@yx=\dimen142
-\pgf@yy=\dimen143
-\pgf@zx=\dimen144
-\pgf@zy=\dimen145
+\pgf@picminx=\dimen140
+\pgf@picmaxx=\dimen141
+\pgf@picminy=\dimen142
+\pgf@picmaxy=\dimen143
+\pgf@pathminx=\dimen144
+\pgf@pathmaxx=\dimen145
+\pgf@pathminy=\dimen146
+\pgf@pathmaxy=\dimen147
+\pgf@xx=\dimen148
+\pgf@xy=\dimen149
+\pgf@yx=\dimen150
+\pgf@yy=\dimen151
+\pgf@zx=\dimen152
+\pgf@zy=\dimen153
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
 (Font)              scaled to size 9.6222pt on input line 926.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
@@ -505,14 +511,14 @@ LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
 ruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen146
-\pgf@path@lasty=\dimen147
+\pgf@path@lastx=\dimen154
+\pgf@path@lasty=\dimen155
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
 .code.tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen148
-\pgf@shorten@start@additional=\dimen149
+\pgf@shorten@end@additional=\dimen156
+\pgf@shorten@start@additional=\dimen157
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
 de.tex
@@ -520,19 +526,19 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box44
 \pgf@hbox=\box45
 \pgf@layerbox@main=\box46
-\pgf@picture@serial@count=\count295
+\pgf@picture@serial@count=\count297
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen150
+\pgflinewidth=\dimen158
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
 ations.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen151
-\pgf@pt@y=\dimen152
-\pgf@pt@temp=\dimen153
+\pgf@pt@x=\dimen159
+\pgf@pt@y=\dimen160
+\pgf@pt@temp=\dimen161
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
 e.tex
@@ -549,13 +555,13 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
 de.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen154
+\pgfarrowsep=\dimen162
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
 e.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen155
-\pgf@sys@shading@range@num=\count296
+\pgf@max=\dimen163
+\pgf@sys@shading@range@num=\count298
 )
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -590,8 +596,8 @@ File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen156
-\pgf@nodesepend=\dimen157
+\pgf@nodesepstart=\dimen164
+\pgf@nodesepend=\dimen165
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
@@ -606,10 +612,10 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen158
-\pgffor@skip=\dimen159
-\pgffor@stack=\toks28
-\pgffor@toks=\toks29
+\pgffor@iter=\dimen166
+\pgffor@skip=\dimen167
+\pgffor@stack=\toks27
+\pgffor@toks=\toks28
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
@@ -618,56 +624,37 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count297
-\pgfplotmarksize=\dimen160
+\pgf@plot@mark@count=\count299
+\pgfplotmarksize=\dimen168
 )
-\tikz@lastx=\dimen161
-\tikz@lasty=\dimen162
-\tikz@lastxsaved=\dimen163
-\tikz@lastysaved=\dimen164
-\tikzleveldistance=\dimen165
-\tikzsiblingdistance=\dimen166
+\tikz@lastx=\dimen169
+\tikz@lasty=\dimen170
+\tikz@lastxsaved=\dimen171
+\tikz@lastysaved=\dimen172
+\tikzleveldistance=\dimen173
+\tikzsiblingdistance=\dimen174
 \tikz@figbox=\box49
 \tikz@figbox@bg=\box50
 \tikz@tempbox=\box51
 \tikz@tempbox@bg=\box52
-\tikztreelevel=\count298
-\tikznumberofchildren=\count299
-\tikznumberofcurrentchild=\count300
-\tikz@fig@count=\count301
+\tikztreelevel=\count300
+\tikznumberofchildren=\count301
+\tikznumberofcurrentchild=\count302
+\tikz@fig@count=\count303
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count302
-\pgfmatrixcurrentcolumn=\count303
-\pgf@matrix@numberofcolumns=\count304
+\pgfmatrixcurrentrow=\count304
+\pgfmatrixcurrentcolumn=\count305
+\pgf@matrix@numberofcolumns=\count306
 )
-\tikz@expandcount=\count305
+\tikz@expandcount=\count307
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
-)
-(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count306
-\calc@Bcount=\count307
-\calc@Adimen=\dimen167
-\calc@Bdimen=\dimen168
-\calc@Askip=\skip57
-\calc@Bskip=\skip58
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count308
-\calc@Cskip=\skip59
-)
-\c@@todonotes@numberoftodonotes=\count309
-)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
 
@@ -677,22 +664,22 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen169
-\captionmargin@=\dimen170
-\captionwidth=\dimen171
-\caption@tempdima=\dimen172
-\caption@indent=\dimen173
-\caption@parindent=\dimen174
-\caption@hangindent=\dimen175
+\captionmargin=\dimen175
+\captionmargin@=\dimen176
+\captionwidth=\dimen177
+\caption@tempdima=\dimen178
+\caption@indent=\dimen179
+\caption@parindent=\dimen180
+\caption@hangindent=\dimen181
 )
-\c@ContinuedFloat=\count310
+\c@ContinuedFloat=\count308
 )
-\c@subfigure=\count311
-\c@subtable=\count312
+\c@subfigure=\count309
+\c@subtable=\count310
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip60
+\@mathmargin=\skip57
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -700,51 +687,51 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks30
-\ex@=\dimen176
+\@emptytoks=\toks29
+\ex@=\dimen182
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen177
+\pmbraise@=\dimen183
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count313
+\inf@bad=\count311
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count314
-\leftroot@=\count315
+\uproot@=\count312
+\leftroot@=\count313
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count316
-\DOTSCASE@=\count317
+\classnum@=\count314
+\DOTSCASE@=\count315
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box53
 \strutbox@=\box54
-\big@size=\dimen178
+\big@size=\dimen184
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count318
-\c@MaxMatrixCols=\count319
+\macc@depth=\count316
+\c@MaxMatrixCols=\count317
 \dotsspace@=\muskip11
-\c@parentequation=\count320
-\dspbrk@lvl=\count321
-\tag@help=\toks31
-\row@=\count322
-\column@=\count323
-\maxfields@=\count324
-\andhelp@=\toks32
-\eqnshift@=\dimen179
-\alignsep@=\dimen180
-\tagshift@=\dimen181
-\tagwidth@=\dimen182
-\totwidth@=\dimen183
-\lineht@=\dimen184
-\@envbody=\toks33
-\multlinegap=\skip61
-\multlinetaggap=\skip62
-\mathdisplay@stack=\toks34
+\c@parentequation=\count318
+\dspbrk@lvl=\count319
+\tag@help=\toks30
+\row@=\count320
+\column@=\count321
+\maxfields@=\count322
+\andhelp@=\toks31
+\eqnshift@=\dimen185
+\alignsep@=\dimen186
+\tagshift@=\dimen187
+\tagwidth@=\dimen188
+\totwidth@=\dimen189
+\lineht@=\dimen190
+\@envbody=\toks32
+\multlinegap=\skip58
+\multlinetaggap=\skip59
+\mathdisplay@stack=\toks33
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
@@ -757,15 +744,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2015/03/04 v2.20.2
-\thm@style=\toks35
-\thm@bodyfont=\toks36
-\thm@headfont=\toks37
-\thm@notefont=\toks38
-\thm@headpunct=\toks39
-\thm@preskip=\skip63
-\thm@postskip=\skip64
-\thm@headsep=\skip65
-\dth@everypar=\toks40
+\thm@style=\toks34
+\thm@bodyfont=\toks35
+\thm@headfont=\toks36
+\thm@notefont=\toks37
+\thm@headpunct=\toks38
+\thm@preskip=\skip60
+\thm@postskip=\skip61
+\thm@headsep=\skip62
+\dth@everypar=\toks39
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -775,21 +762,21 @@ Package: ascmac 2017/07/22 v2.0d ascmac wrapper (community edition)
 
 (/usr/local/texlive/2017/texmf-dist/tex/platex/base/tascmac.sty
 Package: tascmac 2017/07/22 v2.0d ascmac package (community edition) 
-\@savetbaselineshift=\dimen185
-\@saveybaselineshift=\dimen186
+\@savetbaselineshift=\dimen191
+\@saveybaselineshift=\dimen192
 \scb@x=\box55
 \scscb@x=\box56
-\@bw=\dimen187
+\@bw=\dimen193
 \@nbox=\box57
 \@nbody=\box58
-\@scw=\dimen188
-\@itemh=\dimen189
-\@iboxpos=\toks41
+\@scw=\dimen194
+\@itemh=\dimen195
+\@iboxpos=\toks40
 \@iboxstr=\box59
 \@bwsp=\box60
 \@@bwsp=\box61
-\@bcal=\count325
-\shaderule=\dimen190
+\@bcal=\count323
+\shaderule=\dimen196
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
@@ -797,34 +784,34 @@ nment
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count326
-\float@exts=\toks42
+\c@float@type=\count324
+\float@exts=\toks41
 \float@box=\box62
-\@float@everytoks=\toks43
+\@float@everytoks=\toks42
 \@floatcapt=\box63
 )
-\@float@every@algorithm=\toks44
-\c@algorithm=\count327
+\@float@every@algorithm=\toks43
+\c@algorithm=\count325
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count328
-\c@ALC@line=\count329
-\c@ALC@rem=\count330
-\c@ALC@depth=\count331
-\ALC@tlm=\skip66
-\algorithmicindent=\skip67
+\c@ALC@unique=\count326
+\c@ALC@line=\count327
+\c@ALC@rem=\count328
+\c@ALC@depth=\count329
+\ALC@tlm=\skip63
+\algorithmicindent=\skip64
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/dcolumn.sty
 Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/array.sty
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
-\col@sep=\dimen191
-\extrarowheight=\dimen192
-\NC@list=\toks45
-\extratabsurround=\skip68
-\backup@length=\skip69
+\col@sep=\dimen197
+\extrarowheight=\dimen198
+\NC@list=\toks44
+\extratabsurround=\skip65
+\backup@length=\skip66
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
@@ -836,23 +823,23 @@ LaTeX Info: Redefining \bm on input line 207.
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
-\heavyrulewidth=\dimen193
-\lightrulewidth=\dimen194
-\cmidrulewidth=\dimen195
-\belowrulesep=\dimen196
-\belowbottomsep=\dimen197
-\aboverulesep=\dimen198
-\abovetopsep=\dimen199
-\cmidrulesep=\dimen256
-\cmidrulekern=\dimen257
-\defaultaddspace=\dimen258
-\@cmidla=\count332
-\@cmidlb=\count333
-\@aboverulesep=\dimen259
-\@belowrulesep=\dimen260
-\@thisruleclass=\count334
-\@lastruleclass=\count335
-\@thisrulewidth=\dimen261
+\heavyrulewidth=\dimen199
+\lightrulewidth=\dimen256
+\cmidrulewidth=\dimen257
+\belowrulesep=\dimen258
+\belowbottomsep=\dimen259
+\aboverulesep=\dimen260
+\abovetopsep=\dimen261
+\cmidrulesep=\dimen262
+\cmidrulekern=\dimen263
+\defaultaddspace=\dimen264
+\@cmidla=\count330
+\@cmidlb=\count331
+\@aboverulesep=\dimen265
+\@belowrulesep=\dimen266
+\@thisruleclass=\count332
+\@lastruleclass=\count333
+\@thisrulewidth=\dimen267
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/braket/braket.sty)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/setspace/setspace.sty
@@ -862,23 +849,23 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 Package: docmute 2012/03/22 v1.4 Input stand-alone documents
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count336
+\lst@mode=\count334
 \lst@gtempboxa=\box64
-\lst@token=\toks46
-\lst@length=\count337
-\lst@currlwidth=\dimen262
-\lst@column=\count338
-\lst@pos=\count339
-\lst@lostspace=\dimen263
-\lst@width=\dimen264
-\lst@newlines=\count340
-\lst@lineno=\count341
-\lst@maxwidth=\dimen265
+\lst@token=\toks45
+\lst@length=\count335
+\lst@currlwidth=\dimen268
+\lst@column=\count336
+\lst@pos=\count337
+\lst@lostspace=\dimen269
+\lst@width=\dimen270
+\lst@newlines=\count338
+\lst@lineno=\count339
+\lst@maxwidth=\dimen271
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count342
-\lst@skipnumbers=\count343
+\c@lstnumber=\count340
+\lst@skipnumbers=\count341
 \lst@framebox=\box65
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/listings.cfg
@@ -899,8 +886,7 @@ Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package hobsub Info: Skipping package `ifluatex' (already loaded).
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
 Package hobsub Info: Skipping package `etexcmds' (already loaded).
@@ -922,9 +908,6 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-(/usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 
@@ -933,13 +916,13 @@ Package auxhook Warning: Cannot patch \document,
 (auxhook)                using \AtBeginDocument instead.
 
 )
-\@linkdim=\dimen266
-\Hy@linkcounter=\count344
-\Hy@pagecounter=\count345
+\@linkdim=\dimen272
+\Hy@linkcounter=\count342
+\Hy@pagecounter=\count343
  (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count346
+\Hy@SavedSpaceFactor=\count344
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -952,12 +935,12 @@ Package hyperref Info: Plain pages OFF on input line 4513.
 Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4751.
-\c@Hy@tempcnt=\count347
+\c@Hy@tempcnt=\count345
 LaTeX Info: Redefining \url on input line 5104.
-\XeTeXLinkMargin=\dimen267
-\Fld@menulength=\count348
-\Field@Width=\dimen268
-\Fld@charsize=\dimen269
+\XeTeXLinkMargin=\dimen273
+\Fld@menulength=\count346
+\Field@Width=\dimen274
+\Fld@charsize=\dimen275
 Package hyperref Info: Hyper figures OFF on input line 6358.
 Package hyperref Info: Link nesting OFF on input line 6363.
 Package hyperref Info: Hyper index ON on input line 6366.
@@ -967,9 +950,9 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6383.
 Package hyperref Info: PDF/A mode OFF on input line 6388.
 LaTeX Info: Redefining \ref on input line 6428.
 LaTeX Info: Redefining \pageref on input line 6432.
-\Hy@abspage=\count349
-\c@Item=\count350
-\c@Hfootnote=\count351
+\Hy@abspage=\count347
+\c@Item=\count348
+\c@Hfootnote=\count349
 )
 
 Package hyperref Message: Driver: hdvipdfm.
@@ -977,75 +960,95 @@ Package hyperref Message: Driver: hdvipdfm.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/hdvipdfm.def
 File: hdvipdfm.def 2017/03/14 v6.85a Hyperref driver for dvipdfm
 \pdfm@box=\box66
-\c@Hy@AnnotLevel=\count352
-\HyField@AnnotCount=\count353
-\Fld@listcount=\count354
-\c@bookmark@seq@number=\count355
+\c@Hy@AnnotLevel=\count350
+\HyField@AnnotCount=\count351
+\Fld@listcount=\count352
+\c@bookmark@seq@number=\count353
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip70
+\Hy@SectionHShift=\skip67
 )
-\c@definition=\count356
-\c@theorem=\count357
-\c@corollary=\count358
-\c@one=\count359
+\c@definition=\count354
+\c@theorem=\count355
+\c@corollary=\count356
+\c@one=\count357
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2017/11/21 v3.9 biblatex localization (PK/JW/AB)
 )
-\@quotelevel=\count360
-\@quotereset=\count361
-
-(./Body.aux
-
-LaTeX Warning: Label `fig:fuga' multiply defined.
+\@quotelevel=\count358
+\@quotereset=\count359
 
 
-LaTeX Warning: Label `sub@fig:fuga' multiply defined.
+LaTeX Warning: Unused global option(s):
+    [a4].
 
-
-LaTeX Warning: Label `fig:fuga' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:fuga' multiply defined.
-
-
-LaTeX Warning: Label `fig:fuga' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:fuga' multiply defined.
-
-)
+(./Body.aux)
 \openout1 = `Body.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 50.
+(Font)              scaled to size 11.54663pt on input line 53.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 50.
+(Font)              scaled to size 11.54663pt on input line 53.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: dvips
+*geometry* verbose mode - [ preamble ] result:
+* driver: dvips
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 624.25346pt, 99.58464pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=472.03123pt
+* \textheight=624.25346pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-33.0119pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=98.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
 Package biblatex Info: No input encoding detected.
 (biblatex)             Assuming 'ascii'.
 Package biblatex Info: Automatic encoding selection.
@@ -1057,7 +1060,12 @@ Package biblatex Info: Data encoding 'ascii' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Body.bbl' found.
- (./Body.bbl
+(./Body.bbl
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Hucht2009b':
+(biblatex)                - Invalid format of field 'month'.
+
 
 Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'Weiss1996':
@@ -1070,32 +1078,12 @@ Package biblatex Warning: BibTeX reported the following issues
 
 
 Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Strunz1998a':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Strunz1998':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Novaco2015b':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Novaco2015a':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Meng2015':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'Garcia-Mata2007':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Meyer2015':
 (biblatex)                - Invalid format of field 'month'.
 
 
@@ -1145,7 +1133,27 @@ Package biblatex Warning: BibTeX reported the following issues
 
 
 Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Hucht2009b':
+(biblatex)                with 'Strunz1998a':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Strunz1998':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Novaco2015b':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Meng2015':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'Fusco2008':
 (biblatex)                - Invalid format of field 'month'.
 
 
@@ -1159,17 +1167,17 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 50.
-Package biblatex Info: Reference segment=0 on input line 50.
+Package biblatex Info: Reference section=0 on input line 53.
+Package biblatex Info: Reference segment=0 on input line 53.
  ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count362
+\c@lstlisting=\count360
 \AtBeginShipoutBox=\box67
-Package hyperref Info: Link coloring ON on input line 50.
+Package hyperref Info: Link coloring ON on input line 53.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1177,31 +1185,31 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count363
+\c@section@level=\count361
 )
-LaTeX Info: Redefining \ref on input line 50.
-LaTeX Info: Redefining \pageref on input line 50.
-LaTeX Info: Redefining \nameref on input line 50.
+LaTeX Info: Redefining \ref on input line 53.
+LaTeX Info: Redefining \pageref on input line 53.
+LaTeX Info: Redefining \nameref on input line 53.
 
 (./Body.out) (./Body.out)
 \@outlinefile=\write6
 \openout6 = `Body.out'.
 
-\docmute@nestinglevel=\count364
+\docmute@nestinglevel=\count362
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 19.95642pt on input line 56.
+(Font)              scaled to size 19.95642pt on input line 59.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 19.95642pt on input line 56.
+(Font)              scaled to size 19.95642pt on input line 59.
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 56.
+(Font)              scaled to size 13.85594pt on input line 59.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 56.
-LaTeX Font Info:    Try loading font information for U+msa on input line 56.
+(Font)              scaled to size 13.85594pt on input line 59.
+LaTeX Font Info:    Try loading font information for U+msa on input line 59.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 56.
+LaTeX Font Info:    Try loading font information for U+msb on input line 59.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1211,37 +1219,31 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ]
 (./Acknowledgement.tex) [2]
 LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 59.
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 62.
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 59.
+(Font)              scaled to size 13.85594pt on input line 62.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 59.
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 62.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 59.
+(Font)              scaled to size 13.85594pt on input line 62.
  [3
 
 ] [4
 
 ]
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 23.94002pt on input line 64.
+(Font)              scaled to size 23.94002pt on input line 67.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 23.94002pt on input line 64.
+(Font)              scaled to size 23.94002pt on input line 67.
 LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <24.88> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 64.
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 67.
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 23.94002pt on input line 64.
+(Font)              scaled to size 23.94002pt on input line 67.
 LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <24.88> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 64.
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 67.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 23.94002pt on input line 64.
- (./Body.tdo)
-\tf@tdo=\write7
-\openout7 = `Body.tdo'.
-
- [5] [6
-
-] (./Body.toc
+(Font)              scaled to size 23.94002pt on input line 67.
+ (./Body.toc
 LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <12> not available
 (Font)              Font shape `JT1/hgt/m/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
@@ -1250,12 +1252,14 @@ LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <12> not available
 (Font)              Font shape `JY1/hgt/m/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
 (Font)              scaled to size 11.54663pt on input line 3.
- [7])
-\tf@toc=\write8
-\openout8 = `Body.toc'.
+)
+\tf@toc=\write7
+\openout7 = `Body.toc'.
 
+ (./Introduction.tex [5]
+[6
 
-(./Introduction.tex [8]
+]
 Chapter 1.
 
 LaTeX Font Warning: Font shape `JT1/hmc/m/it' undefined
@@ -1277,305 +1281,279 @@ LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <17.28> not available
 (Font)              Font shape `JY1/hgt/m/n' tried instead on input line 10.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
 (Font)              scaled to size 16.62714pt on input line 10.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10]
+[7]
 LaTeX Font Info:    Font shape `JT1/hmc/m/it' will be
 (Font)              scaled to size 11.54663pt on input line 20.
 LaTeX Font Info:    Font shape `JY1/hmc/m/it' will be
 (Font)              scaled to size 11.54663pt on input line 20.
-
-[11] [12]) (./NEPhaseTrans.tex [13] [14
+ [8]) (./NEPhaseTrans.tex [9] [10
 
 ]
 Chapter 2.
-File: 1dIsingAfterTwoWalks.pdf Graphic file (type pdf)
-<1dIsingAfterTwoWalks.pdf>
+File: Fig2Modified.pdf Graphic file (type pdf)
+<Fig2Modified.pdf>
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
 (Font)              scaled to size 10.53629pt on input line 11.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
 (Font)              scaled to size 10.53629pt on input line 11.
-File: 2dIsingAfterTwoWalks.pdf Graphic file (type pdf)
-<2dIsingAfterTwoWalks.pdf>
+File: Fig3Modified.pdf Graphic file (type pdf)
+<Fig3Modified.pdf>
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 7.69775pt on input line 13.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 7.69775pt on input line 13.
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 6.73553pt on input line 17.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 6.73553pt on input line 17.
+LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 17.
+LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
+(Font)              scaled to size 9.6222pt on input line 17.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 17.
+LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
+(Font)              scaled to size 9.6222pt on input line 17.
+[11]
+File: Fig15.pdf Graphic file (type pdf)
+<Fig15.pdf>
+ [12] [13]
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 5.77332pt on input line 99.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 5.77332pt on input line 99.
+ [14]) (./NumSim.tex [15] [16
 
-Underfull \vbox (badness 4726) has occurred while \output is active []
+]
+Chapter 3.
+File: CutIsing.pdf Graphic file (type pdf)
+<CutIsing.pdf>
 
- [15]
-File: NEPTIsing.pdf Graphic file (type pdf)
-<NEPTIsing.pdf>
-
-[16]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3417) has occurred while \output is active []
 
  [17]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[18] [19]
 
- [18]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 86.
 
- [19]
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 7.69775pt on input line 95.
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 7.69775pt on input line 95.
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 5.77332pt on input line 95.
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 5.77332pt on input line 95.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 86.
+
+[20]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 102.
+
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-(./NumSim.tex [20]
-Chapter 3.
-[21
-
-]
-File: ../../Slides/Ingredients/03-CutIsing.pdf Graphic file (type pdf)
-<../../Slides/Ingredients/03-CutIsing.pdf>
- [22] [23]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [24]
-[25]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 89.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 89.
-
-[26]) (./Results.tex [27] [28
-
-]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 102.
+ [21]
+File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM1_B0-
+1_Detailed.png Graphic file (type bmp)
+<../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM1_B0-1_Det
+ailed.png>
+File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotS_Deta
+iled.png Graphic file (type bmp)
+<../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotS_Detailed.
+png>
+File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotT6_B0-
+1_Detailed.png Graphic file (type bmp)
+<../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotT6_B0-1_Det
+ailed.png>
+File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_EigDist_M6_Beta
+0-1.png Graphic file (type bmp)
+<../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_EigDist_M6_Beta0-1.p
+ng>
+File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_EigDist_T6_Beta
+0-1.png Graphic file (type bmp)
+<../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_EigDist_T6_Beta0-1.p
+ng>
+)
+(./Results.tex [22]
 Chapter 4.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29]
-Overfull \hbox (12.79895pt too wide) in paragraph at lines 12--12
-[]\OT1/cmr/bx/n/17.28 Stochastic Ma-tri-ces and Non-Equilbrium Monte Carlo
+Overfull \hbox (0.55226pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/12 for tem-per-a-tures $\OML/cmm/m/it/12 k[]T=J \OMS/cmsy/m/n/12 2
+ f\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/c
+mr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/1
+2 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; [] ; \OT1/cmr/m/n/12 1
+\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 9\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm
+/m/it/12 :\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12
+ :\OT1/cmr/m/n/12 02\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1/
+cmr/m/n/12 04\OML/cmm/m/it/12 ; [] ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1/cm
+r/m/n/12 48\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/1
+2 50\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 6\OML
+/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 7\OML/cmm/m/i
+t/12 ; [] ; \OT1/cmr/m/n/12 5\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0\OMS/cmsy/m/n/1
+2 g$
  []
 
 
-Underfull \vbox (badness 1675) has occurred while \output is active []
-
- [30]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 22.
-File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/ArrayPlotS_Detai
-led.pdf Graphic file (type pdf)
-<../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/ArrayPlotS_Detailed.p
-df>
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 12.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 42.
+(hyperref)                removing `subscript' on input line 12.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 42.
+(hyperref)                removing `math shift' on input line 12.
 
+[23
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 42.
-
-
-Underfull \vbox (badness 7238) has occurred while \output is active []
-
- [31]
-File: ../../NumCalc/ClassicalSpinMC/fricDensP_Allsize_AP.eps Graphic file (type
- eps)
-<../../NumCalc/ClassicalSpinMC/fricDensP_Allsize_AP.eps>
-File: ../../NumCalc/ClassicalSpinMC/fricDensP_Allsize_P.eps Graphic file (type 
-eps)
-<../../NumCalc/ClassicalSpinMC/fricDensP_Allsize_P.eps>
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 59.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\epsilon' on input line 59.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 59.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 59.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 59.
-
-File: ../../NumCalc/ClassicalSpinMC/EnDens_Allsize_AP.eps Graphic file (type ep
-s)
-<../../NumCalc/ClassicalSpinMC/EnDens_Allsize_AP.eps>
-File: ../../NumCalc/ClassicalSpinMC/EnDens_Allsize_P.eps Graphic file (type eps
-)
-<../../NumCalc/ClassicalSpinMC/EnDens_Allsize_P.eps>
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 74.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\partial' on input line 74.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 74.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\partial' on input line 74.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 74.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 74.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\partial' on input line 74.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\epsilon' on input line 74.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 74.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 74.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\partial' on input line 74.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 74.
-
-[32] [33]
-File: ../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_AP.eps Graphic file (typ
+]
+File: ../../NumCalc/ClassicalSpinMC/fricDensP_Allsize_AP_.eps Graphic file (typ
 e eps)
-<../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_AP.eps>
-File: ../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_P.eps Graphic file (type
+<../../NumCalc/ClassicalSpinMC/fricDensP_Allsize_AP_.eps>
+File: ../../NumCalc/ClassicalSpinMC/fricDensP_Allsize_P_.eps Graphic file (type
  eps)
-<../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_P.eps>
-File: ../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_AP.eps Graphic file (type e
+<../../NumCalc/ClassicalSpinMC/fricDensP_Allsize_P_.eps>
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 31.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\epsilon' on input line 31.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 31.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 31.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 31.
+
+File: ../../NumCalc/ClassicalSpinMC/EnDens_Allsize_AP_.eps Graphic file (type e
 ps)
-<../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_AP.eps>
-File: ../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_P.eps Graphic file (type ep
+<../../NumCalc/ClassicalSpinMC/EnDens_Allsize_AP_.eps>
+File: ../../NumCalc/ClassicalSpinMC/EnDens_Allsize_P_.eps Graphic file (type ep
 s)
-<../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_P.eps>
- [34]
+<../../NumCalc/ClassicalSpinMC/EnDens_Allsize_P_.eps>
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 102.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 102.
+(hyperref)                removing `math shift' on input line 46.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\to' on input line 102.
+(hyperref)                removing `\partial' on input line 46.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\infty' on input line 102.
+(hyperref)                removing `subscript' on input line 46.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 102.
+(hyperref)                removing `\partial' on input line 46.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [35]
-
-LaTeX Warning: Reference `fig:ffdcheck' on page 36 undefined on input line 116.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 46.
 
 
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 46.
+
+File: ../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_AP_Bar.eps Graphic file 
+(type eps)
+<../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_AP_Bar.eps>
+File: ../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_P_Bar.eps Graphic file (
+type eps)
+<../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_P_Bar.eps>
+
+LaTeX Warning: Float too large for page by 26.53784pt on input line 60.
+
+File: ../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_AP_Bar.eps Graphic file (ty
+pe eps)
+<../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_AP_Bar.eps>
+File: ../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_P_Bar.eps Graphic file (typ
+e eps)
+<../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_P_Bar.eps>
+
+LaTeX Warning: Float too large for page by 12.03784pt on input line 70.
+
+File: NEPTIsing_.pdf Graphic file (type pdf)
+<NEPTIsing_.pdf>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 85.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 85.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\to' on input line 85.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\infty' on input line 85.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 85.
+
+[24] [25] [26] [27] [28]
 File: ../../NumCalc/ClassicalSpinMC/FricDensP_Lz004.eps Graphic file (type eps)
 
 <../../NumCalc/ClassicalSpinMC/FricDensP_Lz004.eps>
-File: ../../NumCalc/ClassicalSpinMC/FricDensP_Lz006.eps Graphic file (type eps)
-
-<../../NumCalc/ClassicalSpinMC/FricDensP_Lz006.eps>
 File: ../../NumCalc/ClassicalSpinMC/FricDensP_Lz008.eps Graphic file (type eps)
 
 <../../NumCalc/ClassicalSpinMC/FricDensP_Lz008.eps>
-File: ../../NumCalc/ClassicalSpinMC/FricDensP_Lz010.eps Graphic file (type eps)
-
-<../../NumCalc/ClassicalSpinMC/FricDensP_Lz010.eps>
-File: ../../NumCalc/ClassicalSpinMC/FricDensP_Lz012.eps Graphic file (type eps)
-
-<../../NumCalc/ClassicalSpinMC/FricDensP_Lz012.eps>
-File: ../../NumCalc/ClassicalSpinMC/FricDensP_Lz014.eps Graphic file (type eps)
-
-<../../NumCalc/ClassicalSpinMC/FricDensP_Lz014.eps>
 File: ../../NumCalc/ClassicalSpinMC/FricDensP_Lz016.eps Graphic file (type eps)
 
 <../../NumCalc/ClassicalSpinMC/FricDensP_Lz016.eps>
+
+
+LaTeX Warning: Float too large for page by 20.75067pt on input line 106.
+
 File: ../../NumCalc/ClassicalSpinMC/FricDensP_Lz032.eps Graphic file (type eps)
 
 <../../NumCalc/ClassicalSpinMC/FricDensP_Lz032.eps>
 File: ../../NumCalc/ClassicalSpinMC/FricDensP_Lz064.eps Graphic file (type eps)
 
 <../../NumCalc/ClassicalSpinMC/FricDensP_Lz064.eps>
-
-LaTeX Warning: Reference `fig:ebcheck' on page 36 undefined on input line 147.
-
 File: ../../NumCalc/ClassicalSpinMC/EnDens_Lz004.eps Graphic file (type eps)
 <../../NumCalc/ClassicalSpinMC/EnDens_Lz004.eps>
-File: ../../NumCalc/ClassicalSpinMC/EnDens_Lz006.eps Graphic file (type eps)
-<../../NumCalc/ClassicalSpinMC/EnDens_Lz006.eps>
 File: ../../NumCalc/ClassicalSpinMC/EnDens_Lz008.eps Graphic file (type eps)
 <../../NumCalc/ClassicalSpinMC/EnDens_Lz008.eps>
-File: ../../NumCalc/ClassicalSpinMC/EnDens_Lz010.eps Graphic file (type eps)
-<../../NumCalc/ClassicalSpinMC/EnDens_Lz010.eps>
-File: ../../NumCalc/ClassicalSpinMC/EnDens_Lz012.eps Graphic file (type eps)
-<../../NumCalc/ClassicalSpinMC/EnDens_Lz012.eps>
-File: ../../NumCalc/ClassicalSpinMC/EnDens_Lz014.eps Graphic file (type eps)
-<../../NumCalc/ClassicalSpinMC/EnDens_Lz014.eps>
 File: ../../NumCalc/ClassicalSpinMC/EnDens_Lz016.eps Graphic file (type eps)
 <../../NumCalc/ClassicalSpinMC/EnDens_Lz016.eps>
+
+LaTeX Warning: Float too large for page by 20.75067pt on input line 128.
+
 File: ../../NumCalc/ClassicalSpinMC/EnDens_Lz032.eps Graphic file (type eps)
 <../../NumCalc/ClassicalSpinMC/EnDens_Lz032.eps>
 File: ../../NumCalc/ClassicalSpinMC/EnDens_Lz064.eps Graphic file (type eps)
 <../../NumCalc/ClassicalSpinMC/EnDens_Lz064.eps>
-) (./Summary.tex [36] [37] [38] [39] [40]
-Chapter 5.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [41
+) (./Summary.tex [29] [30] [31] [32] [33] [34
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 10.
+Chapter 5.
+) (./App_StochasticMatrices.tex [35] [36
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
-)
-(./App_StochasticMatrices.tex [42]
+]
 Appendix A.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1585,133 +1563,94 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 8.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [43
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [44]
-Overfull \hbox (47.92586pt too wide) in paragraph at lines 20--22
-\OT1/cmr/m/n/12 In the other words, the sys-tem can be de-scribed by the prob-a
--bil-ity vec-tor $\OML/cmm/b/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr
-/m/n/12 ) := [][] []$
+[37] [38] [39] [40] [41] [42] [43]
+Overfull \hbox (0.11932pt too wide) in paragraph at lines 286--287
+[]\OT1/cmr/m/n/12 Once we get a strongly con-nected stochas-tic ma-trix $[]$, i
+ts sta-tion-ary dis-tri-bu-tion $\OML/cmm/b/it/12 u[]\OML/cmm/m/it/12 =\OMS/cms
+y/m/n/12 k\OML/cmm/b/it/12 u[]\OMS/cmsy/m/n/12 k[]$
  []
 
-
-Underfull \vbox (badness 1248) has occurred while \output is active []
-
- [45]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [46]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [47]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [48]
-Overfull \hbox (1.56822pt too wide) in paragraph at lines 112--113
-[]\OT1/cmr/m/n/12 If com-po-nents of the vec-tor $\OML/cmm/b/it/12 x[]$ \OT1/cm
-r/m/n/12 are \OT1/cmr/m/it/12 not \OT1/cmr/m/n/12 aligned to-gether such that $
-[][] \OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 x[]\OMS/cmsy/m/n/12 j \OML/cmm/m/it/12 
-> \OMS/cmsy/m/n/12 j [][] \OML/cmm/m/it/12 x[]\OMS/cmsy/m/n/12 j$
- []
-
-[49] [50] [51]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [52]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [53]
-[54]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [55]
-[56]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [57]
+[44] [45]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 329.
+(hyperref)                removing `math shift' on input line 330.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\times' on input line 329.
+(hyperref)                removing `\times' on input line 330.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 329.
+(hyperref)                removing `math shift' on input line 330.
 
-File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/ArrayPlotM1_Beta
-0-1_Detailed.pdf Graphic file (type pdf)
-<../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/ArrayPlotM1_Beta0-1_D
-etailed.pdf>
-File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/ArrayPlotM2_Beta
-0-1_Detailed.pdf Graphic file (type pdf)
-<../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/ArrayPlotM2_Beta0-1_D
-etailed.pdf>
-File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/ArrayPlotM3_Beta
-0-1_Detailed.pdf Graphic file (type pdf)
-<../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/ArrayPlotM3_Beta0-1_D
-etailed.pdf>
-File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/ArrayPlotM4_Beta
-0-1_Detailed.pdf Graphic file (type pdf)
-<../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/ArrayPlotM4_Beta0-1_D
-etailed.pdf>
+File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM1_B0-
+1_Detailed.png Graphic file (type bmp)
+<../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM1_B0-1_Det
+ailed.png>
+File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM2_B0-
+1_Detailed.png Graphic file (type bmp)
+<../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM2_B0-1_Det
+ailed.png>
+File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM3_B0-
+1_Detailed.png Graphic file (type bmp)
+<../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM3_B0-1_Det
+ailed.png>
+File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM4_B0-
+1_Detailed.png Graphic file (type bmp)
+<../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM4_B0-1_Det
+ailed.png>
+File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM5_B0-
+1_Detailed.png Graphic file (type bmp)
+<../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM5_B0-1_Det
+ailed.png>
+File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM6_B0-
+1_Detailed.png Graphic file (type bmp)
+<../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM6_B0-1_Det
+ailed.png>
+File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_IT.pn
+g Graphic file (type bmp)
+<../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_IT.png>
 File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_Beta0
-.pdf Graphic file (type pdf)
-<../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_Beta0.pdf>
+-1.png Graphic file (type bmp)
+<../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_Beta0-1.pn
+g>
+File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_AZ.pn
+g Graphic file (type bmp)
+<../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_AZ.png>
+) [46] [47] [48
 
-File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_Beta0
--1.pdf Graphic file (type pdf)
-<../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_Beta0-1.pd
-f>
-File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_BetaI
-nfinity.pdf Graphic file (type pdf)
-<../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_BetaInfini
-ty.pdf>
-) [58] [59] [60
+] [49]
 
-] [61] [62]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
+LaTeX Font Warning: Font shape `JT1/hgt/m/it' undefined
+(Font)              using `JT1/hgt/m/n' instead on input line 79.
+
+
+LaTeX Font Warning: Font shape `JY1/hgt/m/it' undefined
+(Font)              using `JY1/hgt/m/n' instead on input line 79.
+
+[50]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
  (./Body.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 77.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 80.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
+Package rerunfilecheck Info: File `Body.out' has not changed.
+(rerunfilecheck)             Checksum: DB48203168E42CF29F8FA1CE4115AD29;1960.
 
-
-Package rerunfilecheck Warning: File `Body.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Body.out':
-(rerunfilecheck)             Before: BF9C1362B99D1AC86A8A687D8CFC5E7B;2376
-(rerunfilecheck)             After:  0D44BBA3926CDB3B922D29ABB24F7525;2163.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'Body.run.xml'.
 \openout1 = `Body.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27481 strings out of 493642
- 502432 string characters out of 6148748
- 920932 words of memory out of 5000000
- 30554 multiletter control sequences out of 15000+600000
- 31456 words of font info for 135 fonts, out of 8000000 for 9000
+ 27347 strings out of 493642
+ 497045 string characters out of 6148748
+ 782510 words of memory out of 5000000
+ 30437 multiletter control sequences out of 15000+600000
+ 29691 words of font info for 131 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 62i,19n,94p,1169b,1517s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,19n,56p,1138b,1478s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Body.dvi (62 pages, 192828 bytes).
+Output written on Body.dvi (50 pages, 184816 bytes).

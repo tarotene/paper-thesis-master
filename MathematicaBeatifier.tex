@@ -47,4 +47,19 @@
 12 & 3 & -13 & -110 & 33 & 2 & -48 & -159 & -9 & -50 & -116 & -223 & -42 & -111 & -184 & -361 \\
 \end{bmatrix}
 \end{align}
+
+\begin{align}
+m_{\rm b,eq}(z,y)=\frac{z^{-1}-z}{z/y-y/z}\left[\frac{b^{2}}{2\pi}\mathrm{K}(16w^{2})+\frac{b^{2}}{4\pi w}\frac{(a+y^{2}/z)^{2}}{1-by^{2}/c^{2}z}\mathrm{\Pi}\left(\frac{(1-by^{2}/z)}{1-by^{2}/c^{2}z},16w^{2}\right) + \frac{Y^{1/2}-Y^{-1/2}}{2(z^{-1}-z)}-\frac{1}{4}\right]\\
+z:=\tanh K\\
+y:=\tanh h_{\rm b}\\
+\chi_{\rm b, eq}(z)=(z^{-1}-1)\times\left[(1+2w-8w^{2})\frac{\mathrm{K}(16w^{2})}{4\pi w}-\frac{\mathrm{E}(16w^{2})}{4\pi w} - \frac{1}{4}\right]\\
+w:=\frac{z(1-z^{2})}{(1+z^{2})^{2}}\\
+a:=\frac{1-2z-z^{2}}{1+z^{2}}\\
+b:=\frac{1+2z-z^{2}}{1+z^{2}}\\
+c:=\frac{2z}{1+z^{2}}\\
+Y:=\frac{az/c^{2}y^{2}+1}{by^{2}/c^{2}z-1}\\
+\mathrm{K}(k)=\int_{0}^{\pi/2}\frac{d\theta}{\sqrt{1-k^{2}\sin^{2}\theta}}\\
+\mathrm{E}(k)=\int_{0}^{\pi/2}d\theta\;\sqrt{1-k^{2}\sin^{2}\theta}\\
+\mathrm{\Pi}(n,k)=\int_{0}^{\pi/2}\frac{d\theta}{(1-n\sin^{2}\theta)\sqrt{1-k^{2}\sin^{2}\theta}}
+\end{align}
 \end{document}
