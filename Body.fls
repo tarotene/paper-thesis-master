@@ -74,6 +74,18 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.cfg
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/todonotes/todonotes.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/todonotes/todonotes.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
@@ -97,8 +109,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
@@ -113,10 +123,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftp
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
@@ -175,6 +181,10 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryplo
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
@@ -296,9 +306,8 @@ INPUT Acknowledgement.tex
 INPUT Acknowledgement.tex
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT Body.toc
-INPUT Body.toc
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT Body.tdo
+INPUT Body.tdo
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
@@ -316,6 +325,7 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
@@ -324,14 +334,17 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
+OUTPUT Body.tdo
+INPUT Body.toc
+INPUT Body.toc
 OUTPUT Body.toc
 INPUT Introduction.tex
 INPUT Introduction.tex
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
+INPUT NEPhaseTrans.tex
+INPUT NEPhaseTrans.tex
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT NEPhaseTrans.tex
-INPUT NEPhaseTrans.tex
 INPUT Fig2Modified.pdf
 INPUT extractbb -B cropbox -O Fig2Modified.pdf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
@@ -349,6 +362,16 @@ INPUT NumSim.tex
 INPUT NumSim.tex
 INPUT CutIsing.pdf
 INPUT extractbb -B cropbox -O CutIsing.pdf
+INPUT Snapshot1.pdf
+INPUT extractbb -B cropbox -O Snapshot1.pdf
+INPUT Snapshot2.pdf
+INPUT extractbb -B cropbox -O Snapshot2.pdf
+INPUT Snapshot3.pdf
+INPUT extractbb -B cropbox -O Snapshot3.pdf
+INPUT ../../NumCalc/ClassicalSpinMC_tmp/1pass_nonstationary.eps
+INPUT ../../NumCalc/ClassicalSpinMC_tmp/1pass_nonstationary.eps
+INPUT ../../NumCalc/ClassicalSpinMC_tmp/1pass_stationary.eps
+INPUT ../../NumCalc/ClassicalSpinMC_tmp/1pass_stationary.eps
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM1_B0-1_Detailed.png
@@ -431,6 +454,7 @@ INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_Beta0-
 INPUT extractbb -B cropbox -O ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_Beta0-1.png
 INPUT ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_AZ.png
 INPUT extractbb -B cropbox -O ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_AZ.png
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT Body.aux
 INPUT ./Body.out
 INPUT ./Body.out
@@ -455,5 +479,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb

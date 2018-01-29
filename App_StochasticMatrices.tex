@@ -1,7 +1,7 @@
 % !TeX root = Body.tex
 
-\chapter{Analysis based on Stochastic Matrices}
-\label{chap:ProofEx}
+%\todo{Metropolis行列のやつを$2\times 2$についても追加．}
+\chapter{Analysis based on Stochastic Matrices}\label{chap:ProofEx}
 
 In this appendix, we prove the existence of the non-equilibrium stationary state in our model with sliding of arbitrary velocity. In the first section, we discuss the formulation in terms of stochastic matrices. In the following two sections, we prove based on Ref.~\cite{Hara2011} several facts for stochastic matrices, which ensures that almost all Monte Carlo simulations converge to a unique equilibrium state. In the last two sections, we propose a way to construct the matrix for both equilibrium cases and non-equilibrium stationary cases, and discuss the distributions of their eigenvalues in terms of the convergence.
 
@@ -141,7 +141,7 @@ and each component is
 	If two eigenvectors $\bm{u}_{1}$ and $\bm{v}_{1}$ are not parallel to each other, we can make a non-trivial vector with a certain value of $t$ such that $\left(\bm{u}_{1} + t\bm{v}_{1}\right)_{l} = 0$ for an $l$th element. However it is the contradiction with the fact $x_{1,i}>0$ ($i=1,2,\dots,\Omega$). Therefore we have no eigenspaces more than one which belongs to the eigenvalue $1$.
 \end{proof}
 
-\begin{definition}
+\begin{definition}\label{def:StrongConn}
 	If there exists a number $N_{0}>0$ such that
 	\begin{align}
 	\left(\hat{T}^{N_{0}}\right)_{ij}>0

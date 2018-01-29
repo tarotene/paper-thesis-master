@@ -1,11 +1,11 @@
 % !TeX root = Body.tex
 \chapter{Results}\label{chap:Res}
 
-In this chapter, we first show the numerical results of the frictional force density $f(L_{z}, T)$, the bulk energy density $\epsilon_{\rm b}(L_{z}, T)$ and their temperature derivatives. We also show in Subsec.~\ref{sec:convcheck}) the numerical infinite-size limit $L_{x}\to\infty$ converges with $L_{z}$ and $T$ fixed.
+In this chapter, we first show in Sec.~\ref{sec:NEMCs} our numerical results of the frictional force density $f(L_{z}, T)$, the bulk energy density $\epsilon(L_{z}, T)$ and their temperature derivatives. We also show in Sec.~\ref{sec:convcheck} that the numerical infinite-size limit $L_{x}\to\infty$ converges with $L_{z}$ and $T$ fixed.
 
-The range of parameters in our simulation is as follows. We computed the value of $f(L_{z}, T)$ for temperatures $k_{\rm B}T/J\in\{0.0,0.1,0.2,\dots,1.9,2.0,2.02,2.04,\dots,2.48,2.50,2.6,2.7,\dots,5.0\}$ and sizes $L_{z}\in\{4,8,16,32,64\}$ with the anti-parallel and the parallel boundary conditions. For the anti-parallel boundary conditions, we set the initial state to the domain-wall state, where spin variables $\sigma_{i}$ in the upper half of the system are the same value as the spins on the upper boundary and those in the lower half as the spins on the lower boundary. For the parallel boundary conditions we set the initial state is set to the magnetized state, where all spin variables $\sigma_{i}$ are the same value as both of boundaries. The reason why we used these initial states is that they are the most natural ground states which correpond to each boundary condition.
+The range of parameters in our simulation is as follows. We computed the value of $f(L_{z}, T)$ for temperatures $k_{\rm B}T/J\in\{0.0,0.1,0.2,\dots,1.9,2.0,2.02,2.04,\dots,2.48,2.50,2.6,2.7,\dots,5.0\}$ and sizes $L_{z}\in\{4,8,16,32,64\}$ with the anti-parallel and the parallel boundary conditions. For the anti-parallel boundary conditions, we set the initial state to the domain-wall state, where spin variables $\sigma_{i}$ in the upper half of the system have the same value as the spins on the upper boundary and those in the lower half as the spins on the lower boundary. For the parallel boundary conditions we set the initial state to the magnetized state, where all spin variables $\sigma_{i}$ have the same value as both of boundaries. The reason why we used these initial states is that they are the most natural ground states which correpond to each set of boundary conditions.
 
-All the simulations are performed by the single-flip algorithm with the Metropolis rate. To obtain the observables in the non-equilibrium stationary state, we performed the equilibration process for $5000$ sweeps and the stationarization process for $5000$ sweeps for all given parameters. We checked the convergence of the observables to the equilibrium value and the stationary value for these time regions by fitting the observables by the function $A(t)=A_{0} + A_{1}\mathrm{e}^{-t/\tau}$. The duration of $5000$ sweeps is substantially longer than the fitting parameter $\tau$, which we call the \textit{non-equilibrium relaxation time}. We performed these simulations for $480$ samples for all parameters and averaged them, and then averaged along the time direction. The statistical errors of the data presented in the present chapter are all smaller than the point size.
+All the simulations are performed by the single-flip algorithm with the Metropolis rate at the temperature $T$. To obtain the observables in the non-equilibrium stationary state, we performed the equilibration process for $5000$ sweeps without shift operations and the stationarization process for $5000$ sweeps for all given parameters. We checked the convergence of the observables to the equilibrium values and the stationary values for these time regions by fitting the observables by the function $A(t)=A_{0} + A_{1}\mathrm{e}^{-t/\tau}$. The duration of $5000$ sweeps is substantially longer than the fitting parameter $\tau$, which we call the \textit{non-equilibrium relaxation time}. We performed these simulations for $480$ samples for all parameters and averaged them, and then averaged along the time direction. The statistical errors of the data presented in the present chapter are all smaller than the point size.
 
 \section{Observed Quantities}\label{sec:NEMCs}
 
@@ -13,7 +13,7 @@ All the simulations are performed by the single-flip algorithm with the Metropol
 
 We show the behavior of the frictional force density $f(L_{z}, T)$ in Fig.~\ref{fig:fricDens_Allsize}. For both boundary conditions, $f(L_{z}, T)$ reaches the results in Ref.~\cite{Kadau2008} with the size $L_{z}=64$. We thereby decide that the size $L_{z}=64$ is a good approximation for the limit of $L_{z}\to\infty$. Towards this limit, $f(L_{z}, T)$ increases for the anti-parallel boundary conditions, whereas $f(L_{z}, T)$ decreases for the parallel boundary. 
 
-When the size $L_{z}$ is larger than the correlation length $\xi_{z}(\beta)$ along the $z$ direction, the system behaves as a two-dimensional one and the effects of the boundary conditions vanish, whereas when the size $L_{z}$ is smaller than $\xi_{z}(\beta)$ the system is effectively one-dimensional. We can consider this behavior as a size-driven dimensional crossover. 
+When the size $L_{z}$ is larger than the correlation length $\xi_{z}(\beta)$ along the $z$ direction perpendicular to the cut, the system behaves as a two-dimensional one and the effects of the boundary conditions vanish, whereas when the size $L_{z}$ is smaller than $\xi_{z}(\beta)$ the system is effectively one-dimensional. We can consider this behavior as a dimensional crossover. 
 
 \begin{figure}[htbp]
 	\centering
@@ -28,9 +28,9 @@ When the size $L_{z}$ is larger than the correlation length $\xi_{z}(\beta)$ alo
 
 %Remarkably peaks $\{T_{\rm peak}(L_{z})\}$ for both boundaries hit the temperature higher than the ordinary critical point $T_{\rm c}=2/\log\left[1+\sqrt{2}\right]$. This implies that both the ordinary phase transition and the non-equilibrium phase transition occur at two different temperatures.
 
-\subsection{Bulk Energy Density $\epsilon_{\rm b}(L_{z}, T)$}
+\subsection{Bulk Energy Density $\epsilon(L_{z}, T)$}
 
-We show the behavior of the bulk energy density $\epsilon_{\rm b}(L_{z}, T)$ in Fig.~\ref{fig:EnDens_Allsize}. As the frictional force density $f(L_{z}, T)$, bulk energy densities $\epsilon_{\rm b}(L_{z}, T)$ also indicates asymptotic behavior in the limit of $L_{z}\to\infty$ and difference for small $L_{z}$, reflecting the dimensional crossover.
+We show the behavior of the bulk energy density $\epsilon(L_{z}, T)$ in Fig.~\ref{fig:EnDens_Allsize}. As the frictional force density $f(L_{z}, T)$, the bulk energy density $\epsilon(L_{z}, T)$ also indicates asymptotic behavior in the limit of $L_{z}\to\infty$ as well as difference due to the boundary conditions for small $L_{z}$, reflecting the dimensional crossover.
 
 \begin{figure}[htbp]
 	\centering
@@ -38,16 +38,14 @@ We show the behavior of the bulk energy density $\epsilon_{\rm b}(L_{z}, T)$ in 
 	
 	\subcaptionbox{\label{fig:EnDens_Allsize_P}}[0.90\linewidth]{\includegraphics[width=0.80\linewidth]{../../NumCalc/ClassicalSpinMC/EnDens_Allsize_P_.eps}}
 	
-	\caption{Temperature dependences of $\epsilon_{\rm b}(L_{z}, T)$ with each boundary condition: (\subref{fig:fricDens_Allsize_AP}) The anti-parallel boundary conditions; (\subref{fig:fricDens_Allsize_P}) The parallel boundary conditions.}
+	\caption{Temperature dependences of $\epsilon(L_{z}, T)$ with each boundary condition: (\subref{fig:fricDens_Allsize_AP}) The anti-parallel boundary conditions; (\subref{fig:fricDens_Allsize_P}) The parallel boundary conditions.}
 	\label{fig:EnDens_Allsize}
 \end{figure}
 
 
-\subsection{Temperature Derivatives $\partial f(L_{z}, T)/\partial T$ and $c_{\rm b}(L_{z}, T)$}
+\subsection{Temperature Derivatives $\partial f(L_{z}, T)/\partial T$ and $c(L_{z}, T)$}
 
-We additionally show the behavior of temperature derivatives $\partial f(L_{z}, T)/\partial T$ and $c_{\rm b}(L_{z},T)=\partial \epsilon_{\rm b}(L_{z}, T)/\partial T$ in Figs.~\ref{fig:dFricDens_Allsize} and \ref{fig:dEnDens_Allsize}, respectively.
-
-The temperature derivative $\partial f(L_{z}, T)/\partial T$ and the temperature derivative $c_{\rm b}(L_{z}, T)$ exhibit sharp peaks at a characteristic temperature $T=2.40$ (see the red marker line in Fig.~\ref{fig:dFricDens_Allsize}) and $T=2.27$ (see the black marker line in Fig.~\ref{fig:dEnDens_Allsize}), respectively, for both boundary conditions for the largest size $L_{z}=64$. This implies that they diverge in the limit of $L_{z}\to\infty$. We observe that the finite-size peak $T_{\rm peak}(L_{z})$ shifts to lower temperatures for the anti-parallel boundary conditions and to higher temperatures for the parallel boundary conditions. This observation shows us that the anti-parallel boundary conditions acts as a \textit{disordering} field such that the effective temperature of the system rises, while the parallel boundary conditions acts as an \textit{ordering} field such that the effective temperature of the system drops. The changes in the effective temperature of the system are most enhanced for small $L_{z}$.
+We additionally show the behavior of temperature derivatives $\partial f(L_{z}, T)/\partial T$ and $c(L_{z},T)=\partial \epsilon(L_{z}, T)/\partial T$ in Figs.~\ref{fig:dFricDens_Allsize} and \ref{fig:dEnDens_Allsize}, respectively. They exhibit sharp peaks at a characteristic temperature $k_{\rm B}T/J=2.40$ (see the red vertical line in Fig.~\ref{fig:dFricDens_Allsize}) and $k_{\rm B}T/J=2.27$ (see the black vertical line in Fig.~\ref{fig:dEnDens_Allsize}), respectively, for both boundary conditions for the largest size $L_{z}=64$. This implies that they diverge in the limit of $L_{z}\to\infty$. We observe that the finite-size peak $k_{\rm B}T_{\rm peak}(L_{z})/J$ shifts to lower temperatures for the anti-parallel boundary conditions and to higher temperatures for the parallel boundary conditions. This observation shows us that the anti-parallel boundary conditions generate a \textit{disordering} effect, while the parallel boundary conditions generate an \textit{ordering} effect. These effects are most enhanced for small $L_{z}$.
 
 \begin{figure}[htbp]
 	\centering
@@ -55,7 +53,7 @@ The temperature derivative $\partial f(L_{z}, T)/\partial T$ and the temperature
 	
 	\subcaptionbox{\label{fig:dFricDens_Allsize_P}}[0.90\linewidth]{\includegraphics[width=0.80\linewidth]{../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_P_Bar.eps}}
 	
-	\caption{Temperature dependence of $\partial f(L_{z}, T)/\partial T$ with each boundary condition: (\subref{fig:dFricDens_Allsize_AP}) The anti-parallel boundary conditions; (\subref{fig:dFricDens_Allsize_P}) The parallel boundary conditions. The vertical red line in each panel indicates the non-equilibrium critical temperature $T^{\rm M}_{\rm c}(10)\simeq 2.40$ in the phase diagram of the two-dimensional non-equilibrium Ising model obtained in Ref.~\cite{Hucht2009b}; see Fig.~\ref{fig:NEPTinIsing_}.}
+	\caption{Temperature dependence of $\partial f(L_{z}, T)/\partial T$ with each boundary condition: (\subref{fig:dFricDens_Allsize_AP}) The anti-parallel boundary conditions; (\subref{fig:dFricDens_Allsize_P}) The parallel boundary conditions. The vertical red line in each panel indicates the non-equilibrium critical temperature $T^{\rm M}_{\rm c}(10)\simeq 2.40$, where we choose the unit $k_{\rm B}/J=1$, in the phase diagram of the two-dimensional non-equilibrium Ising model obtained in Ref.~\cite{Hucht2009b}; see Fig.~\ref{fig:NEPTinIsing_}.}
 	\label{fig:dFricDens_Allsize}
 \end{figure}
 
@@ -65,11 +63,11 @@ The temperature derivative $\partial f(L_{z}, T)/\partial T$ and the temperature
 	
 	\subcaptionbox{\label{fig:dEnDens_Allsize_P}}[0.90\linewidth]{\includegraphics[width=0.80\linewidth]{../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_P_Bar.eps}}
 	
-	\caption{Temperature dependences of $c_{\rm b}(L_{z}, T) = \partial \epsilon_{\rm b}(L_{z}, T)/\partial T$ with each boundary condition: (\subref{fig:dEnDens_Allsize_AP}) The anti-parallel boundary conditions;  (\subref{fig:dEnDens_Allsize_P}) The parallel boundary conditions. The vertical black line in each panel indicates the equilibrium critical temperature $T_{\rm c,eq}\simeq 2.27$; see Fig.~\ref{fig:NEPTinIsing_}.}
+	\caption{Temperature dependences of $c(L_{z}, T) = \partial \epsilon(L_{z}, T)/\partial T$ with each boundary condition: (\subref{fig:dEnDens_Allsize_AP}) The anti-parallel boundary conditions;  (\subref{fig:dEnDens_Allsize_P}) The parallel boundary conditions. The vertical black line in each panel indicates the equilibrium critical temperature $T_{\rm c,eq}\simeq 2.27$, where we choose the unit $k_{\rm B}/J=1$; see Fig.~\ref{fig:NEPTinIsing_}.}
 	\label{fig:dEnDens_Allsize}
 \end{figure}
 
-The peak locations $T=2.40$ and $T=2.27$ show good agreements with the non-equilibrium phase transition point $T_{\rm c}^{\rm M}(v)$ with the velocity $v=10$ and the bulk phase transition point, respectively, in Ref.~\cite{Hucht2009b}; see Fig.~\ref{fig:NEPTinIsing_}. We can regard both divergent behaviors as intrinsic phase transitions independent of the boundary conditions, because the effect of boundary conditions vanishes in the limit of $L_{z}\to\infty$.
+The peak locations $k_{\rm B}T/J=2.40$ and $k_{\rm B}T/J=2.27$ show good agreements with the non-equilibrium phase transition point $T_{\rm c}^{\rm M}(v)$ with the velocity $v=10$ in Ref.~\cite{Hucht2009b} and the bulk phase transition point, respectively; see Fig.~\ref{fig:NEPTinIsing_}. We can regard both divergent behaviors as intrinsic phase transitions independent of the boundary conditions, because the effect of boundary conditions vanishes in the limit of $L_{z}\to\infty$.
 
 \begin{figure}[htbp]
 	\centering
@@ -78,9 +76,9 @@ The peak locations $T=2.40$ and $T=2.27$ show good agreements with the non-equil
 	\label{fig:NEPTinIsing_}
 \end{figure}
 
-\footnotetext{Reprinted Fig.~15 with permission adapted from \fullcite{Hucht2009b}. Copyright (2018) by the American Physical Society.}
+\footnotetext{Reprinted Fig.~15 with permission from \fullcite{Hucht2009b}. Copyright (2018) by the American Physical Society.}
 
-We also consider the reason why not only the heat capacity $c_{\rm b}(L_{z}, T)$ but also the temperature derivative of the frictional force density $\partial f(L_{z}, T)/\partial T$ shows the divergent behavior. The frictional force density $f(L_{z}, T)$ is estimated by the difference between the expectation value of the energy before and after the sliding. Then it is plausible that both expectation values have a singularity near $T=2.40$, and these singularities do not cancel with each other.
+We also consider the reason why not only the heat capacity $c(L_{z}, T)$ but also the temperature derivative of the frictional force density $\partial f(L_{z}, T)/\partial T$ shows the divergent behavior. The frictional force density $f(L_{z}, T)$ is estimated by the difference between the expectation value of the energy before and after the sliding. It is therefore plausible that both expectation values have a singularity near $k_{\rm B}T/J=2.40$, and these singularities do not cancel with each other.
 
 \section{Checking the Convergence in the Limit $L_{x}\to\infty$}
 \label{sec:convcheck}
@@ -89,9 +87,9 @@ We now demonstrate that the following two observables converge in the infinite-s
 
 \begin{align}
 f(L_{z}, T):=&\lim_{L_{x}\to\infty}\frac{F(L_{x}, L_{z}, T)}{L_{x}},\\
-\epsilon_{\rm b}(L_{z}, T):=&\lim_{L_{x}\to\infty}\frac{E_{b}(L_{x}. L_{z}, T)}{L_{x}L_{z}}.
+\epsilon(L_{z}, T):=&\lim_{L_{x}\to\infty}\frac{E_{b}(L_{x}. L_{z}, T)}{L_{x}L_{z}}.
 \end{align}
-We use the aspect ratios of $L_{x}=30\times L_{z}, 40\times L_{z}, 50\times L_{z}$ with $L_{z}$ fixed in order to check the convergence in the limit $L_{x}/L_{z}\to\infty$. We show that the quantities $F(L_{x}, L_{z}, T)/L_{x}$ and $E_{\rm b}(L_{x}, L_{z}, T)/L_{x}$ for each boundary conditions have little dependence on $L_{x}$ for sufficiently large size of $L_{x}$ with each size of $L_{z}$. Figures~\ref{fig:ffdcheck1}, \ref{fig:ffdcheck2}, \ref{fig:ebcheck1} and \ref{fig:ebcheck2} respectively show the temperature dependence of the frictional force density and the energy density under each boundary condition for each size of $L_{z} = 4, 8, 16, 32, 64$.
+We use the aspect ratios of $L_{x}=30\times L_{z}, 40\times L_{z}, 50\times L_{z}$ with $L_{z}$ fixed in order to check the convergence in the limit $L_{x}/L_{z}\to\infty$. Figures~\ref{fig:ffdcheck1}, \ref{fig:ffdcheck2}, \ref{fig:ebcheck1} and \ref{fig:ebcheck2} respectively show the temperature dependence of the frictional force density and the energy density under each set of boundary conditions for each size of $L_{z} = 4, 8, 16, 32, 64$. We see the quantities $F(L_{x}, L_{z}, T)/L_{x}$ and $E(L_{x}, L_{z}, T)/L_{x}$ for each set of boundary conditions have little dependence on $L_{x}$ for sufficiently large size of $L_{x}$ with each size of $L_{z}$.
 
 \begin{figure}[htbp]
 	\centering

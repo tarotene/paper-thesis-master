@@ -1,14 +1,31 @@
 % !TeX root = Body.tex
 \chapter{Summary and Discussion}\label{chap:Summary}
 
-To summarize the present results, we found that two different fixed boundary conditions have an effect on the magnetic friction as an effective field; the anti-parallel and the parallel boundary conditions have disordering and ordering effects, respectively. In other words, the anti-parallel boundary conditions raise the effective temperature of the system and the parallel boundary conditions lower it. These effects emerge at the sliding boundary when the system behaves as a one-dimensional system, but vanish in the two-dimensional limit. The crossover between the one dimension and the two dimensions occurs below the size $L_{z}=64$ in the limit $L_{x}\to\infty$. 
+We investigated the effects of boundary conditions on the physical quantities by non-equilibrium Monte Carlo simulations. To summarize the present results, we found that the fixed boundary conditions have an effect on the magnetic friction as an effective field; the anti-parallel and the parallel boundary conditions have disordering and ordering effects, respectively. These effects emerge at the sliding boundary when the system behaves as a one-dimensional system, but vanish in the two-dimensional limit. The crossover between the one dimension and the two dimensions occurs below the size $L_{z}=64$ in the limit $L_{x}\to\infty$. 
 
-The difference of the magnetic frictions under the two boundary conditions is maximized when the temperature of the system is near the boundary critical temperature and the system is sufficiently thin. Therefore we propose to manipulate the magnetic friction by switching the one boundary condition into the other of the system in the boundary criticality.
+In other words, if we set the size $L_{z}$ much less (greater) than the correlation length $\xi_{z}(\beta)$ the system behaves as the one-dimensional (two-dimensional). The two sets of boundary conditions, in particular, have maximum effects on the magnetic friction when the temperature of the system is near the boundary critical temperature and the system is sufficiently thin.
 
-For future works, we are going to investigate the following:
-\begin{itemize}
-\item the divergence of derivatives of the \textit{boundary} heat capacity in the limit of $L_{z}\to\infty$;
-\item the behavior of the correlation length itself;
-\item the dimensional crossover from the viewpoint of critical exponents.
-\end{itemize}
-We also intend to see whether dimensional crossovers occur in models with other spatial dimensions or continuous symmetries.
+Thereby we propose to manipulate the magnetic friction by switching the one boundary condition into the other near the boundary criticality. We can thus sharply increase and decrease the magnetic friction. 
+
+In order to be more precise, we should calculate the correlation length along the $z$ direction $\xi_{z}(\beta)$. Its definition may be different from that of the equilibrium case because the homogeneity along the $z$ direction is destroyed by the constant sliding motion. A good definition of $\xi_{z}(\beta)$ could give the dimensional crossover point by the following way.
+
+%For the temperature near the critical point, in general, the correlation length behaves as $\xi \simeq t^{-\nu}$, where $t$ and $\nu$ denote the reduced temperature $(T-T_{c})/T_{c}$ and the critical exponent, respectively. The correlation function is written by $\langle \sigma_{i}\sigma_{j}\rangle \simeq \mathrm{e}^{-|i-j|/\xi}$. This leads the following relation:
+%\begin{align}
+%\langle \sigma_{i}\sigma_{j}\rangle &\simeq \exp\left[-|i-j|t^{\nu}\right],\\
+%\Longleftrightarrow \nu &\simeq \log\left[-\frac{\log \langle \sigma_{i}\sigma_{j}\rangle}{|i-j|}\right]/\log t\label{rel:effcritexp}.
+%\end{align}
+%
+%The right-hand side of \eqref{rel:effcritexp} is expected to be equal to its universality class in each symmetries and dimensions. Thus we can able to discover the crossover phenomena by a value of r.h.s of \eqref{rel:effcritexp} which does not belongs to any universality class.
+For further analysis, it is worthwhile to determine critical exponents of the non-equilibrium phase transition. We can determine the critical exponent $\alpha$ of the bulk heat capacity $c(T)$ in Fig.~\ref{fig:dEnDens_Allsize} as well as the boundary heat capacity $c_{\rm b}(T)$ by further calculations. Similarly we have critical exponents $\nu$, $\beta$ and $\gamma$ of the correlation length along $x$-direction $\xi_{x}$, the boundary magnetization $m_{b}$ and the boundary susceptibility $\chi_{b,\rm abs}$, respectively, by the methods in Ref.~\cite{Hucht2009b}, which enables us to discuss a crossover from the one-dimension to the two-dimension by the varying size $L_{z}$.
+
+According to Ref.~\cite{Hucht2009b}, the scaling relation $2-\alpha=2\beta+\gamma=d_{\rm b}\nu$ where $d_{\rm b}$ denote the boundary dimension of the system for each bulk dimension and geometry. We can expect that the set of critical exponents exhibits a continuous change with holding the scaling relation.
+
+The discussions on the experimental method of manipulating the magnetic friction and determination of the crossover point with more accuracy are applicable to any lattice system which can be simulated by our way. For more practical purposes, it is more important to study three-dimensional systems with two-dimensional surfaces. We intend to seek the way of manipulating the friction in three dimensional systems for future work.
+%
+%For future works, we are going to investigate the following:
+%\begin{itemize}
+%\item the divergence of derivatives of the \textit{boundary} heat capacity in the limit of $L_{z}\to\infty$;
+%\item the behavior of the correlation length itself;
+%\item the dimensional crossover from the viewpoint of critical exponents.
+%\end{itemize}
+%We also intend to see whether dimensional crossovers occur in models with other spatial dimensions or continuous symmetries.

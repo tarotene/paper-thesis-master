@@ -17,7 +17,7 @@ backend=bibtex]{biblatex}
 \DeclarePrefChars{'-}
 \addbibresource{../../library.bib}
 
-\usepackage{todonotes}
+%\usepackage{todonotes}
 %\renewcommand{\baselinestretch}{2}
 \usepackage{tikz}
 %\usepackage{mediabb}
@@ -61,7 +61,7 @@ backend=bibtex]{biblatex}
 \begin{center}
 \large{{\bf Abstract}}
 \end{center}
-We numerically investigate magnetic friction in the non-equilibrium Ising model with the quasi-one-dimensional geometry. The upper half of the system slides against the lower half along the transverse axis with a fixed sliding velocity. We calculate the frictional force density and the bulk energy density. We find peaks in their temperature derivatives, which may diverge in the two-dimensional limit. The result is consistent with Ref.~\cite{Hucht2009b}, which showed a novel boundary critical temperature higher than the ordinary bulk critical point in two dimensions.
+We numerically investigate magnetic friction in the non-equilibrium Ising model with the quasi-one-dimensional geometry. The upper half of the system slides against the lower half along the transverse axis with a fixed sliding velocity. We calculate the frictional force density and the bulk energy density. We find peaks in their temperature derivatives, which may diverge in the two-dimensional limit. The result is consistent with Ref.~\cite{Hucht2009b}, which showed a novel boundary critical point above the ordinary bulk critical point in two dimensions.
 %Based on these results, we propose a new way of manipulating magnetic frictions by changing fixed boundary conditions. This way gives a new framework for reducing or enhancing frictional heats on solids. 
 %\listoftodos
 \tableofcontents
