@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.12.2)  29 JAN 2018 12:49
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.12.2)  30 JAN 2018 12:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1021,10 +1021,6 @@ File: english.lbx 2017/11/21 v3.9 biblatex localization (PK/JW/AB)
 \@quotelevel=\count363
 \@quotereset=\count364
 
-
-LaTeX Warning: Unused global option(s):
-    [a4].
-
 (./Body.aux)
 \openout1 = `Body.aux'.
 
@@ -1055,24 +1051,24 @@ LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
 *geometry* detected driver: dvips
 *geometry* verbose mode - [ preamble ] result:
 * driver: dvips
-* paper: <default>
+* paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
-* h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
-* v-part:(T,H,B)=(71.13188pt, 624.25346pt, 99.58464pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=472.03123pt
-* \textheight=624.25346pt
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=674.33032pt
 * \oddsidemargin=-1.1381pt
 * \evensidemargin=-1.1381pt
-* \topmargin=-33.0119pt
+* \topmargin=-18.78552pt
 * \headheight=12.0pt
 * \headsep=19.8738pt
 * \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=98.0pt
+* \marginparwidth=88.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
@@ -1332,38 +1328,17 @@ LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
 (Font)              scaled to size 10.53629pt on input line 15.
 File: Fig3Modified.pdf Graphic file (type pdf)
 <Fig3Modified.pdf>
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 7.69775pt on input line 17.
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 7.69775pt on input line 17.
-LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 6.73553pt on input line 21.
-LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 6.73553pt on input line 21.
-LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 21.
-LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 21.
-LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 21.
-LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 21.
 File: Fig15.pdf Graphic file (type pdf)
 <Fig15.pdf>
-[11]
-Overfull \hbox (42.35242pt too wide) in paragraph at lines 40--40
-[]\OT1/cmr/bx/n/17.28 Concrete Ex-am-ples: One-dimension and Two-dimension 
- []
-
-
-Underfull \vbox (badness 1048) has occurred while \output is active []
-
- [12]
-[13] [14]
+[11] [12] [13] [14]
 LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
-(Font)              scaled to size 5.77332pt on input line 105.
+(Font)              scaled to size 7.69775pt on input line 101.
 LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
-(Font)              scaled to size 5.77332pt on input line 105.
+(Font)              scaled to size 7.69775pt on input line 101.
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 5.77332pt on input line 101.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 5.77332pt on input line 101.
 ) (./NumSim.tex [15] [16
 
 ]
@@ -1377,7 +1352,14 @@ File: schemNESS3.png Graphic file (type bmp)
 [17]
 File: CutIsing.pdf Graphic file (type pdf)
 <CutIsing.pdf>
- [18] [19]
+
+Overfull \hbox (2.94028pt too wide) in paragraph at lines 45--46
+[]\OT1/cmr/bx/n/12 Shift\OT1/cmr/m/n/12 : A shift op-er-a-tion ex-cites the en-
+ergy on the slip plane by the amount $\OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 H[]\OT
+1/cmr/m/n/12 (\OML/cmm/m/it/12 t[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@
+ []
+
+[18]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 61.
@@ -1386,54 +1368,48 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 61.
 
+[19]
 File: Snapshot1.pdf Graphic file (type pdf)
 <Snapshot1.pdf>
 File: Snapshot2.pdf Graphic file (type pdf)
 <Snapshot2.pdf>
 File: Snapshot3.pdf Graphic file (type pdf)
 <Snapshot3.pdf>
-
-LaTeX Warning: Reference `subfig:timeseries_ns' on page 20 undefined on input l
-ine 82.
-
-
-LaTeX Warning: Reference `subfig:timeseries_s' on page 20 undefined on input li
-ne 82.
-
-[20]
 File: ../../NumCalc/ClassicalSpinMC_tmp/1pass_nonstationary.eps Graphic file (t
 ype eps)
 <../../NumCalc/ClassicalSpinMC_tmp/1pass_nonstationary.eps>
 File: ../../NumCalc/ClassicalSpinMC_tmp/1pass_stationary.eps Graphic file (type
  eps)
 <../../NumCalc/ClassicalSpinMC_tmp/1pass_stationary.eps>
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 105.
+ [20]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 103.
 
  (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 105.
- [21]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 103.
+
+[21]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 126.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\beta' on input line 126.
+(hyperref)                removing `math shift' on input line 124.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 126.
+(hyperref)                removing `\beta' on input line 124.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 126.
+(hyperref)                removing `math shift' on input line 124.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 126.
+(hyperref)                removing `math shift' on input line 124.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 124.
 
 [22]
 File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_ArrayPlotM1_B0-
@@ -1456,27 +1432,23 @@ File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_EigDist_T6_Beta
 0-1.png Graphic file (type bmp)
 <../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/_EigDist_T6_Beta0-1.p
 ng>
-
-Underfull \vbox (badness 1728) has occurred while \output is active []
-
- [23])
-(./Results.tex [24]
+ [23]) (./Results.tex [24]
 Chapter 4.
 
-Overfull \hbox (0.55226pt too wide) in paragraph at lines 6--7
-\OT1/cmr/m/n/12 for tem-per-a-tures $\OML/cmm/m/it/12 k[]T=J \OMS/cmsy/m/n/12 2
- f\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/c
-mr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/1
-2 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; [] ; \OT1/cmr/m/n/12 1
-\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 9\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm
-/m/it/12 :\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12
- :\OT1/cmr/m/n/12 02\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1/
-cmr/m/n/12 04\OML/cmm/m/it/12 ; [] ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1/cm
-r/m/n/12 48\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/1
-2 50\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 6\OML
-/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 7\OML/cmm/m/i
-t/12 ; [] ; \OT1/cmr/m/n/12 5\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0\OMS/cmsy/m/n/1
-2 g$
+Overfull \hbox (62.7307pt too wide) in paragraph at lines 6--7
+\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 L[]; T\OT1/cmr/m/n/12 )$ fo
+r tem-per-a-tures $\OML/cmm/m/it/12 k[]T=J \OMS/cmsy/m/n/12 2 f\OT1/cmr/m/n/12 
+0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cm
+m/m/it/12 :\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/1
+2 :\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; [] ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 :
+\OT1/cmr/m/n/12 9\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1/cmr
+/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 
+02\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 04\OML/
+cmm/m/it/12 ; [] ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 48\OML/cm
+m/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 50\OML/cmm/m/it/
+12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 6\OML/cmm/m/it/12 ; \OT
+1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 7\OML/cmm/m/it/12 ; [] ; \OT1/c
+mr/m/n/12 5\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0\OMS/cmsy/m/n/12 g$
  []
 
 
@@ -1555,45 +1527,47 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 46.
 
+
+Overfull \hbox (3.87488pt too wide) in paragraph at lines 48--49
+\OT1/cmr/m/n/12 We ad-di-tion-ally show the be-hav-ior of tem-per-a-ture deriva
+-tives $\OML/cmm/m/it/12 @f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 L[]; T\OT1/cmr/m/n
+/12 )\OML/cmm/m/it/12 =@T$ \OT1/cmr/m/n/12 and $\OML/cmm/m/it/12 c\OT1/cmr/m/n/
+12 (\OML/cmm/m/it/12 L[]; T\OT1/cmr/m/n/12 ) =
+ []
+
 File: ../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_AP_Bar.eps Graphic file 
 (type eps)
 <../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_AP_Bar.eps>
 File: ../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_P_Bar.eps Graphic file (
 type eps)
 <../../NumCalc/ClassicalSpinMC/dFricDensP_Allsize_P_Bar.eps>
-
-LaTeX Warning: Float too large for page by 27.10919pt on input line 58.
-
 File: ../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_AP_Bar.eps Graphic file (ty
 pe eps)
 <../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_AP_Bar.eps>
 File: ../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_P_Bar.eps Graphic file (typ
 e eps)
 <../../NumCalc/ClassicalSpinMC/dEnDens_Allsize_P_Bar.eps>
-
-LaTeX Warning: Float too large for page by 12.60919pt on input line 68.
-
 File: NEPTIsing_.pdf Graphic file (type pdf)
 <NEPTIsing_.pdf>
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 83.
+(hyperref)                removing `math shift' on input line 81.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 83.
+(hyperref)                removing `subscript' on input line 81.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\to' on input line 83.
+(hyperref)                removing `\to' on input line 81.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\infty' on input line 83.
+(hyperref)                removing `\infty' on input line 81.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 83.
+(hyperref)                removing `math shift' on input line 81.
 
 [26] [27] [28] [29] [30]
 File: ../../NumCalc/ClassicalSpinMC/FricDensP_Lz004.eps Graphic file (type eps)
@@ -1605,10 +1579,6 @@ File: ../../NumCalc/ClassicalSpinMC/FricDensP_Lz008.eps Graphic file (type eps)
 File: ../../NumCalc/ClassicalSpinMC/FricDensP_Lz016.eps Graphic file (type eps)
 
 <../../NumCalc/ClassicalSpinMC/FricDensP_Lz016.eps>
-
-
-LaTeX Warning: Float too large for page by 20.75067pt on input line 104.
-
 File: ../../NumCalc/ClassicalSpinMC/FricDensP_Lz032.eps Graphic file (type eps)
 
 <../../NumCalc/ClassicalSpinMC/FricDensP_Lz032.eps>
@@ -1621,9 +1591,6 @@ File: ../../NumCalc/ClassicalSpinMC/EnDens_Lz008.eps Graphic file (type eps)
 <../../NumCalc/ClassicalSpinMC/EnDens_Lz008.eps>
 File: ../../NumCalc/ClassicalSpinMC/EnDens_Lz016.eps Graphic file (type eps)
 <../../NumCalc/ClassicalSpinMC/EnDens_Lz016.eps>
-
-LaTeX Warning: Float too large for page by 20.75067pt on input line 126.
-
 File: ../../NumCalc/ClassicalSpinMC/EnDens_Lz032.eps Graphic file (type eps)
 <../../NumCalc/ClassicalSpinMC/EnDens_Lz032.eps>
 File: ../../NumCalc/ClassicalSpinMC/EnDens_Lz064.eps Graphic file (type eps)
@@ -1632,18 +1599,6 @@ File: ../../NumCalc/ClassicalSpinMC/EnDens_Lz064.eps Graphic file (type eps)
 
 ]
 Chapter 5.
-
-Overfull \hbox (9.38321pt too wide) in paragraph at lines 4--5
-\OT1/cmr/m/n/12 We in-ves-ti-gated the ef-fects of bound-ary con-di-tions on th
-e phys-i-cal quan-ti-ties by non-equilibrium
- []
-
-
-Overfull \hbox (0.27914pt too wide) in paragraph at lines 19--20
-[]\OT1/cmr/m/n/12 For fur-ther anal-y-sis, it is worth-while to de-ter-mine cri
-t-i-cal ex-po-nents of the non-equilibrium
- []
-
 ) [37] (./App_StochasticMatrices.tex [38]
 Appendix A.
 
@@ -1654,16 +1609,15 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 8.
 
-[39
 
-] [40] [41] [42] [43] [44] [45]
-Overfull \hbox (0.11932pt too wide) in paragraph at lines 286--287
-[]\OT1/cmr/m/n/12 Once we get a strongly con-nected stochas-tic ma-trix $[]$, i
-ts sta-tion-ary dis-tri-bu-tion $\OML/cmm/b/it/12 u[]\OML/cmm/m/it/12 =\OMS/cms
-y/m/n/12 k\OML/cmm/b/it/12 u[]\OMS/cmsy/m/n/12 k[]$
+Overfull \hbox (1.41736pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/n/12 We now con-sider a ma-trix form of the stochas-tic pro-cess. Fo
+r ex-am-ple, the one-dimensional
  []
 
-[46] [47]
+[39
+
+] [40] [41] [42] [43] [44] [45] [46]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 330.
@@ -1710,9 +1664,7 @@ g>
 File: ../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_AZ.pn
 g Graphic file (type bmp)
 <../../NumCalc/ClassicalSpinStochMat/PROGRAMS/Mathematica/EigDist_M1_AZ.png>
-) [48] [49] [50
-
-]
+) [47] [48]
 
 LaTeX Font Warning: Font shape `JT1/hgt/m/it' undefined
 (Font)              using `JT1/hgt/m/n' instead on input line 79.
@@ -1721,12 +1673,14 @@ LaTeX Font Warning: Font shape `JT1/hgt/m/it' undefined
 LaTeX Font Warning: Font shape `JY1/hgt/m/it' undefined
 (Font)              using `JY1/hgt/m/n' instead on input line 79.
 
-[51]
+[49
+
+]
 LaTeX Font Info:    Font shape `JT1/hgt/m/it' will be
 (Font)              scaled to size 11.54663pt on input line 79.
 LaTeX Font Info:    Font shape `JY1/hgt/m/it' will be
 (Font)              scaled to size 11.54663pt on input line 79.
- [52]
+ [50]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
  (./Body.aux)
@@ -1751,12 +1705,12 @@ Package logreq Info: Writing requests to 'Body.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27929 strings out of 493642
- 509029 string characters out of 6148748
- 934427 words of memory out of 5000000
- 30982 multiletter control sequences out of 15000+600000
- 29860 words of font info for 132 fonts, out of 8000000 for 9000
+ 27918 strings out of 493642
+ 508885 string characters out of 6148748
+ 935381 words of memory out of 5000000
+ 30971 multiletter control sequences out of 15000+600000
+ 29456 words of font info for 128 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  62i,19n,94p,1282b,1527s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Body.dvi (52 pages, 202212 bytes).
+Output written on Body.dvi (50 pages, 202252 bytes).
